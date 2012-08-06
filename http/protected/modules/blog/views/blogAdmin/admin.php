@@ -31,10 +31,7 @@
 
 <h1><?php echo $this->module->getName(); ?></h1>
 
-<?php $this->widget('YModuleInfo'); ?>
-
 <?php echo CHtml::link(Yii::t('blog', 'Поиск'), '#', array('class'=>'search-button')); ?>
-
 <div class="search-form" style="display:none">
     <?php $this->renderPartial('_search',array('model'=>$model)); ?>
 </div><!-- search-form -->
@@ -43,6 +40,7 @@
     $this->widget('YCustomGridView', array(
         'id'=>'blog-grid',
         'dataProvider'=>$model->search(),
+        'itemsCssClass' => ' table table-condensed',
         'columns'=>array(
             'id',
             array(
@@ -65,9 +63,10 @@
                 'value'=>'$data->getType()',
             ),
             array(
-                'name'=>'status',
-                'type'=>'raw',
-                'value'=>'$this->grid->returnStatusHtml($data)',
+                'name' => 'status',
+                'type' => 'raw',
+                'value' => '$this->grid->returnBootstrapStatusHtml($data)',
+                'htmlOptions' => array('style'=>'width:40px; text-align:center;'),
             ),
             array(
                 'name'=>'create_user_id',
@@ -87,9 +86,7 @@
                 'name'=>'update_date',
                 'value'=>'$data->update_date',
             ),
-            array(
-                'class'=>'CButtonColumn',
-            ),
+            array('class' => 'bootstrap.widgets.BootButtonColumn'),
         ),
     ));
 ?>

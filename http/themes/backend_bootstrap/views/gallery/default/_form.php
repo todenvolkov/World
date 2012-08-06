@@ -47,7 +47,7 @@
 
        
        <?php echo CHtml::submitButton($model->isNewRecord
-                                               ? Yii::t('feedback', 'Добавить галерею')
+                                               ? Yii::t('feedback', 'Добавить галлерею')
                                                : Yii::t('feedback', 'Сохранить изменения'),
                                                array('class' => 'btn btn-primary',)); ?>
     </fieldset>

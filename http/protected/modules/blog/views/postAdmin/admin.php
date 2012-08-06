@@ -1,4 +1,6 @@
+<?php $this->pageTitle = Yii::t('blog', 'Посты'); ?>
 <?php
+//@formatter:off
     $this->breadcrumbs = array(
         Yii::t('blog', 'Блоги')=>array('blogAdmin/admin'),
         Yii::t('blog', 'Записи')=>array('admin'),
@@ -15,7 +17,7 @@
         array('label'=>Yii::t('blog', 'Добавить запись'), 'url'=>array('create')),
         array('label'=>Yii::t('blog', 'Управление записями'), 'url'=>array('admin')),
     );
-
+//@formatter:on
     Yii::app()->clientScript->registerScript('search', "
         $('.search-button').click(function() {
             $('.search-form').toggle();
@@ -30,19 +32,18 @@
     ");
 ?>
 
-<h1><?php echo $this->module->getName(); ?></h1>
+<div class="page-header"><h1>Посты <small><?php echo Yii::t('blog', 'Управление');; ?></small></h1></div>
 
-<?php $this->widget('YModuleInfo'); ?>
-
-<?php echo CHtml::link(Yii::t('blog', 'Поиск'), '#', array('class'=>'search-button')); ?>
+<?php echo CHtml::link(Yii::t('blog', 'Поиск'), '#', array('class' => 'search-button')); ?>
 <div class="search-form" style="display:none">
-    <?php $this->renderPartial('_search', array('model'=>$model)); ?>
+    <?php $this->renderPartial('_search', array('model' => $model)); ?>
 </div><!-- search-form -->
 
 <?php
     $this->widget('YCustomGridView', array(
         'id'=>'post-grid',
         'dataProvider'=>$model->search(),
+        'itemsCssClass' => ' table table-condensed',
         'columns'=>array(
             'id',
             array(
@@ -88,9 +89,7 @@
                 'name'=>'update_date',
                 'value'=>'$data->update_date',
             ),
-            array(
-                'class'=>'CButtonColumn',
-            ),
+            array('class' => 'bootstrap.widgets.BootButtonColumn'),
         ),
     ));
 ?>

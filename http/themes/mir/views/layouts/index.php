@@ -15,6 +15,14 @@
 <script type="text/javascript" src="<?=Yii::app()->theme->baseUrl?>/js/jquery-1.7.2.min.js"></script>
 <script type="text/javascript" src="<?=Yii::app()->theme->baseUrl?>/js/prettify.js"></script>
 <script type="text/javascript" src="<?=Yii::app()->theme->baseUrl?>/js/kickstart.js"></script>
+<script src='<?=Yii::app()->theme->baseUrl?>/js/jquery.fancybox-1.3.4.pack.js' type="text/javascript"></script>
+<script type="text/javascript" src="<?=Yii::app()->theme->baseUrl?>/js/jquery.infieldlabel.min.js"></script>
+<script type="text/javascript" src="<?=Yii::app()->theme->baseUrl?>/js/jquery.hoverIntent.minified.js"></script>
+<script type="text/javascript" src="<?=Yii::app()->theme->baseUrl?>/js/jquery.jqtransform.js"></script>
+<!--[if lt IE 9]> <script src="js/html5.js" ></script> <![endif]-->
+<!--[if lt IE 10]> <script type="text/javascript" src="js/PIE.js"></script> <![endif]-->
+<link rel="stylesheet" type="text/css" href="<?=Yii::app()->theme->baseUrl?>/css/style.css" media="all" />
+<link rel="stylesheet" href="<?=Yii::app()->theme->baseUrl?>/css/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
 <!--[if lt IE 9]> <script src="js/html5.js" ></script> <![endif]-->
 <!--[if lt IE 10]> <script type="text/javascript" src="js/PIE.js"></script> <![endif]-->
 <link rel="stylesheet" type="text/css" href="<?=Yii::app()->theme->baseUrl?>/css/style.css" media="all" />
@@ -27,6 +35,45 @@
   </nav>
 </div>
 <!--.SERVICEBAR ENDS-->
+<div style="display:none">
+  <div id="feedback-box">
+    <div class="feedback"> <span>Обратная связь</span> </div>
+    <div class="form-wrap">
+    <p><span>*</span> Обязательные поля</p>
+      <form action="#" method="post" class="clearfix jqtransform">
+        <div class="form-left">
+          <div class="form-row placeholder">
+            <label for="Name"><span>*</span>Ваше имя</label>
+            <input type="text" name="Name" id="Name" />
+          </div>
+          <div class="form-row placeholder">
+            <label for="Company"><span>*</span>Компания</label>
+            <input type="text" name="Company" id="Company" />
+          </div>
+          <div class="form-row placeholder">
+            <label for="Email"><span>*</span> Email</label>
+            <input type="text" name="Email" id="Email" />
+          </div>
+          <div class="form-row placeholder">
+            <label for="PhoneNumber"><span>*</span>Номер телефона</label>
+            <input type="text" name="PhoneNumber" id="PhoneNumber" />
+          </div>
+        </div>
+        <div class="form-right">
+          <div class="form-row placeholder">
+            <label for="Comment">Текст сообщения...</label>
+            <textarea name="Comment" id="Comment"></textarea>
+            </div>
+            <div class="form-row submit clearfix">
+            <span><a href="#" class="clean">Очистить</a></span>
+            <input type="submit" name="submit" value="Отправить" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- #FEEDBACK-BOX ENDS -->
 
 <div class="header-wrapper">
   <header>
@@ -43,6 +90,36 @@
   </header>
 </div>
 <!--.HEAEDER-WRAPPER ENDS-->
+
+<div style="display:none">
+  <div id="login">
+    <div class="login-reg">
+      <ul>
+        <li>Вход</li>
+        <li>регистрация</li>
+      </ul>
+    </div>
+    <div class="form-wrap">
+      <form action="#" method="post" class="clearfix">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Введите ваш email" />
+        </div>
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Пароль" />
+        </div>
+        <div class="form-row login-btn">
+          <ul>
+            <li><a href="#">Зарегистрироваться</a></li>
+            <li><a href="#">Забыли пароль?</a></li>
+          </ul>
+          <input type="submit" name="submit" value="Войти" />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- #LOGIN-BOX ENDS-->
+
 <div class="banner-wrapper">
   <div class="banner">
     <div class="video">
@@ -117,70 +194,70 @@
   <!--.GET-MORE-BLOCK ENDS-->
   
   <div class="post-block clearfix">
-    <div class="blogs">
-      <h2>посты из <strong>блога</strong></h2>
-      <ul>
-        <li>
-          <ul class="clearfix">
-            <li>21.06.2012</li>
-            <li><a href="#">Рубрика</a></li>
-            <li><a href="" class="like">145</a></li>
-            <li><a href="#" class="comments">64</a></li>
-          </ul>
-          <h3><a href="#">Не пропустите летние скидки!</a></h3>
-          Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор! </li>
-        <li>
-          <ul class="clearfix">
-            <li>21.06.2012</li>
-            <li><a href="#">Рубрика</a></li>
-            <li><a href="" class="like">145</a></li>
-            <li><a href="#" class="comments">64</a></li>
-          </ul>
-          <h3><a href="#">Не пропустите летние скидки и новые предложения!</a></h3>
-          Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
-        <li>
-          <ul class="clearfix">
-            <li>21.06.2012</li>
-            <li><a href="#">Рубрика</a></li>
-            <li><a href="" class="like">145</a></li>
-            <li><a href="#" class="comments">64</a></li>
-          </ul>
-          <h3><a href="#">Не пропустите сезон лучших продаж!</a></h3>
-          Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
-      </ul>
-      <a href="#" class="more-post">Больше постов</a> </div>
-    <div class="events">
-      <h2>события из <strong>блога</strong></h2>
-      <ul>
-        <li>
-          <ul class="clearfix">
-            <li>21.06.2012</li>
-            <li><a href="#">Рубрика</a></li>
-            <li><a href="" class="like">145</a></li>
-            <li><a href="#" class="comments">64</a></li>
-          </ul>
-          <h3><a href="#">Не пропустите летние скидки!</a></h3>
-          Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
-        <li>
-          <ul class="clearfix">
-            <li>21.06.2012</li>
-            <li><a href="#">Рубрика</a></li>
-            <li><a href="" class="like">145</a></li>
-            <li><a href="#" class="comments">64</a></li>
-          </ul>
-          <h3><a href="#">Не пропустите летние скидки и новые предложения!</a></h3>
-          Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
-        <li>
-          <ul class="clearfix">
-            <li>21.06.2012</li>
-            <li><a href="#">Рубрика</a></li>
-            <li><a href="" class="like">145</a></li>
-            <li><a href="#" class="comments">64</a></li>
-          </ul>
-          <h3><a href="#">Не пропустите сезон лучших продаж!</a></h3>
-          Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
-      </ul>
-      <a href="#" class="more-post">Больше событий</a> </div>
+    <div class="block-one">
+        <h2>посты из <strong>блога</strong></h2>
+        <ul>
+            <li class="first">
+                <ul class="clearfix">
+                    <li class="first">21.06.2012</li>
+                    <li><a href="#">Рубрика</a></li>
+                    <li><a href="" class="like">145</a></li>
+                    <li class="last"><a href="#" class="comments">64</a></li>
+                </ul>
+                <h3><a href="#">Не пропустите летние скидки!</a></h3>
+                Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор! </li>
+            <li>
+                <ul class="clearfix">
+                    <li class="first">21.06.2012</li>
+                    <li><a href="#">Рубрика</a></li>
+                    <li><a href="" class="like">145</a></li>
+                    <li class="last"><a href="#" class="comments">64</a></li>
+                </ul>
+                <h3><a href="#">Не пропустите летние скидки и новые предложения!</a></h3>
+                Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
+            <li class="last">
+                <ul class="clearfix">
+                    <li class="first">21.06.2012</li>
+                    <li><a href="#">Рубрика</a></li>
+                    <li><a href="" class="like">145</a></li>
+                    <li class="last"><a href="#" class="comments">64</a></li>
+                </ul>
+                <h3><a href="#">Не пропустите сезон лучших продаж!</a></h3>
+                Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
+        </ul>
+        <a href="#" class="more-post">Больше постов</a> </div>
+    <div class="block-two">
+        <h2>события из <strong>блога</strong></h2>
+        <ul>
+            <li class="first">
+                <ul class="clearfix">
+                    <li class="first">21.06.2012</li>
+                    <li><a href="#">Рубрика</a></li>
+                    <li><a href="" class="like">145</a></li>
+                    <li class="last"><a href="#" class="comments">64</a></li>
+                </ul>
+                <h3><a href="#">Не пропустите летние скидки!</a></h3>
+                Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
+            <li>
+                <ul class="clearfix">
+                    <li class="first">21.06.2012</li>
+                    <li><a href="#">Рубрика</a></li>
+                    <li><a href="" class="like">145</a></li>
+                    <li class="last"><a href="#" class="comments">64</a></li>
+                </ul>
+                <h3><a href="#">Не пропустите летние скидки и новые предложения!</a></h3>
+                Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
+            <li class="last">
+                <ul class="clearfix">
+                    <li class="first">21.06.2012</li>
+                    <li><a href="#">Рубрика</a></li>
+                    <li><a href="" class="like">145</a></li>
+                    <li class="last"><a href="#" class="comments">64</a></li>
+                </ul>
+                <h3><a href="#">Не пропустите сезон лучших продаж!</a></h3>
+                Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
+        </ul>
+        <a href="#" class="more-post">Больше событий</a> </div>
     <a href="#" class="more subscribe">подписаться</a> </div>
   <!--.POST-BLOCK ENDS-->
   

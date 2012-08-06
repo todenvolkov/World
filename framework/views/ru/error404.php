@@ -17,7 +17,7 @@ p {font-family:"Verdana";font-weight:normal;color:black;font-size:9pt;margin-top
 </style>
 </head>
 <body>
-<h1>Страница не найдена</h1>
+<h1>Страница не найдена1</h1>
 <h2><?php echo nl2br(CHtml::encode($data['message'])); ?></h2>
 <p>
 Запрошенная страница не найдена на сервере.

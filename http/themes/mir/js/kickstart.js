@@ -1,6 +1,6 @@
 $(window).load(function() {
 	if (window.PIE) {
-				$('.counter-wrapper, .banner, .our-contacts li, .our-contacts li a, .get-more-block li, .get-more-block li span').each(function() {
+				$('.counter-wrapper, .banner, .our-contacts li, .our-contacts li a, .get-more-block li, .get-more-block li span, #wrap, .page, .shadow, .photo, .order table td .count, aside div, .share-this ul, .blogger-post li .photo, .option-one li, .option-two li, .form-wrapper input[type="text"], .form-wrapper textarea, .ask-question, .question, .answer, #login .login-reg, #login .form-wrap, #login .form-wrap input[type="submit"], .feedback, #feedback-box .form-wrap, #feedback-box input[type="submit"], #response-box, #respond .name, #respond form, #respond #submit').each(function() {
 				PIE.attach(this);
 			});
 		}
@@ -16,8 +16,68 @@ var home_counter = 12503849;
 			
 jQuery(document).ready(function($){
 	
-	$('.our-contacts li:nth-child(4n+4)').css('margin-right','0');
+
 	
+	$('.our-contacts li:nth-child(4n+4)').css('margin-right','0');
+	$('.blog-posts li:nth-child(3n+3)').css('margin-right','0');
+	
+	/*---------------------------------
+					  PANEL
+	-----------------------------------*/
+	
+   $('#panelHandle').hover(function() {
+		  $('#panelHandle').css({
+				'background-image' : 'url(css/images/close-bg.png)',
+			  'background-position' : '0px 0px'
+			});
+            $('#sidePanel').stop(true, false).animate({
+                'right': '0px'
+            }, 900);
+        }, function() {
+            jQuery.noConflict();
+        });
+
+        jQuery('#sidePanel').hover(function() {
+            // Do nothing
+        }, function() {
+				$('#panelHandle').css({
+				'background-image' : 'url(css/images/respond-bg.png)',
+			  'background-position' : '0px 108px',
+				'background-repeat' : 'no-repeat'
+			});
+            jQuery.noConflict();
+            jQuery('#sidePanel').animate({
+                right: '-262px'
+            }, 800);
+
+        });
+
+	
+	
+/*
+======================
+	INFIELD LABLE
+======================*/	
+$('#feedback-box .placeholder,.ask-question .placeholder').addClass('inFields');
+$('.inFields .text').focus(function(){
+$('.inFiels label').css('opacity','0');
+});
+$('#feedback-box label,.ask-question label').inFieldLabels();
+$('.ask-question label').inFieldLabels();
+/*
+======================
+		   PARENT
+======================*/	
+var ulwidth = 0;
+$('.parent > li').each(function(){
+	ulwidth = ulwidth + $(this).outerWidth();
+});
+$('.parent').css('width', 5+ulwidth+'px');
+
+/*======================
+  	   PAGINATION
+========================*/
+$('.pagination ul').css( 'width', 26*$('.pagination li').length+'px');
 	/*---------------------------------
 		MENU Dropdowns
 	-----------------------------------*/

@@ -130,7 +130,7 @@
     </div>
 
     <div class="row buttons">
-        <?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('blog', 'Добавить запись') : Yii::t('blog', 'Сохранить запись')); ?>
+        <?php echo CHtml::submitButton($model->isNewRecord ? Yii::t('blog', 'Добавить запись') : Yii::t('blog', 'Сохранить запись'),array('class'=>'btn btn-primary')); ?>
     </div>
 
 <?php $this->endWidget(); ?>

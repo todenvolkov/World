@@ -36,7 +36,8 @@
 <?php
     $this->widget('YCustomGridView', array(
         'id'=>'user-to-blog-grid',
-        'dataProvider'=>$model->search(),    
+        'dataProvider'=>$model->search(),
+        'itemsCssClass' => ' table table-condensed',
         'columns'=>array(
             'id',
             array(
@@ -61,9 +62,7 @@
                 'value'=>'$this->grid->returnStatusHtml($data)'
             ),
             'note',
-            array(
-                'class'=>'CButtonColumn',
-            ),
+            array('class' => 'bootstrap.widgets.BootButtonColumn'),
         ),
     ));
 ?>

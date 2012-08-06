@@ -21,7 +21,7 @@ $this->menu = array(
 <?php echo $this->renderPartial('_form', array('model' => $model)); ?>
 <div class="row-fluid control-group">
     <div class="span7">
-        <a class="btn btn-success" data-toggle="modal" href="#upload_modal_window">Загрузить фотографии</a>
+        <a class="btn btn-success" data-toggle="modal" href="#upload_modal_window">Добавить фотографии</a>
     </div>
 </div>
 
@@ -67,7 +67,7 @@ $this->menu = array(
 <span class="hide" id="all_photo">
     <ul class="thumbnails">
         <li>
-          <a href="#" class="thumbnail cover">
+          <a href="#" class="thumbnail">
             <img imgid="1" src="http://placehold.it/145x120" alt="">
           </a>
         </li>
@@ -126,7 +126,7 @@ function updateImages(){
 	$('#all_photo_control').fadeOut(500).slideUp('slow').html(all_photo).fadeIn(500).slideDown('slow');
 	
 	$('#all_photo_control .thumbnails .thumbnail img').each( function() { 
-			$(this).parent('a').append('<div style="margin-top:7px; text-align:right"><a class="delete" rel="tooltip" data-original-title="Удалить" href="/image/default/delete/id/'+$(this).attr('imgid')+'"><i class="icon-trash"></i></a></div>');
+			$(this).parent('a').append('<span style="position:absolute;top:11px;right:11px;"><a class="delete" rel="tooltip" data-original-title="Удалить" href="/image/default/delete/id/'+$(this).attr('imgid')+'"><i class="icon-trash"></i></a><br><a class="update" rel="tooltip" data-original-title="Редактировать" href="/image/default/update/id/'+$(this).attr('imgid')+'"><i class="icon-pencil"></i></a></span>');
 	});
 	
 	
