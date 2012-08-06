@@ -1,0 +1,1257 @@
+2012/08/03 21:24:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:24:52 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Gallery.cover_id".' in J:\webprojects\mir\framework\base\CComponent.php:131
+Stack trace:
+#0 J:\webprojects\mir\framework\db\ar\CActiveRecord.php(144): CComponent->__get('cover_id')
+#1 J:\webprojects\mir\framework\validators\CNumberValidator.php(79): CActiveRecord->__get('cover_id')
+#2 J:\webprojects\mir\framework\validators\CValidator.php(197): CNumberValidator->validateAttribute(Object(Gallery), 'cover_id')
+#3 J:\webprojects\mir\framework\base\CModel.php(158): CValidator->validate(Object(Gallery), NULL)
+#4 J:\webprojects\mir\framework\db\ar\CActiveRecord.php(786): CModel->validate(NULL)
+#5 J:\webprojects\mir\http\protected\modules\gallery\controllers\DefaultController.php(54): CActiveRecord->save()
+#6 [internal function]: DefaultController->actionUpdate('1')
+#7 J:\webprojects\mir\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#8 J:\webprojects\mir\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#9 J:\webprojects\mir\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 J:\webprojects\mir\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 J:\webprojects\mir\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 J:\webprojects\mir\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#13 J:\webprojects\mir\framework\web\CController.php(292): CFilterChain->run()
+#14 J:\webprojects\mir\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 J:\webprojects\mir\framework\web\CWebApplication.php(276): CController->run('update')
+#16 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/default...')
+#17 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/gallery/default/update/id/1
+HTTP_REFERER=http://mir.neo-systems.ru/gallery/default/update/id/1
+---
+2012/08/03 21:24:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:25:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:25:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:26:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:26:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:27:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:29:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:30:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:31:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:31:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:32:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:33:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:34:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:34:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:34:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:34:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:35:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:35:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:36:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:36:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:36:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:39:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:39:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/03 21:40:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:12:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:12:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:12:55 [info] [application.modules.user] Пользователь admin@admin.ru авторизовался!
+2012/08/04 00:12:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:13:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:13:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:23:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:23:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:23:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:24:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:24:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:24:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:24:46 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Gallery.cover_id".' in J:\webprojects\mir\framework\base\CComponent.php:131
+Stack trace:
+#0 J:\webprojects\mir\framework\db\ar\CActiveRecord.php(144): CComponent->__get('cover_id')
+#1 J:\webprojects\mir\framework\validators\CNumberValidator.php(79): CActiveRecord->__get('cover_id')
+#2 J:\webprojects\mir\framework\validators\CValidator.php(197): CNumberValidator->validateAttribute(Object(Gallery), 'cover_id')
+#3 J:\webprojects\mir\framework\base\CModel.php(158): CValidator->validate(Object(Gallery), NULL)
+#4 J:\webprojects\mir\framework\db\ar\CActiveRecord.php(786): CModel->validate(NULL)
+#5 J:\webprojects\mir\http\protected\modules\gallery\controllers\DefaultController.php(54): CActiveRecord->save()
+#6 [internal function]: DefaultController->actionUpdate('1')
+#7 J:\webprojects\mir\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#8 J:\webprojects\mir\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#9 J:\webprojects\mir\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 J:\webprojects\mir\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 J:\webprojects\mir\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 J:\webprojects\mir\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#13 J:\webprojects\mir\framework\web\CController.php(292): CFilterChain->run()
+#14 J:\webprojects\mir\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 J:\webprojects\mir\framework\web\CWebApplication.php(276): CController->run('update')
+#16 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/default...')
+#17 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/gallery/default/update/id/1
+HTTP_REFERER=http://mir.neo-systems.ru/gallery/default/update/id/1
+---
+2012/08/04 00:24:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:24:50 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Gallery.cover_id".' in J:\webprojects\mir\framework\base\CComponent.php:131
+Stack trace:
+#0 J:\webprojects\mir\framework\db\ar\CActiveRecord.php(144): CComponent->__get('cover_id')
+#1 J:\webprojects\mir\framework\validators\CNumberValidator.php(79): CActiveRecord->__get('cover_id')
+#2 J:\webprojects\mir\framework\validators\CValidator.php(197): CNumberValidator->validateAttribute(Object(Gallery), 'cover_id')
+#3 J:\webprojects\mir\framework\base\CModel.php(158): CValidator->validate(Object(Gallery), NULL)
+#4 J:\webprojects\mir\framework\db\ar\CActiveRecord.php(786): CModel->validate(NULL)
+#5 J:\webprojects\mir\http\protected\modules\gallery\controllers\DefaultController.php(54): CActiveRecord->save()
+#6 [internal function]: DefaultController->actionUpdate('1')
+#7 J:\webprojects\mir\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#8 J:\webprojects\mir\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#9 J:\webprojects\mir\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 J:\webprojects\mir\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 J:\webprojects\mir\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 J:\webprojects\mir\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#13 J:\webprojects\mir\framework\web\CController.php(292): CFilterChain->run()
+#14 J:\webprojects\mir\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 J:\webprojects\mir\framework\web\CWebApplication.php(276): CController->run('update')
+#16 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/default...')
+#17 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/gallery/default/update/id/1
+HTTP_REFERER=http://mir.neo-systems.ru/gallery/default/update/id/1
+---
+2012/08/04 00:24:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:24:52 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Gallery.cover_id".' in J:\webprojects\mir\framework\base\CComponent.php:131
+Stack trace:
+#0 J:\webprojects\mir\framework\db\ar\CActiveRecord.php(144): CComponent->__get('cover_id')
+#1 J:\webprojects\mir\framework\validators\CNumberValidator.php(79): CActiveRecord->__get('cover_id')
+#2 J:\webprojects\mir\framework\validators\CValidator.php(197): CNumberValidator->validateAttribute(Object(Gallery), 'cover_id')
+#3 J:\webprojects\mir\framework\base\CModel.php(158): CValidator->validate(Object(Gallery), NULL)
+#4 J:\webprojects\mir\framework\db\ar\CActiveRecord.php(786): CModel->validate(NULL)
+#5 J:\webprojects\mir\http\protected\modules\gallery\controllers\DefaultController.php(54): CActiveRecord->save()
+#6 [internal function]: DefaultController->actionUpdate('1')
+#7 J:\webprojects\mir\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#8 J:\webprojects\mir\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#9 J:\webprojects\mir\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 J:\webprojects\mir\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 J:\webprojects\mir\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 J:\webprojects\mir\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#13 J:\webprojects\mir\framework\web\CController.php(292): CFilterChain->run()
+#14 J:\webprojects\mir\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 J:\webprojects\mir\framework\web\CWebApplication.php(276): CController->run('update')
+#16 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/default...')
+#17 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#19 {main}
+REQUEST_URI=/gallery/default/update/id/1
+HTTP_REFERER=http://mir.neo-systems.ru/gallery/default/update/id/1
+---
+2012/08/04 00:24:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:26:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:26:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:26:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:26:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:26:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:26:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:26:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:26:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:26:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:26:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:26:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:26:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:26:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:26:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:26:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:26:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:27:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:27:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:28:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:29:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:29:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:29:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:29:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:29:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:40:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:40:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:40:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:49:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:49:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:51:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:52:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:55:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:56:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:57:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 00:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:06:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:08:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:08:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:09:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:19:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:21:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:23:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:24:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:24:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:24:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:25:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:26:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:26:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:27:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:32:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:32:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:33:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:33:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:33:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:33:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:44:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 01:53:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:03:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:03:56 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in J:\webprojects\mir\http\protected\modules\image\controllers\DefaultController.php:78
+Stack trace:
+#0 [internal function]: DefaultController->actionDelete('undefined')
+#1 J:\webprojects\mir\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#2 J:\webprojects\mir\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#3 J:\webprojects\mir\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 J:\webprojects\mir\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 J:\webprojects\mir\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 J:\webprojects\mir\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#7 J:\webprojects\mir\framework\web\CController.php(292): CFilterChain->run()
+#8 J:\webprojects\mir\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 J:\webprojects\mir\framework\web\CWebApplication.php(276): CController->run('delete')
+#10 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('image/default/d...')
+#11 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#13 {main}
+REQUEST_URI=/image/default/delete/id/undefined
+HTTP_REFERER=http://mir.neo-systems.ru/gallery/default/update/id/1
+---
+2012/08/04 02:03:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:04:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:04:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:04:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in J:\webprojects\mir\http\protected\modules\image\controllers\DefaultController.php:78
+Stack trace:
+#0 [internal function]: DefaultController->actionDelete('undefined')
+#1 J:\webprojects\mir\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#2 J:\webprojects\mir\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#3 J:\webprojects\mir\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 J:\webprojects\mir\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 J:\webprojects\mir\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 J:\webprojects\mir\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#7 J:\webprojects\mir\framework\web\CController.php(292): CFilterChain->run()
+#8 J:\webprojects\mir\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 J:\webprojects\mir\framework\web\CWebApplication.php(276): CController->run('delete')
+#10 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('image/default/d...')
+#11 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#13 {main}
+REQUEST_URI=/image/default/delete/id/undefined
+HTTP_REFERER=http://mir.neo-systems.ru/gallery/default/update/id/1
+---
+2012/08/04 02:04:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:04:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:04:21 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in J:\webprojects\mir\http\protected\modules\image\controllers\DefaultController.php:78
+Stack trace:
+#0 [internal function]: DefaultController->actionDelete('undefined')
+#1 J:\webprojects\mir\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#2 J:\webprojects\mir\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#3 J:\webprojects\mir\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 J:\webprojects\mir\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 J:\webprojects\mir\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 J:\webprojects\mir\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#7 J:\webprojects\mir\framework\web\CController.php(292): CFilterChain->run()
+#8 J:\webprojects\mir\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 J:\webprojects\mir\framework\web\CWebApplication.php(276): CController->run('delete')
+#10 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('image/default/d...')
+#11 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#13 {main}
+REQUEST_URI=/image/default/delete/id/undefined
+HTTP_REFERER=http://mir.neo-systems.ru/gallery/default/update/id/1
+---
+2012/08/04 02:04:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:04:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:05:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:06:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in J:\webprojects\mir\http\protected\modules\image\controllers\DefaultController.php:78
+Stack trace:
+#0 [internal function]: DefaultController->actionDelete('8')
+#1 J:\webprojects\mir\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#2 J:\webprojects\mir\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#3 J:\webprojects\mir\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 J:\webprojects\mir\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 J:\webprojects\mir\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 J:\webprojects\mir\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#7 J:\webprojects\mir\framework\web\CController.php(292): CFilterChain->run()
+#8 J:\webprojects\mir\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 J:\webprojects\mir\framework\web\CWebApplication.php(276): CController->run('delete')
+#10 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('image/default/d...')
+#11 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#13 {main}
+REQUEST_URI=/image/default/delete/id/8
+HTTP_REFERER=http://mir.neo-systems.ru/gallery/default/update/id/1
+---
+2012/08/04 02:06:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:06:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:06:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Invalid request. Please do not repeat this request again.' in J:\webprojects\mir\http\protected\modules\image\controllers\DefaultController.php:78
+Stack trace:
+#0 [internal function]: DefaultController->actionDelete('8')
+#1 J:\webprojects\mir\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(DefaultController), Array)
+#2 J:\webprojects\mir\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(DefaultController), Object(ReflectionMethod), Array)
+#3 J:\webprojects\mir\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 J:\webprojects\mir\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 J:\webprojects\mir\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 J:\webprojects\mir\framework\web\filters\CFilterChain.php(131): CFilter->filter(Object(CFilterChain))
+#7 J:\webprojects\mir\framework\web\CController.php(292): CFilterChain->run()
+#8 J:\webprojects\mir\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 J:\webprojects\mir\framework\web\CWebApplication.php(276): CController->run('delete')
+#10 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('image/default/d...')
+#11 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#13 {main}
+REQUEST_URI=/image/default/delete/id/8
+HTTP_REFERER=http://mir.neo-systems.ru/gallery/default/update/id/1
+---
+2012/08/04 02:06:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:06:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:06:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:07:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:07:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:08:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 02:16:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 10:11:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 10:12:00 [info] [application.modules.user] Пользователь admin@admin.ru авторизовался!
+2012/08/04 10:12:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 10:12:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 10:12:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/04 10:26:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://mir.neo-systems.ru/login
+---
+2012/08/04 10:27:21 [info] [application.modules.user] Пользователь admin@admin.ru авторизовался!
+2012/08/04 10:30:23 [info] [application.modules.user] Пользователь admin вышел!
+2012/08/06 10:43:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 10:43:24 [info] [application.modules.user] Пользователь admin@admin.ru авторизовался!
+2012/08/06 10:43:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 10:43:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 10:43:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 10:54:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 11:49:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 11:49:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 11:49:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 11:50:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 11:50:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 11:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2012/08/06 11:50:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in J:\webprojects\mir\framework\web\CWebApplication.php:280
+Stack trace:
+#0 J:\webprojects\mir\framework\web\CWebApplication.php(135): CWebApplication->runController('favicon.ico')
+#1 J:\webprojects\mir\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 J:\webprojects\mir\http\index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
