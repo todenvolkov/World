@@ -8,7 +8,7 @@
   'charset' => 'utf8',
   'enableParamLogging' => 1,
   'enableProfiling' => 1,
-  'schemaCachingDuration' => 108000,
+  'schemaCachingDuration' => 0,
   'tablePrefix' => '',
 ) ;
 ?>

@@ -5,7 +5,7 @@ return array(
     // контроллер по умолчанию
     'defaultController' => 'site',
     // название приложения
-    'name' => 'Юпи!',
+    'name' => 'Компания МИР',
     // язык по умолчанию
     'language' => 'ru',
     // тема оформления по умолчанию
@@ -47,6 +47,12 @@ return array(
         'application.modules.social.extensions.eoauth.lib.*',
         'application.modules.social.extensions.lightopenid.*',
         'application.modules.social.extensions.eauth.services.*',
+
+        'application.modules.order.models.*',
+        'application.modules.order.controllers.*',
+        'application.modules.order.components.*',
+        'application.modules.order.components.*',
+
     ),
 
     // конфигурирование основных компонентов (подробнее http://www.yiiframework.ru/doc/guide/ru/basics.component)
@@ -134,7 +140,8 @@ return array(
 
         // настройки кэширования, подробнее http://www.yiiframework.ru/doc/guide/ru/caching.overview
         'cache' => array(
-            'class' => 'CMemCache',
+          //  'class' => 'CMemCache',
+            'class' => 'CDummyCache', // В целях отладки.
         ),
 
         /*'messages' => array(
@@ -239,6 +246,8 @@ return array(
                     'userAdapter' => array('class' => 'WikiUser'),
                 ),
             ),
+
+
             /*
             'controllerMap' => array(
                 'default' => array(
@@ -246,6 +255,11 @@ return array(
                 ),
             ),*/
         ),
+        'order' => array(
+                            'class' => 'application.modules.order.OrderModule',
+
+                            ),
+
         // подключение gii в режиме боевой работы рекомендуется отключить (подробнее http://www.yiiframework.com/doc/guide/1.1/en/quickstart.first-app)
         'gii' => array(
             'class' => 'system.gii.GiiModule',
