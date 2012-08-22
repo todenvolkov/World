@@ -21,7 +21,7 @@
         <div class="row-fluid control-group">
             <div class="span3">
                 <?php echo $form->labelEx($model, 'parent_Id' ); ?>
-                <?php echo $form->dropDownList($model, 'parent_Id', $pages); ?>
+                <?php echo $form->dropDownList($model, 'parent_Id', $pages, array('prompt'=>'-- нет --')); ?>
             </div>
             <div class="span2 popover-help" data-content="<?php echo Yii::t('page',"<span class='label label-success'>Опубликовано</span> &ndash; Страницу видят все посетители сайта, режим по-умолчанию.<br /><br /><span class='label label-default'>Черновик</span> &ndash; Данная страница еще не окончена и не должна отображаться.<br /><br /><span class='label label-info'>На модерации</span> &ndash; Данная страница еще не проверена и не должна отображаться.") ?>" data-original-title="<?php echo $model-> getAttributeLabel('status'); ; ?>" >
                 <?php echo $form->labelEx($model, 'status' ); ?>

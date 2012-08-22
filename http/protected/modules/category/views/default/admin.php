@@ -38,6 +38,7 @@ $('.search-form form').submit(function(){
 <?php $this->widget('YCustomGridView', array(
                                                        'id' => 'category-grid',
                                                        'dataProvider' => $model->search(),
+                                                       'itemsCssClass' => ' table table-condensed',
                                                        'columns' => array(
                                                            'id',
                                                            array(
@@ -50,10 +51,9 @@ $('.search-form form').submit(function(){
                                                            array(
                                                                'name' => 'status',
                                                                'type' => 'raw',
-                                                               'value' => '$this->grid->returnStatusHtml($data)'
+                                                               'value' => '$this->grid->returnBootstrapStatusHtml($data)',
+                                                               'htmlOptions' => array('style'=>'width:40px; text-align:center;'),
                                                            ),
-                                                           array(
-                                                               'class' => 'CButtonColumn',
-                                                           ),
+                                                           array('class' => 'bootstrap.widgets.BootButtonColumn'),
                                                        ),
                                                   )); ?>

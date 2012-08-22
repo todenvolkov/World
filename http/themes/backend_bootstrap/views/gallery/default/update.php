@@ -8,10 +8,11 @@ $this->breadcrumbs = array(
 );
 
 $this->menu = array(
-    array('label' => Yii::t('feedback', 'Управление галереями'), 'url' => array('admin')),
-    array('label' => Yii::t('feedback', 'Добавить галерею'), 'url' => array('create')),
-    array('label' => Yii::t('feedback', 'Редактирование галереи'), 'url' => array('update', 'id' => $model->id)),
-    array('label' => Yii::t('feedback', 'Просмотреть галерею'), 'url' => array('view', 'id' => $model->id))
+    array('label' => Yii::t('gallery', 'Управление галереями'), 'url' => array('admin')),
+    array('label' => Yii::t('gallery', 'Добавить галерею'), 'url' => array('create')),
+    array('label' => Yii::t('gallery', 'Редактирование галереи'), 'url' => array('update', 'id' => $model->id)),
+    array('label' => Yii::t('gallery', 'Просмотреть галерею'), 'url' => array('view', 'id' => $model->id)),
+    array('label' => Yii::t('gallery', 'Добавить изображение'), 'url' => array('addImage', 'galleryId' => $model->id))
 );
 ?>
 
@@ -36,7 +37,7 @@ $this->menu = array(
         </div>
 	</div>
     <div class="modal-footer">
-        <a href="#" class="btn" data-dismiss="modal">Отмена</a>
+        <a href="#" class="btn" data-dismiss="modal">Закрыть</a>
     </div>
 </div>
 
@@ -66,57 +67,29 @@ $this->menu = array(
 
 <span class="hide" id="all_photo">
     <ul class="thumbnails">
+        <?php
+        if($model->imagesCount > 0):
+            $images = ImageToGallery::model()->with('image')->findAll(array(
+                'condition' => 'galleryId = :galleryId',
+                'params' => array(':galleryId' => $model->id),
+                'order' => 't.sort DESC, t.creation_date DESC'
+            ));
+
+        foreach($images as $img):
+            $sort[$img->image->id] = '<a class="thumbnail"><img imgid="'.$img->image->id.'" orig-src="'.$img->image->file.'" src="/timthumb.php?src='.urlencode($img->image->file).'&w=145&h=120" alt=""></a>';
+        ?>
         <li>
-          <a href="#" class="thumbnail">
-            <img imgid="1" src="http://placehold.it/145x120" alt="">
-          </a>
+            <?=$sort[$img->image->id]?>
         </li>
-        <li>
-          <a href="#" class="thumbnail">
-            <img imgid="2" src="http://placehold.it/145x120" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="thumbnail">
-            <img imgid="3" src="http://placehold.it/145x120" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="thumbnail">
-            <img imgid="4" src="http://placehold.it/145x120" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="thumbnail">
-            <img imgid="5" src="http://placehold.it/145x120" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="thumbnail cover">
-            <img imgid="6" src="http://placehold.it/145x120" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="thumbnail">
-            <img imgid="7" src="http://placehold.it/145x120" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="thumbnail">
-            <img imgid="8" src="http://placehold.it/145x120" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="thumbnail">
-            <img imgid="9" src="http://placehold.it/145x120" alt="">
-          </a>
-        </li>
-        <li>
-          <a href="#" class="thumbnail">
-            <img imgid="10" src="http://placehold.it/145x120" alt="">
-          </a>
-        </li>
+        <?php endforeach; ?>
+        <?php endif; ?>
     </ul>
+
+    <?php $this->widget('zii.widgets.jui.CJuiSortable', array(
+        //'itemTemplate'=>'<li><a class="thumbnail"></a></li>',
+        'items'=>$sort,
+        //'htmlOptions'=>array('class'=>'thumbnail'),
+    )); ?>
 </span>
 
 <script language="javascript" type="application/javascript">
@@ -126,7 +99,7 @@ function updateImages(){
 	$('#all_photo_control').fadeOut(500).slideUp('slow').html(all_photo).fadeIn(500).slideDown('slow');
 	
 	$('#all_photo_control .thumbnails .thumbnail img').each( function() { 
-			$(this).parent('a').append('<span style="position:absolute;top:11px;right:11px;"><a class="delete" rel="tooltip" data-original-title="Удалить" href="/image/default/delete/id/'+$(this).attr('imgid')+'"><i class="icon-trash"></i></a><br><a class="update" rel="tooltip" data-original-title="Редактировать" href="/image/default/update/id/'+$(this).attr('imgid')+'"><i class="icon-pencil"></i></a></span>');
+			$(this).parent('a').append('<span style="position:absolute;top:7px;right:7px; background-color: rgba(0, 0, 0, 0.5); padding: 2px;"><a class="update" rel="tooltip" data-original-title="Редактировать" href="/image/default/update/id/'+$(this).attr('imgid')+'"><i class="icon-pencil icon-white"></i></a><br><a class="delete" rel="tooltip" data-original-title="Удалить" href="/image/default/delete/id/'+$(this).attr('imgid')+'"><i class="icon-trash icon-white"></i></a></span>');
 	});
 	
 	
@@ -148,7 +121,7 @@ $(document).ready(function() {
 		}*/
 		$('#cover_selector .thumbnails .thumbnail img').each( function() {
 				
-				$(this).click(function() { $(href).modal('hide'); $('#Gallery_name').val($(this).attr('src')); } );
+				$(this).click(function() { $(href).modal('hide'); $('#coverImg').attr("src","/timthumb.php?w=260&src="+$(this).attr('orig-src')); $('#Gallery_cover_id').val($(this).attr('imgid')); } );
 		 } );
 	});
 	/*==================================*/

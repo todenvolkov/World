@@ -80,8 +80,8 @@
     <div class="logo"><a href="/"><img src="<?=Yii::app()->theme->baseUrl?>/images/logo.png" width="320" height="109" alt="Logo" /></a></div>
     <div class="user"><span class="phone_no"><?php $this->widget("application.modules.contentblock.widgets.ContentBlockWidget", array("code" => "phone")); ?></span>
       <ul>
-        <li><?=CHtml::link('Вход',array('/login'))?></li>
-        <li><?=CHtml::link('Регистрация',array('/registration'))?></li>
+          <li><a href="#login" class="fancybox">Вход</a></li>
+          <li><a href="#">Регистрация</a></li>
       </ul>
     </div>
     <div class="counter-wrapper"><span>Когда вы с нами вас видят:</span>
@@ -91,33 +91,8 @@
 </div>
 <!--.HEAEDER-WRAPPER ENDS-->
 
-<div style="display:none">
-  <div id="login">
-    <div class="login-reg">
-      <ul>
-        <li>Вход</li>
-        <li>регистрация</li>
-      </ul>
-    </div>
-    <div class="form-wrap">
-      <form action="#" method="post" class="clearfix">
-        <div class="form-row">
-          <input type="text" name="name" placeholder="Введите ваш email" />
-        </div>
-        <div class="form-row">
-          <input type="text" name="name" placeholder="Пароль" />
-        </div>
-        <div class="form-row login-btn">
-          <ul>
-            <li><a href="#">Зарегистрироваться</a></li>
-            <li><a href="#">Забыли пароль?</a></li>
-          </ul>
-          <input type="submit" name="submit" value="Войти" />
-        </div>
-      </form>
-    </div>
-  </div>
-</div>
+<?php $this->renderPartial('//layouts/_loginform'); ?>
+
 <!-- #LOGIN-BOX ENDS-->
 
 <div class="banner-wrapper">
@@ -150,15 +125,51 @@
 </div>
 <!--.BANNER-WRAPPER ENDS-->
 
-<div class="respond"><a href="#">Respond</a></div>
+<div id="sidePanel" style="right: -262px; ">
+    <div id="panelContent">
+        <div id="response-box">
+            <ul class="comment-box">
+                <li class="first"> <a href="#respond" class="fancybox">
+                    <div class="avatar"> <img src="avatars/avatar.png" width="58" height="69" alt="avatar"> </div>
+                    <div class="content"> <strong class="name-surname">Имя Фамилие</strong> <span>Написать собщение<br>
+            Личная страница</span> <span class="star">145</span> </div>
+                </a> </li>
+                <li> <a href="#respond" class="fancybox">
+                    <div class="avatar"> <img src="avatars/avatar.png" width="58" height="69" alt="avatar"> </div>
+                    <div class="content"> <strong class="name-surname">Имя Фамилие</strong> <span>Написать собщение<br>
+            Личная страница</span> <span class="star">145</span> </div>
+                </a> </li>
+                <li> <a href="#respond" class="fancybox">
+                    <div class="avatar"> <img src="avatars/avatar.png" width="58" height="69" alt="avatar"> </div>
+                    <div class="content"> <strong class="name-surname">Имя Фамилие</strong> <span>Написать собщение<br>
+            Личная страница</span> <span class="star">145</span> </div>
+                </a> </li>
+                <li> <a href="#respond" class="fancybox">
+                    <div class="avatar"> <img src="avatars/avatar.png" width="58" height="69" alt="avatar"> </div>
+                    <div class="content"> <strong class="name-surname">Имя Фамилие</strong> <span>Написать собщение<br>
+            Личная страница</span> <span class="star">145</span> </div>
+                </a> </li>
+                <li class="last"> <a href="#respond" class="fancybox">
+                    <div class="avatar"> <img src="avatars/avatar.png" width="58" height="69" alt="avatar"> </div>
+                    <div class="content"> <strong class="name-surname">Имя Фамилие</strong> <span>Написать собщение<br>
+            Личная страница</span><span class="star">145</span> </div>
+                </a> </li>
+            </ul>
+        </div>
+        <!--.RESPONSE BOX ENDS-->
+    </div>
+    <!--.PANEL CONTENT ENDS-->
+    <div id="panelHandle" style="background-image: url(<?=Yii::app()->theme->baseUrl?>/css/images/respond-bg.png); background-position: 0px 108px; background-repeat: no-repeat no-repeat; "><a href="#" title="respond">Respond</a></div>
+</div>
+
 <div id="wrap">
   <div class="our-contacts">
     <h2>как мы увеличиваем <strong>количество контактов</strong></h2>
     <ul class="clearfix">
-      <li><a href="">Оптимизируем затраты <img src="<?=Yii::app()->theme->baseUrl?>/images/001.png" width="107" height="135" alt="" /></a></li>
-      <li><a href="">размещаем и согласовываем <img src="<?=Yii::app()->theme->baseUrl?>/images/002.png" width="86" height="135" alt="" /></a></li>
-      <li><a href="">проектируем и изготавливаем <img src="<?=Yii::app()->theme->baseUrl?>/images/003.png" width="104" height="135" alt="" /></a></li>
-      <li><a href="">Анализируем и сопровождаем <img src="<?=Yii::app()->theme->baseUrl?>/images/004.png" width="92" height="135" alt="" /></a></li>
+      <li><a href="/pages/optimization">Оптимизируем затраты <img src="<?=Yii::app()->theme->baseUrl?>/images/001.png" width="107" height="135" alt="" /></a></li>
+      <li><a href="/pages/location-and-agreement">размещаем и согласовываем <img src="<?=Yii::app()->theme->baseUrl?>/images/002.png" width="86" height="135" alt="" /></a></li>
+      <li><a href="/pages/design-and-production">проектируем и изготавливаем <img src="<?=Yii::app()->theme->baseUrl?>/images/003.png" width="104" height="135" alt="" /></a></li>
+      <li><a href="/pages/analysis-and-maintenance">Анализируем и сопровождаем <img src="<?=Yii::app()->theme->baseUrl?>/images/004.png" width="92" height="135" alt="" /></a></li>
     </ul>
   </div>
   <!--.OUR-CONTANTS ENDS-->
@@ -166,14 +177,14 @@
   <div class="solutions-block">
     <h2>возьмите готовые <strong>решения</strong></h2>
     <ul class="solutions clearfix">
-      <li><a href="#">Молодой бизнес</a> У вас молодой перспективный бизнес нуждающийся в активном привлечении клиентов, при условии скромного бюджета на рекламу. </li>
-      <li><a href="#">Оптима</a> Максимальный охват аудитории, при оптимальных вложениях для удержания занятых  позиций бизнеса и активного продвижения вперед.</li>
-      <li><a href="#">Премиум</a> Хороший бизнесмен ни когда не забывает о подростающей конкуренции. Закрепляем позиции с мксимальным размахом.</li>
+      <li><a href="/pages/solution-for-small-business">Молодой бизнес</a> У вас молодой перспективный бизнес нуждающийся в активном привлечении клиентов, при условии скромного бюджета на рекламу. </li>
+      <li><a href="/pages/solution-for-medium-business">Оптима</a> Максимальный охват аудитории, при оптимальных вложениях для удержания занятых  позиций бизнеса и активного продвижения вперед.</li>
+      <li><a href="/pages/solution-for-big-business">Премиум</a> Хороший бизнесмен ни когда не забывает о подростающей конкуренции. Закрепляем позиции с мксимальным размахом.</li>
     </ul>
     <ul class="clearfix">
-      <li class="read-more"><a href="#">Подробнее</a></li>
-      <li class="read-more"><a href="#">Подробнее</a></li>
-      <li class="read-more"><a href="#">Подробнее</a></li>
+      <li class="read-more"><a href="/pages/solution-for-small-business">Подробнее</a></li>
+      <li class="read-more"><a href="/pages/solution-for-medium-business">Подробнее</a></li>
+      <li class="read-more"><a href="/pages/solution-for-big-business">Подробнее</a></li>
     </ul>
     <a href="#" class="more">Другие варианты</a> </div>
   <!--.SOLUTIONS-BLOCK ENDS-->
@@ -192,73 +203,9 @@
     </ul>
     <a href="#" class="more">задать вопрос</a> </div>
   <!--.GET-MORE-BLOCK ENDS-->
-  
-  <div class="post-block clearfix">
-    <div class="block-one">
-        <h2>посты из <strong>блога</strong></h2>
-        <ul>
-            <li class="first">
-                <ul class="clearfix">
-                    <li class="first">21.06.2012</li>
-                    <li><a href="#">Рубрика</a></li>
-                    <li><a href="" class="like">145</a></li>
-                    <li class="last"><a href="#" class="comments">64</a></li>
-                </ul>
-                <h3><a href="#">Не пропустите летние скидки!</a></h3>
-                Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор! </li>
-            <li>
-                <ul class="clearfix">
-                    <li class="first">21.06.2012</li>
-                    <li><a href="#">Рубрика</a></li>
-                    <li><a href="" class="like">145</a></li>
-                    <li class="last"><a href="#" class="comments">64</a></li>
-                </ul>
-                <h3><a href="#">Не пропустите летние скидки и новые предложения!</a></h3>
-                Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
-            <li class="last">
-                <ul class="clearfix">
-                    <li class="first">21.06.2012</li>
-                    <li><a href="#">Рубрика</a></li>
-                    <li><a href="" class="like">145</a></li>
-                    <li class="last"><a href="#" class="comments">64</a></li>
-                </ul>
-                <h3><a href="#">Не пропустите сезон лучших продаж!</a></h3>
-                Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
-        </ul>
-        <a href="#" class="more-post">Больше постов</a> </div>
-    <div class="block-two">
-        <h2>события из <strong>блога</strong></h2>
-        <ul>
-            <li class="first">
-                <ul class="clearfix">
-                    <li class="first">21.06.2012</li>
-                    <li><a href="#">Рубрика</a></li>
-                    <li><a href="" class="like">145</a></li>
-                    <li class="last"><a href="#" class="comments">64</a></li>
-                </ul>
-                <h3><a href="#">Не пропустите летние скидки!</a></h3>
-                Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
-            <li>
-                <ul class="clearfix">
-                    <li class="first">21.06.2012</li>
-                    <li><a href="#">Рубрика</a></li>
-                    <li><a href="" class="like">145</a></li>
-                    <li class="last"><a href="#" class="comments">64</a></li>
-                </ul>
-                <h3><a href="#">Не пропустите летние скидки и новые предложения!</a></h3>
-                Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
-            <li class="last">
-                <ul class="clearfix">
-                    <li class="first">21.06.2012</li>
-                    <li><a href="#">Рубрика</a></li>
-                    <li><a href="" class="like">145</a></li>
-                    <li class="last"><a href="#" class="comments">64</a></li>
-                </ul>
-                <h3><a href="#">Не пропустите сезон лучших продаж!</a></h3>
-                Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
-        </ul>
-        <a href="#" class="more-post">Больше событий</a> </div>
-    <a href="#" class="more subscribe">подписаться</a> </div>
+
+  <?php $this->renderPartial('//layouts/_lastposts'); ?>
+
   <!--.POST-BLOCK ENDS-->
   
   <div class="tape-block clearfix">
@@ -267,7 +214,7 @@
 		<?php $this->widget('application.modules.news.widgets.RssNewsWidget',array('feed'=>'http://www.sostav.ru/webServices/RSS/','count'=>5)); ?>
     </div>
     <div class="tape-adme">
-      <h2>лента <strong>adme.ru</strong></h2>
+      <h2><strong>лента</strong> adme.ru</h2>
       <?php $this->widget('application.modules.news.widgets.RssNewsWidget',array('feed'=>'http://www.adme.ru/rss/','count'=>5)); ?>
     </div>
   </div>
@@ -353,5 +300,18 @@
   <!--FOOTER ENDS--> 
 </div>
 <!--.FOOTER-WRAPPER ENDS-->
+<script type="text/javascript">
+    <!--
+     $(document).ready(function (){
+     $('a.fancybox').fancybox({
+         'scrolling'		: 'no',
+         'titleShow'		: false,
+         'padding' : '0',
+         'centerOnScroll':true,
+         'overlayColor' : '#000'
+     });
+     });
+     -->
+</script>
 </body>
 </html>

@@ -39,6 +39,7 @@ Yii::app()->clientScript->registerScript('search', "
 $this->widget('YCustomGridView', array(
     'id' => 'user-grid',
     'dataProvider' => $model->search(),
+    'itemsCssClass' => ' table table-condensed',
     'columns' => array(
         'id',
         array(
@@ -57,18 +58,20 @@ $this->widget('YCustomGridView', array(
         array(
             'name' => 'status',
             'type' => 'raw',
-            'value' => '$this->grid->returnStatusHtml($data, Comment::STATUS_APPROVED, 1)',
+            'value' => '$this->grid->returnBootstrapStatusHtml($data)',
+            'htmlOptions' => array('style'=>'width:40px; text-align:center;'),
         ),
         array(
-            'class' => 'CButtonColumn',
+            'class' => 'bootstrap.widgets.BootButtonColumn',
             'template' => '{view} {update} {password} {delete}',
             'buttons' => array(
                 'password' => array(
                     'label' => Yii::t('user', 'Изменить пароль'),
-                    'imageUrl' => Yii::app()->request->baseUrl . '/web/images/key.gif',
+                    'icon' => 'icon-wrench',
                     'url' => 'array("/user/default/changepassword/", "id"=>$data->id)',
                 ),
             ),
+            'htmlOptions' => array('style'=>'width:80px; text-align:center;'),
         ),
     ),
 ));

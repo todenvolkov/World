@@ -2,6 +2,7 @@ body {
     background: #EEE url(body.png) repeat-x;
     font: 13px "Trebuchet MS", Arial, Verdana;
     padding-top: 95px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -31,4 +32,37 @@ p em a {
     width: 120px;
     height: 28px;
     left: 30px;
+}
+
+.more {
+    margin: 17px auto;
+    padding-top: 13px;
+
+}
+
+.post-block .more-post {
+    background-position: 0 5px;
+
+}
+
+.post-block .block-one, .post-block .block-two {
+    width: 480px;
+
+}
+
+.tape-block {
+    width: 974px;
+    margin: auto 56px;
+
+}
+
+.counter {
+    padding: 5px 0 0 5px;
+    right: 7px;
+
+}
+
+.information .learn-more {
+    margin-left: 5px;
+
 }

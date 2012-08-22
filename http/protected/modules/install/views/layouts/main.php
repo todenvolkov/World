@@ -26,7 +26,7 @@
     <style>
         body {
             background: white;
-            font-family: 'Lucida Grande', Verdana, Geneva, Lucida, Helvetica, Arial, sans-serif;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             font-size: 10pt;
             font-weight: normal;
         }

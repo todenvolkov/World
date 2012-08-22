@@ -60,7 +60,8 @@ class Gallery extends CActiveRecord
         return array(
             'imagesRell' => array(self::HAS_MANY, 'ImageToGallery', 'galleryId'),
             'images' => array(self::HAS_MANY, 'Images', 'image_id', 'through' => 'imagesRell'),
-            'imagesCount' => array(self::STAT, 'ImageToGallery', 'galleryId')
+            'imagesCount' => array(self::STAT, 'ImageToGallery', 'galleryId'),
+            'cover' => array(self::BELONGS_TO, 'Image', 'cover_id'),
         );
     }
 
@@ -74,6 +75,7 @@ class Gallery extends CActiveRecord
             'name' => Yii::t('gallery', 'Название'),
             'description' => Yii::t('gallery', 'Описание'),
             'status' => Yii::t('gallery', 'Статус'),
+            'cover_id' => Yii::t('gallery', 'Обложка'),
         );
     }
 

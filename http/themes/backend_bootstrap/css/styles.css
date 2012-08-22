@@ -131,3 +131,9 @@ footer {
 .navbar .divider-vertical {
     margin:0;
 }
+
+.grid-view .button-column
+{
+    text-align: center;
+    width: 80px;
+}

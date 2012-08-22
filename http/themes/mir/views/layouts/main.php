@@ -19,13 +19,18 @@
 <script type="text/javascript" src="<?=Yii::app()->theme->baseUrl?>/js/jquery.infieldlabel.min.js"></script>
 <script type="text/javascript" src="<?=Yii::app()->theme->baseUrl?>/js/jquery.hoverIntent.minified.js"></script>
 <script type="text/javascript" src="<?=Yii::app()->theme->baseUrl?>/js/jquery.jqtransform.js"></script>
-<!--[if lt IE 9]> <script src="js/html5.js" ></script> <![endif]-->
-<!--[if lt IE 10]> <script type="text/javascript" src="js/PIE.js"></script> <![endif]-->
+
+<script type="text/javascript" src="<?=Yii::app()->theme->baseUrl?>/js/jquery.esn.autobrowse.js"></script>
+<script type="text/javascript" src="<?=Yii::app()->theme->baseUrl?>/js/jquery.json-2.2.min.js"></script>
+<script type="text/javascript" src="<?=Yii::app()->theme->baseUrl?>/js/jstorage.js"></script>
+
+<script type="text/javascript" src="<?=Yii::app()->theme->baseUrl?>/js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="<?=Yii::app()->theme->baseUrl?>/js/to_top.js"></script>
+
+<!--[if lt IE 9]> <script src="<?=Yii::app()->theme->baseUrl?>/js/html5.js" ></script> <![endif]-->
+<!--[if lt IE 10]> <script type="text/javascript" src="<?=Yii::app()->theme->baseUrl?>/js/PIE.js"></script> <![endif]-->
 <link rel="stylesheet" type="text/css" href="<?=Yii::app()->theme->baseUrl?>/css/style.css" media="all" />
 <link rel="stylesheet" href="<?=Yii::app()->theme->baseUrl?>/css/jquery.fancybox-1.3.4.css" type="text/css" media="screen">
-<!--[if lt IE 9]> <script src="js/html5.js" ></script> <![endif]-->
-<!--[if lt IE 10]> <script type="text/javascript" src="js/PIE.js"></script> <![endif]-->
-<link rel="stylesheet" type="text/css" href="<?=Yii::app()->theme->baseUrl?>/css/style.css" media="all" />
 </head>
 <body>
 <div class="servicebar">
@@ -34,6 +39,7 @@
     <?php $this->widget('application.modules.menu.widgets.MirMenuWidget', array('id'=>'menu right-menu','name'=>'top-right-menu')); ?>
   </nav>
 </div>
+
 <!--.SERVICEBAR ENDS-->
 <div style="display:none">
   <div id="feedback-box">
@@ -76,20 +82,25 @@
 <!-- #FEEDBACK-BOX ENDS -->
 
 <div class="header-wrapper">
-  <header>
-    <div class="logo"><a href="/"><img src="<?=Yii::app()->theme->baseUrl?>/images/logo.png" width="320" height="109" alt="Logo" /></a></div>
-    <div class="user"><span class="phone_no"><?php $this->widget("application.modules.contentblock.widgets.ContentBlockWidget", array("code" => "phone")); ?></span>
-      <ul>
-        <li><?=CHtml::link('Вход',array('/login'))?></li>
-        <li><?=CHtml::link('Регистрация',array('/registration'))?></li>
-      </ul>
-    </div>
-    <div class="counter-wrapper"><span>Когда вы с нами вас видят:</span>
-      <div class="counter">&nbsp;</div>
-    </div>
-  </header>
+    <header>
+        <div class="logo"><a href="/"><img src="<?=Yii::app()->theme->baseUrl?>/images/logo.png" width="320" height="109" alt="Logo" /></a></div>
+        <div class="user"><span class="phone_no"><?php $this->widget("application.modules.contentblock.widgets.ContentBlockWidget", array("code" => "phone")); ?></span>
+            <ul>
+                <li><a href="#login" class="fancybox">Вход</a></li>
+                <li><a href="#">Регистрация</a></li>
+            </ul>
+        </div>
+        <div class="counter-wrapper"><span>Когда вы с нами вас видят:</span>
+            <div class="counter">&nbsp;</div>
+        </div>
+    </header>
 </div>
 <!--.HEAEDER-WRAPPER ENDS-->
+
+<?php $this->renderPartial('//layouts/_loginform'); ?>
+
+<!-- #LOGIN-BOX ENDS-->
+
 <div id="wrap">
     <div class="page clearfix">
         <div class="shadow">
@@ -103,34 +114,13 @@
             <!-- .BASKET ENDS-->
 
             <div class="blogger clearfix">
-                <h2><strong>блоггеры</strong></h2>
-                <ul class="parent clearfix" style="width: 457px; ">
-                    <li class="first"><a href="#">посты</a></li>
-                    <li><a href="#">события</a></li>
-                    <li><a href="#">полезное</a></li>
-                    <li><a href="#">портфолио</a></li>
-                    <li><a href="#">faq</a></li>
-                    <li class="last"><a href="#" class="active">блоггеры</a></li>
-                </ul>
-                <div class="info clearfix staticpage">
+
                     <?php echo $content; ?>
-                </div>
-                <div class="sort">
-                    <p>Сортировка по должности: <a href="#">Дизайнер</a>, <a href="#">Менеджер</a>, <a href="#">Управляющий</a>, <a href="#">Директор</a>, <a href="#">Печатник</a></p>
-                </div>
+
             </div>
             <!-- .BLOGGER ENDS -->
 
-            <div class="share-this"><span>Поделиться:</span>
-                <ul>
-                    <li class="first"><a href="#">Facebook</a></li>
-                    <li><a href="#" class="bloger">Bloger</a></li>
-                    <li><a href="#" class="link">Link</a></li>
-                    <li><a href="#" class="twitter">Twitter</a></li>
-                    <li><a href="#" class="youtube">YouTube</a></li>
-                    <li class="last"><a href="#" class="at">At</a></li>
-                </ul>
-            </div>
+            <?php $this->renderPartial('//layouts/_sharethis'); ?>
             <!-- .SHARE THIS ENDS-->
 
 
@@ -139,72 +129,8 @@
     </div>
     <!-- .PAGE ENDS-->
 
-    <div class="post-block clearfix">
-        <div class="block-one">
-            <h2>посты из <strong>блога</strong></h2>
-            <ul>
-                <li class="first">
-                    <ul class="clearfix">
-                        <li class="first">21.06.2012</li>
-                        <li><a href="#">Рубрика</a></li>
-                        <li><a href="" class="like">145</a></li>
-                        <li class="last"><a href="#" class="comments">64</a></li>
-                    </ul>
-                    <h3><a href="#">Не пропустите летние скидки!</a></h3>
-                    Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор! </li>
-                <li>
-                    <ul class="clearfix">
-                        <li class="first">21.06.2012</li>
-                        <li><a href="#">Рубрика</a></li>
-                        <li><a href="" class="like">145</a></li>
-                        <li class="last"><a href="#" class="comments">64</a></li>
-                    </ul>
-                    <h3><a href="#">Не пропустите летние скидки и новые предложения!</a></h3>
-                    Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
-                <li class="last">
-                    <ul class="clearfix">
-                        <li class="first">21.06.2012</li>
-                        <li><a href="#">Рубрика</a></li>
-                        <li><a href="" class="like">145</a></li>
-                        <li class="last"><a href="#" class="comments">64</a></li>
-                    </ul>
-                    <h3><a href="#">Не пропустите сезон лучших продаж!</a></h3>
-                    Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
-            </ul>
-            <a href="#" class="more-post">Больше постов</a> </div>
-        <div class="block-two">
-            <h2>события из <strong>блога</strong></h2>
-            <ul>
-                <li class="first">
-                    <ul class="clearfix">
-                        <li class="first">21.06.2012</li>
-                        <li><a href="#">Рубрика</a></li>
-                        <li><a href="" class="like">145</a></li>
-                        <li class="last"><a href="#" class="comments">64</a></li>
-                    </ul>
-                    <h3><a href="#">Не пропустите летние скидки!</a></h3>
-                    Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
-                <li>
-                    <ul class="clearfix">
-                        <li class="first">21.06.2012</li>
-                        <li><a href="#">Рубрика</a></li>
-                        <li><a href="" class="like">145</a></li>
-                        <li class="last"><a href="#" class="comments">64</a></li>
-                    </ul>
-                    <h3><a href="#">Не пропустите летние скидки и новые предложения!</a></h3>
-                    Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
-                <li class="last">
-                    <ul class="clearfix">
-                        <li class="first">21.06.2012</li>
-                        <li><a href="#">Рубрика</a></li>
-                        <li><a href="" class="like">145</a></li>
-                        <li class="last"><a href="#" class="comments">64</a></li>
-                    </ul>
-                    <h3><a href="#">Не пропустите сезон лучших продаж!</a></h3>
-                    Мы дарим вам 10 дней и 10 любых услун на ваш выбор! Мы дарим вам 10 любых услун на ваш выбор!</li>
-            </ul>
-            <a href="#" class="more-post">Больше событий</a> </div>
-        <a href="#" class="more subscribe">подписаться</a> </div>
+<?php $this->renderPartial('//layouts/_lastposts'); ?>
+
     <!-- .POST-BLOCK ENDS-->
 </div>
 <!--#WRAP ENDS-->
@@ -287,5 +213,18 @@
   <!--FOOTER ENDS--> 
 </div>
 <!--.FOOTER-WRAPPER ENDS-->
+<script type="text/javascript">
+    <!--
+     $(document).ready(function (){
+     $('a.fancybox').fancybox({
+         'scrolling'		: 'no',
+         'titleShow'		: false,
+         'padding' : '0',
+         'centerOnScroll':true,
+         'overlayColor' : '#000'
+     });
+     });
+     -->
+</script>
 </body>
 </html>

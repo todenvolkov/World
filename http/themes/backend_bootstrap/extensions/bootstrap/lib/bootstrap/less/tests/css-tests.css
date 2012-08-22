@@ -6,6 +6,7 @@
 /* Remove background image */
 body {
   background-image: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Space out subhead */

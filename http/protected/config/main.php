@@ -32,6 +32,7 @@ return array(
         'application.modules.vote.models.*',
         'application.modules.blog.models.*',
         'application.modules.menu.models.*',
+        'application.modules.category.models.*',
 
         'application.modules.yupe.controllers.*',
         'application.modules.yupe.widgets.*',
@@ -88,7 +89,7 @@ return array(
             'urlFormat' => 'path',
             // для того чтобы убрать index.php из url, читаем статью http://yiiframework.ru/doc/guide/ru/quickstart.apache-nginx-config
             'showScriptName' => false,
-            'cacheID' => 'cache',
+            'cacheID' => 'mir_cache',
             'rules' => array(
                 '/' => 'site/index',
                 '/login' => 'user/account/login',
@@ -100,7 +101,7 @@ return array(
                 '/post/<slug>.html' => 'blog/post/show/',
                 '/posts/tag/<tag>' => 'blog/post/list/',
                 '/blog/<slug>' => 'blog/blog/show/',
-                '/blogs/' => 'blog/blog/index/',
+                '/directions/' => 'blog/blog/index/',
                 '/users/' => 'user/people/index/',
                 '/profile/' => 'user/people/profile/',
                 '/wiki/<controller:\w+>/<action:\w+>' => '/yeeki/wiki/<controller>/<action>',
@@ -114,7 +115,7 @@ return array(
         'request' => array(
             'class' => 'YHttpRequest',
             'enableCsrfValidation' => true,
-            'csrfTokenName' => 'YUPE_TOKEN',
+            'csrfTokenName' => 'mir_v_1_YUPE_TOKEN',
             'noCsrfValidationRoutes' => array('yupe/backend/AjaxFileUpload')
         ),
 
@@ -171,24 +172,24 @@ return array(
         'blog' => array(
             'class' => 'application.modules.blog.BlogModule',
         ),
-        'social' => array(
+        /*'social' => array(
             'class' => 'application.modules.social.SocialModule',
-        ),
+        ),*/
         'comment' => array(
             'class' => 'application.modules.comment.CommentModule',
         ),
-        'dictionary' => array(
+        /*'dictionary' => array(
             'class' => 'application.modules.dictionary.DictionaryModule',
-        ),
+        ),*/
         'gallery' => array(
             'class' => 'application.modules.gallery.GalleryModule',
         ),
-        'vote' => array(
+        /*'vote' => array(
             'class' => 'application.modules.vote.VoteModule',
-        ),
-        'contest' => array(
+        ),*/
+        /*'contest' => array(
             'class' => 'application.modules.contest.ContestModule',
-        ),
+        ),*/
         'image' => array(
             'class' => 'application.modules.image.ImageModule',
         ),

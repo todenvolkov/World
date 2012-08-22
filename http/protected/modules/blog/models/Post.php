@@ -10,6 +10,7 @@
  * @property string $update_user_id
  * @property integer $create_date
  * @property integer $update_date
+ * @property integer $post_type
  * @property string $slug
  * @property string $publish_date
  * @property string $title
@@ -35,6 +36,10 @@ class Post extends CActiveRecord
 
     const ACCESS_PUBLIC  = 1;
     const ACCESS_PRIVATE = 2;
+
+    const TYPE_POST  = 1;
+    const TYPE_EVENT = 2;
+    const TYPE_PORTFOLIO = 3;
     /**
      * Returns the static model of the specified AR class.
      * @return Post the static model class
@@ -61,7 +66,7 @@ class Post extends CActiveRecord
         // will receive user inputs.
         return array(
             array('blog_id, slug, publish_date, title, content', 'required'),
-            array('blog_id, create_user_id, update_user_id, status, comment_status, access_type', 'numerical', 'integerOnly' => true),
+            array('blog_id, create_user_id, update_user_id, status, comment_status, access_type, post_type', 'numerical', 'integerOnly' => true),
             array('blog_id, create_user_id, update_user_id', 'length', 'max' => 10),
             array('slug, title, link, keywords', 'length', 'max' => 150),
             array('quote, description', 'length', 'max' => 300),
@@ -86,6 +91,8 @@ class Post extends CActiveRecord
             'createUser' => array(self::BELONGS_TO, 'User', 'create_user_id'),
             'updateUser' => array(self::BELONGS_TO, 'User', 'update_user_id'),
             'blog' => array(self::BELONGS_TO, 'Blog', 'blog_id'),
+            'category' => array(self::HAS_ONE, 'Category', 'blog_id'),
+            'commentsCount' => array(self::STAT, 'PostComment', 'post_id'),
         );
     }
 
@@ -174,9 +181,11 @@ class Post extends CActiveRecord
         {
             $this->update_user_id = Yii::app()->user->getId();
 
-            if($this->isNewRecord)
+            if($this->isNewRecord){
                 $this->create_user_id = $this->update_user_id;
-
+                $this->create_date = new CDbExpression('now()');
+            }
+            $this->update_date = new CDbExpression('now()');
             return true;
         }
 
@@ -193,9 +202,9 @@ class Post extends CActiveRecord
 
     public function afterFind()
     {
-        $this->create_date = date('d.m.Y H:m', $this->create_date);
-        $this->update_date = date('d.m.Y H:m', $this->update_date);
-        $this->publish_date = date('d.m.Y H:m', strtotime($this->publish_date));
+        //$this->create_date = date('d.m.Y H:m', $this->create_date);
+        //$this->update_date = date('d.m.Y H:m', $this->update_date);
+        //$this->publish_date = date('d.m.Y H:m', strtotime($this->publish_date));
 
         return parent::afterFind();
     }
@@ -223,6 +232,15 @@ class Post extends CActiveRecord
         return array(
             self::ACCESS_PRIVATE => Yii::t('blog', 'Личный'),
             self::ACCESS_PUBLIC => Yii::t('blog', 'Публичный')
+        );
+    }
+
+    public function getTypeList()
+    {
+        return array(
+            self::TYPE_POST => Yii::t('blog', 'Пост'),
+            self::TYPE_EVENT => Yii::t('blog', 'Событие'),
+            self::TYPE_PORTFOLIO => Yii::t('blog', 'Портфолио'),
         );
     }
 

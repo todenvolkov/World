@@ -6,57 +6,32 @@ $this->breadcrumbs = array(
     'Блоги' => array('/blogs/'),
     $blog->name,
 );
+$title = $blog->name;
+if(strpos($title," ")!==false){
+	$title = wordwrap($title,(strlen($title)/2),"|",true);
+	$title = explode("|",$title,2);
+	$title = str_replace("|"," ",$title);
+	$title = $title[0]." <strong>".$title[1]."</strong>";
+}
 ?>
-
-
-<div class="post">
-    <div class="title">
-        <?php echo $blog->name; ?>
-    </div>
-    <div class="author">
-        Создал: <b><?php echo $blog->createUser->nick_name?></b>
-        дата: <?php echo $blog->create_date; ?>
-    </div>
-    <br/>
-
-    <div class="content">
-        <p><?php echo $blog->description; ?></p>
-    </div>    
-</div>
-
-Участники:
-<?php if($members): ?>
-    <?php foreach($members as $member):?>
-        <?php echo CHtml::link($member->nick_name,array('/user/people/userInfo/','username' => $member->nick_name));?>
-    <?php endforeach;?>
-<?php endif; ?>
-
-<br/><br/>
-
-<p>Последние записи</p>
-
+<h2><?=$title?></h2>
+<?php $this->widget('application.modules.menu.widgets.MirMenuWidget', array('id'=>'parent clearfix','name'=>'post-menu')); ?>
+<!-- <ul class="parent clearfix" style="width: 457px; ">
+    <li class="first"><a href="#" class="active">посты</a></li>
+    <li><a href="#">события</a></li>
+    <li><a href="#">полезное</a></li>
+    <li><a href="#">портфолио</a></li>
+    <li><a href="#">faq</a></li>
+    <li class="last"><a href="#">блоггеры</a></li>
+</ul> -->
+<div class="info clearfix staticpage">
+        <div class="content">
+            <p>
 <?php if(count($posts)):?>
-    <ul>
     <?php foreach ($posts as $post):?>
-        <li><?php echo CHtml::link($post->title,array('/blog/post/show/','slug' => $post->slug));?></li>
+         <?php $this->renderPartial('//blog/post/_view',array('data' => $post));?>
     <?php endforeach;?>
-    </ul>
 <?php endif;?>
-
-<div style='float:left;padding-right:5px'>
-    <?php $this->widget('application.modules.social.widgets.ysc.yandex.YandexShareApi', array(
-                                                                                              'type' => 'button',
-                                                                                              'services' => 'all'
-                                                                                         ));?>
+			</p>
+        </div>
 </div>
-
-<br/><br/>
-
-<?php $this->widget('application.modules.comment.widgets.CommentsListWidget', array('model' => $blog, 'modelId' => $blog->id)); ?>
-
-<br/><br/>
-
-<h3>Оставить комментарий</h3>
-
-<?php $this->widget('application.modules.comment.widgets.CommentFormWidget', array('redirectTo' => Yii::app()->createUrl('/blog/blog/show/',array('slug' => $blog->slug)), 'model' => $blog, 'modelId' => $blog->id)); ?>
-

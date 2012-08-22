@@ -144,3 +144,24 @@
     color: #FFF;
     background-color: #000;
 }
+
+.more {
+    margin: 17px auto;
+    padding-top: 13px;
+
+}
+
+.post-block .more-post {
+    background-position: 0 5px;
+
+}
+
+.post-block .block-one, .post-block .block-two {
+    width: 480px;
+
+}
+
+.tape-block {
+    width: 974px;
+
+}

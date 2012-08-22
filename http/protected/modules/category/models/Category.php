@@ -49,7 +49,6 @@ class Category extends CActiveRecord
             ? $this->findAll('id != :id', array(':id' => $selfId))
             : $this->findAll();
         $category = CHtml::listData($category, 'id', 'name');
-        $category[0] = Yii::t('category', '--нет--');
         return $category;
     }
 

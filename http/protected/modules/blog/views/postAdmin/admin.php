@@ -9,13 +9,18 @@
 
     $this->menu = array(
         array('label'=> Yii::t('blog', 'Блоги')),
-        array('label'=>Yii::t('blog','Список блогов'), 'url'=>array('blogAdmin/index')),
-        array('label'=>Yii::t('blog','Добавить блог'), 'url'=>array('blogAdmin/create')),
+        array('icon' => 'list','label'=>Yii::t('blog','Список блогов'), 'url'=>array('blogAdmin/index')),
+        array('icon' => 'file','label'=>Yii::t('blog','Добавить блог'), 'url'=>array('blogAdmin/create')),
 
         array('label'=> Yii::t('blog', 'Записи')),
-        array('label'=>Yii::t('blog', 'Список записей'), 'url'=>array('index')),
-        array('label'=>Yii::t('blog', 'Добавить запись'), 'url'=>array('create')),
-        array('label'=>Yii::t('blog', 'Управление записями'), 'url'=>array('admin')),
+        array('icon' => 'list','label'=>Yii::t('blog', 'Список записей'), 'url'=>array('index')),
+        array('icon' => 'file','label'=>Yii::t('blog', 'Добавить запись'), 'url'=>array('create')),
+        array('icon' => 'list-alt','label'=>Yii::t('blog', 'Управление записями'), 'url'=>array('admin')),
+
+        array('label'=> Yii::t('blog', 'События')),
+        array('icon' => 'list','label'=>Yii::t('blog', 'Список событий'), 'url'=>array('index')),
+        array('icon' => 'file','label'=>Yii::t('blog', 'Добавить событие'), 'url'=>array('create')),
+        array('icon' => 'list-alt','label'=>Yii::t('blog', 'Управление событиями'), 'url'=>array('admin')),
     );
 //@formatter:on
     Yii::app()->clientScript->registerScript('search', "
@@ -57,20 +62,12 @@
                 'value' => 'CHtml::link($data->blog->name,array("/blog/blogAdmin/view/","id" => $data->blog->id))'
             ),
             'slug',
-            'publish_date',
             array(
                 'name'=>'status',
                 'type'=>'raw',
-                'value'=>'$this->grid->returnStatusHtml($data)',
+                'value'=>'$this->grid->returnBootstrapStatusHtml($data)',
+                'htmlOptions' => array('style'=>'width:40px; text-align:center;'),
             ),
-            array(
-                'name'=>'comment_status',
-                'value'=>'$data->getCommentStatus()',
-            ),
-            array(
-                 'name'=>'access_type',
-                 'value'=>'$data->getAccessType()',
-             ),
             array(
                 'name'=>'create_user_id',
                 'type' => 'raw',

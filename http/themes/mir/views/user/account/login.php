@@ -11,7 +11,7 @@ $this->breadcrumbs = array('Авторизация');
 
 <div class="form">
 
-    <?php $form = $this->beginWidget('CActiveForm', array(
+    <?php  $form = $this->beginWidget('CActiveForm', array(
                                                          'id' => 'login-form',
                                                          'enableClientValidation' => true
                                                     ));?>
@@ -43,5 +43,3 @@ $this->breadcrumbs = array('Авторизация');
 
     <?php $this->endWidget(); ?>
 </div><!-- form -->
-
-<?php  $this->widget('application.modules.social.extensions.eauth.EAuthWidget',array('action' => '/social/social/login/'));?>

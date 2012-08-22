@@ -56,7 +56,8 @@
             echo CHtml::submitButton(
                 $model->isNewRecord
                     ? Yii::t('category', 'Добавить категорию')
-                    : Yii::t('category', 'Сохранить измнения')
+                    : Yii::t('category', 'Сохранить измнения'),
+                array('class'=>'btn btn-primary')
             );
         ?>
     </div>

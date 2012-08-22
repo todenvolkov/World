@@ -23,6 +23,14 @@
     </div>
 
     <div class="row">
+        <?php echo $form->labelEx($model, 'post_type'); ?>
+        <?php
+        echo $form->dropDownList($model, 'post_type', Post::getTypeList() );
+        ?>
+        <?php echo $form->error($model, 'post_type'); ?>
+    </div>
+
+    <div class="row">
         <?php echo $form->labelEx($model, 'title'); ?>
         <?php echo $form->textField($model, 'title', array('size'=>60, 'maxlength'=>150)); ?>
         <?php echo $form->error($model, 'title'); ?>

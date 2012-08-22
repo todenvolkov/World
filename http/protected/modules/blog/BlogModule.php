@@ -5,7 +5,7 @@ class BlogModule extends YWebModule
 
     public function getCategory()
     {
-        return Yii::t('blog', 'Контент');
+        return Yii::t('blog', 'Блоги');
     }
 
     public function getParamsLabels()
@@ -29,6 +29,8 @@ class BlogModule extends YWebModule
         return array(
             Yii::t('blog', 'Блоги') => '/blog/blogAdmin/admin/',
             Yii::t('blog', 'Записи') => '/blog/postAdmin/admin/',
+            Yii::t('blog', 'События') => '/blog/postAdmin/admin/',
+            Yii::t('blog', 'Портфолио') => '/blog/postAdmin/admin/',
             Yii::t('blog', 'Участники') => '/blog/userToBlogAdmin/admin/',
         );
     }
@@ -40,7 +42,7 @@ class BlogModule extends YWebModule
 
     public function getName()
     {
-        return Yii::t('blog', 'Блоги');
+        return Yii::t('blog', 'Управление');
     }
 
     public function getDescription()

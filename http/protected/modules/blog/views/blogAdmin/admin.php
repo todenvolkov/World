@@ -59,6 +59,10 @@
             'icon',
             'slug',
             array(
+                'name'=>'category',
+                'value'=>'$data->cat->name',
+            ),
+            array(
                 'name'=>'type',
                 'value'=>'$data->getType()',
             ),

@@ -12,7 +12,10 @@
         array('label' => Yii::t('blog', 'Управление блогами'), 'url'=>array('admin')),
     );
 ?>
-
-<h1><?php echo Yii::t('blog', 'Редактирование блога'); ?> "<?php echo $model->name; ?>"</h1>
+<div class="page-header">
+    <h1><?php echo Yii::t('blog', 'Редактирование блога'); ?>
+        <br /><small>&laquo;<?php echo $model->name; ?>&raquo;</small>
+    </h1>
+</div>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

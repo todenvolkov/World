@@ -27,7 +27,7 @@ jQuery(document).ready(function($){
 	
    $('#panelHandle').hover(function() {
 		  $('#panelHandle').css({
-				'background-image' : 'url(css/images/close-bg.png)',
+				'background-image' : 'url(/themes/mir/css/images/close-bg.png)',
 			  'background-position' : '0px 0px'
 			});
             $('#sidePanel').stop(true, false).animate({
@@ -41,8 +41,8 @@ jQuery(document).ready(function($){
             // Do nothing
         }, function() {
 				$('#panelHandle').css({
-				'background-image' : 'url(css/images/respond-bg.png)',
-			  'background-position' : '0px 108px',
+				'background-image' : 'url(/themes/mir/css/images/respond-bg.png)',
+			    'background-position' : '0px 108px',
 				'background-repeat' : 'no-repeat'
 			});
             jQuery.noConflict();

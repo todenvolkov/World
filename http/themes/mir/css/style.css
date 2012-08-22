@@ -66,6 +66,11 @@ ul, ol {
 a img {
 	border: 0;
 }
+
+a {
+    color: #EA5E21;
+    text-decoration: none;
+}
 /*---------------------------------
 							LAYOUT
 -----------------------------------*/
@@ -76,14 +81,15 @@ body {
 	background: #fff url('images/banner-bg.png') no-repeat center 140px;
 	position: relative;
 	font: normal 0.9em/150% 'Arimo', "Trebuchet MS", arial, verdana, sans-serif;
-	text-shadow: 0px 0px 1px transparent; /* google font pixelation fix */
+	text-shadow: 0px 0px 1px transparent;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* google font pixelation fix */
 }
 /*---------------------------------
 					FONT FACE
 -----------------------------------*/
 @font-face {
 	font-family: 'MyriadPro-Bold';
-	src: url('fonts/webfonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),  
+	src: url('fonts/webfonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
 	url('fonts/webfonts/MyriadPro-Bold.woff') format('woff'),  
 	url('fonts/webfonts/MyriadPro-Bold.ttf') format('truetype'),  
 	url('fonts/webfonts/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
@@ -127,14 +133,14 @@ nav .right-menu {
 							HEADER
 -----------------------------------*/
 .header-wrapper {
-	background: #ecebeb;
+	/*background: #ecebeb;
 	background: -webkit-gradient(linear, 0 0, 0 bottom, from(0%, #ecebeb), to(100%, #fff));
 	background: -webkit-linear-gradient(#ecebeb, #fff);
 	background: -moz-linear-gradient(#ecebeb, #fff);
 	background: -ms-linear-gradient(#ecebeb, #fff);
 	background: -o-linear-gradient(#ecebeb, #fff);
 	background: linear-gradient(#ecebeb, #fff);
-	-pie-background: linear-gradient(#ecebeb, #fff);
+	-pie-background: linear-gradient(#ecebeb, #fff);*/
 }
 header {
 	width: 963px;
@@ -218,7 +224,7 @@ header {
 	font-family: 'MyriadPro-Bold';
 	letter-spacing: 4.4px;
 	position: absolute;
-	right: 10px;
+	right: 7px;
 	top: 8px;
 	background: url('images/counter-bg.png') no-repeat left top;
 }
@@ -389,6 +395,7 @@ header {
 	padding-left: 19px;
 	font: 11px/1 Tahoma, Geneva, sans-serif;
 	background: url('images/learn-more-bg.png') no-repeat left 7px;
+    margin-left: 5px;
 }
 .ie7 .information .learn-more {
 	margin: 30px 0px 0px 5px;
@@ -763,7 +770,7 @@ header {
 	text-align: center;
 	color: #232222;
 	margin: 17px auto;
-	padding-top: 12px;
+	padding-top: 13px;
 	font: 16px/1 Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -827,7 +834,7 @@ header {
 .post-block .block-one, 
 .post-block .block-two {
 	float: left;
-	width: 444px;
+	width: 480px;
 	height:300px;
 	padding-right: 38px;
 	margin-right: 32px;
@@ -906,6 +913,7 @@ header {
 	padding-left: 13px;
 	font: 14px/1 Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	background: url('images/more-post-bg.png') no-repeat left 7px;
+    background-position: 0 5px;
 }
 .post-block .subscribe {
 	clear: both;
@@ -914,14 +922,15 @@ header {
 						TAPE BLOCK
 -----------------------------------*/
 .tape-block {
-	width: 960px;
-	margin: 0 auto 56px;
+	width: 1036px;
+    margin: 0;
 }
 .tape-sostav, 
 .tape-adme {
-	width: 444px;
+	width: 500px;
 	float: left;
-}    
+}
+.tape-sostav, #wrap .tape-block .tape-sostav h2 {text-align:right;}
 .tape-adme {
 	float: right;
 	margin-right: 0;
@@ -970,6 +979,7 @@ header {
 	z-index: 50;
 	
 }
+.content p { font: 14px/1 Calibri; }
 .shadow {
 	padding-bottom: 24px;
 	border-radius: 14px;
@@ -1462,7 +1472,10 @@ aside div li a span {
 .tags p a {
 	color: #ea5e21;
 	text-decoration:none;
+	font:11px/1 Tahoma, Geneva, sans-serif;
 }
+.tags p a:after { content: ", " }
+.tags p a:last-child { content:"" }
 .blog-page .tape-block {
 	margin-top: 34px;
 	padding-top: 39px;
@@ -1673,6 +1686,8 @@ aside div li a span {
 	color: #eb5e21;
 	margin-right: 9px;
 	font: 11px/1.45 Tahoma, Geneva, sans-serif;
+	line-height: 2px;
+	display: inline-block;
 }
 .ask-question .form-row .placeholder {
 	margin: 0 0 -10px 4px;
@@ -1691,21 +1706,23 @@ aside div li a span {
 .form-wrapper .form-row {
 	margin-bottom: 6px;
 }
+.form-wrapper form img.captcha { cursor:pointer; }
 .form-wrapper form input[type="text"],
 .form-wrapper form textarea {
 	width: 237px;
 	color: #757575;
 	border: 0 none;
 	border-radius: 7px;
-	padding: 16px 8px 15px 24px;
+	padding: 14px 8px 14px 24px;
 	font: 11px/1 Tahoma, Geneva, sans-serif;
 	background-color: #f4f4f4;
 }
 .form-wrapper form textarea {
 	width: 269px;
-	height: 66px;
+	height: 65px;
 	resize: none;
 	overflow: hidden;
+	padding: 16px 8px 14px 24px;
 }
 .form-wrapper form input[type="submit"] {
 	border: 0;
@@ -1729,7 +1746,7 @@ aside div li a span {
 }
 .question .text {
 	float: left;
-	width: 570px;
+	width: 770px;
 }
 .question h3,
 .answer h3{
@@ -1774,7 +1791,7 @@ aside div li a span {
 	background: url('images/answers-tip.png') no-repeat left top;
 }
 .answer .text {
-	width: 502px;
+	width: 772px;
 	float: left;
 }
 .pagination {
@@ -2026,7 +2043,7 @@ footer .share-this li a.google {
 	width: 142px;
 	padding-left: 21px;
 }
-#login .form-wrap input[type="text"] {
+#login .form-wrap input[type="text"], #login .form-wrap input[type="password"] {
 	width: 132px;
 	padding: 6px 9px 5px;
 	color: #3f3f3f;
@@ -2201,3 +2218,70 @@ footer .share-this li a.google {
 	font: 11px/1 Tahoma, Geneva, sans-serif;
 }
 .staticpage { padding: 0 28px 0 30px; }
+.content, .author { font: 14px/1 Calibri; color:#3F3F3F; }
+.blogger {min-height: 346px}
+
+/*
+----------------------------
+TO TOP
+----------------------------
+*/
+.to_top {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width:80px;
+  -moz-opacity: 0.3;
+  filter: alpha(opacity=30);
+  opacity: 0.3;
+  display: none; 
+}
+.to_top .to_top_panel {
+  width:100%;
+  height: 100%;
+  font-size: 11px;
+  /*color: #4d7285;*/
+  color:#EA5E21;
+  padding-top: 10px; 
+}
+.to_top:hover {
+  -moz-opacity: 0.9;
+  filter: alpha(opacity=90);
+  opacity: 0.9;
+}
+.to_top:hover .to_top_panel {
+  cursor: pointer;
+  background: #626262;
+  color:#fff; 
+}
+.to_top .to_top_button {
+  text-align: left;
+  line-height: 8px;
+  margin-left:10px;
+  font-family: tahoma, arial, verdana, sans-serif;
+  font-weight: bold; 
+}	
+.to_top .to_top_button .arrow{
+	font-size: 14px;
+	font-weight: bold; 
+	font-family: tahoma;
+	vertical-align: middle;
+}
+/* стиль для mini панели */
+
+.to_top.mini {width:40px;}
+.to_top.mini .to_top_panel .arrow{font-size:20px;}
+.to_top.mini .to_top_panel .label{display:none;}
+/*
+----------------------------
+AUTOBROWSE
+----------------------------
+*/
+div.loader {
+    font-style: italic;
+    text-align: center;
+    margin: 20px;
+    height: 24px;
+    background: url(images/loader.gif) no-repeat center center;
+}

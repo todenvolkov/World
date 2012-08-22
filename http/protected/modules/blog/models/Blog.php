@@ -12,6 +12,7 @@
  * @property string $slug
  * @property integer $type
  * @property integer $status
+ * @property integer $category
  * @property string $create_user_id
  * @property string $update_user_id
  * @property integer $create_date
@@ -57,7 +58,7 @@ class Blog extends CActiveRecord
         return array(
             //@formatter:off
             array('name, description, slug', 'required'),
-            array('type, status, create_user_id, update_user_id', 'numerical', 'integerOnly' => true),
+            array('type, status, create_user_id, update_user_id, category', 'numerical', 'integerOnly' => true),
             array('name, icon', 'length', 'max' => 300),
             array('slug', 'length', 'max' => 150),
             array('create_user_id, update_user_id', 'length', 'max' => 10),
@@ -86,6 +87,7 @@ class Blog extends CActiveRecord
             'members' => array(self::HAS_MANY, 'User', array('user_id' => 'id'), 'through' => 'userToBlog'),
             'postsCount' => array(self::STAT, 'Post', 'blog_id', 'condition' => 'status = :status', 'params' => array(':status' => Post::STATUS_PUBLISHED)),
             'membersCount' => array(self::STAT, 'UserToBlog', 'blog_id', 'condition' => 'status = :status', 'params' => array(':status' => UserToBlog::STATUS_ACTIVE)),
+            'cat' => array(self::BELONGS_TO, 'Category', 'category'),
             //@formatter:on
         );
     }
@@ -99,6 +101,7 @@ class Blog extends CActiveRecord
             'id' => Yii::t('blog', 'id'),
             'name' => Yii::t('blog', 'Название'),
             'description' => Yii::t('blog', 'Описание'),
+            'category' => Yii::t('blog', 'Категория'),
             'icon' => Yii::t('blog', 'Иконка'),
             'slug' => Yii::t('blog', 'Урл'),
             'type' => Yii::t('blog', 'Тип'),
@@ -130,6 +133,7 @@ class Blog extends CActiveRecord
         $criteria->compare('slug', $this->slug, true);
         $criteria->compare('type', $this->type);
         $criteria->compare('status', $this->status);
+        $criteria->compare('category', $this->category);
         $criteria->compare('create_user_id', $this->create_user_id, true);
         $criteria->compare('update_user_id', $this->update_user_id, true);
         $criteria->compare('create_date', $this->create_date);
@@ -151,8 +155,8 @@ class Blog extends CActiveRecord
 
     public function afterFind()
     {
-        $this->create_date = date('d.m.Y H:m', $this->create_date);
-        $this->update_date = date('d.m.Y H:m', $this->update_date);
+        //$this->create_date = date('d.m.Y H:m', $this->create_date);
+        //$this->update_date = date('d.m.Y H:m', $this->update_date);
 
         return parent::afterFind();
     }
@@ -161,9 +165,11 @@ class Blog extends CActiveRecord
     {
         $this->update_user_id = Yii::app()->user->getId();
 
-        if ($this->isNewRecord)
+        if ($this->isNewRecord){
             $this->create_user_id = $this->update_user_id;
-
+            $this->create_date = new CDbExpression('now()');
+        }
+        $this->update_date = new CDbExpression('now()');
         return parent::beforeSave();
     }
 
