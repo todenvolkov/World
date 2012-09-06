@@ -1,12 +1,22 @@
+#php_value session.cookie_domain .neo-systems.ru
+
 AddDefaultCharset utf-8
 Options +FollowSymLinks
 IndexIgnore */*
 RewriteEngine on
 
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/(site|catalog|bitrix|upload|outdoor_img)/.*$
+RewriteRule ^(.*)$ /site/index.php$1 [L]
+
+
 # if a directory or a file exists, use it directly
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
 
 # otherwise forward it to index.php
-RewriteRule . index.php
-
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-l
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
