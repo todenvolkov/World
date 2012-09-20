@@ -1,0 +1,43 @@
+/* Rating */
+span.rating-vote { 
+	display: inline-block!important; 
+	height: 16px;
+	vertical-align: middle;
+}
+span.rating-vote a.rating-vote-plus {
+	display: inline-block; 
+	outline: none;
+	margin: 0px;
+	text-decoration: none;
+	width:16px; 
+	height: 16px; 
+	background: transparent url(images/sprite.png) no-repeat;
+	border: 0px;	
+}
+
+span.rating-vote-disabled a.rating-vote-plus { background-position: 0 -96px; cursor: default;}
+
+span.rating-vote a.rating-vote-minus {
+	display: inline-block; 
+	width:16px; 
+	height: 16px; 
+	background: transparent url(images/sprite.png) no-repeat 0 -48px; 
+	border: 0px;
+	margin: 0px;
+	outline: none;
+	text-decoration: none;	
+}
+span.rating-vote-disabled a.rating-vote-minus { background-position: 0 -144px; cursor: default;}
+
+span.rating-vote-result 
+{ 
+	display: inline-block; 
+	height: 16px; 
+	color: #289b00; 
+	font: normal 12px Verdana;
+	margin: 1px 0 0 0px;
+	padding:0;
+	vertical-align: top;
+}
+
+span.rating-vote-result-minus { color: #ca0000;}

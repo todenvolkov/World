@@ -1,0 +1,17 @@
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#7E7E7E;
+    text-transform: lowercase;
+}
+.news-date-time a {
+    font-size: 11px;
+}
+
+li {background:url(images/1_z1.gif) center left no-repeat; margin:0; padding-left:18px; }
+
+span.news-date-time li{background:url(images/1_z1.gif) center left no-repeat; margin:0; padding:0 0 0 18px }
+* html li{background:url(images/1_z1.gif) 4px left no-repeat;padding:0;}

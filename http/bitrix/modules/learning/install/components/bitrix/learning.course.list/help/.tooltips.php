@@ -1,0 +1,10 @@
+<?
+$arTooltips = array(
+	"SORBY" => GetMessage("SORBY_TIP"),
+	"SORORDER" => GetMessage("SORORDER_TIP"),
+	"COURSE_DETAIL_TEMPLATE" => GetMessage("COURSE_DETAIL_TEMPLATE_TIP"),
+	"CHECK_PERMISSIONS" => GetMessage("CHECK_PERMISSIONS_TIP"),
+	"COURSES_PER_PAGE" => GetMessage("COURSES_PER_PAGE_TIP"),
+	"SET_TITLE" => GetMessage("SET_TITLE_TIP"),
+);
+?>

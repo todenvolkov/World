@@ -1,0 +1,7 @@
+<?
+if($INCLUDE_FROM_CACHE!='Y')return false;
+$datecreate = '001347353224';
+$dateexpire = '001347389224';
+$ser_content = 'a:2:{s:7:"CONTENT";s:0:"";s:4:"VARS";a:6:{i:10;a:7:{s:2:"ID";s:2:"10";s:11:"PROPERTY_ID";s:2:"42";s:5:"VALUE";s:1:"1";s:3:"DEF";s:1:"N";s:4:"SORT";s:3:"500";s:6:"XML_ID";s:32:"24425343fe70321ebd8ba439b5b42cc4";s:6:"TMP_ID";s:32:"5b87c1cb902c1f76e34fe943f81e6f09";}i:11;a:7:{s:2:"ID";s:2:"11";s:11:"PROPERTY_ID";s:2:"43";s:5:"VALUE";s:1:"0";s:3:"DEF";s:1:"N";s:4:"SORT";s:3:"500";s:6:"XML_ID";s:32:"93cfedbb5df1d0e78fb284afe5c07ebe";s:6:"TMP_ID";s:32:"5b87c1cb902c1f76e34fe943f81e6f09";}i:12;a:7:{s:2:"ID";s:2:"12";s:11:"PROPERTY_ID";s:2:"42";s:5:"VALUE";s:1:"2";s:3:"DEF";s:1:"N";s:4:"SORT";s:3:"500";s:6:"XML_ID";s:32:"2e5f61478cb00a0078d5618e09abc6eb";s:6:"TMP_ID";s:32:"5b87c1cb902c1f76e34fe943f81e6f09";}i:13;a:7:{s:2:"ID";s:2:"13";s:11:"PROPERTY_ID";s:2:"43";s:5:"VALUE";s:1:"1";s:3:"DEF";s:1:"N";s:4:"SORT";s:3:"500";s:6:"XML_ID";s:32:"38d7b1723941b71efe86e4968bae52fc";s:6:"TMP_ID";s:32:"5b87c1cb902c1f76e34fe943f81e6f09";}i:14;a:7:{s:2:"ID";s:2:"14";s:11:"PROPERTY_ID";s:2:"42";s:5:"VALUE";s:1:"0";s:3:"DEF";s:1:"N";s:4:"SORT";s:3:"500";s:6:"XML_ID";s:32:"44a579d5669b5961e952f1b4d4f59ec4";s:6:"TMP_ID";s:32:"5b87c1cb902c1f76e34fe943f81e6f09";}i:15;a:7:{s:2:"ID";s:2:"15";s:11:"PROPERTY_ID";s:2:"43";s:5:"VALUE";s:1:"2";s:3:"DEF";s:1:"N";s:4:"SORT";s:3:"500";s:6:"XML_ID";s:32:"5feb79df7b5efb17c9c7ec4c7a36e1b3";s:6:"TMP_ID";s:32:"5b87c1cb902c1f76e34fe943f81e6f09";}}}';
+return true;
+?>

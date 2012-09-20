@@ -1,0 +1,32 @@
+<?
+$MESS ['BLOG_MENU_BLOGS_LIST'] = "Р“Р»Р°РІРЅР°СЏ СЃС‚СЂР°РЅРёС†Р° Р±Р»РѕРіР°";
+$MESS ['BLOG_MENU_BLOGS_LIST_TITLE'] = "Р“Р»Р°РІРЅР°СЏ СЃС‚СЂР°РЅРёС†Р° Р±Р»РѕРіР°";
+$MESS ['BLOG_MENU_CURRENT_BLOG'] = "Р‘Р»РѕРі";
+$MESS ['BLOG_MENU_CURRENT_BLOG_TITLE'] = "Р‘Р»РѕРі &quot;#NAME#&quot;";
+$MESS ['BLOG_MENU_MY_BLOG'] = "РњРѕР№ Р±Р»РѕРі";
+$MESS ['BLOG_MENU_MY_BLOG_TITLE'] = "РњРѕР№ Р±Р»РѕРі";
+$MESS ['BLOG_MENU_PROFILE'] = "РњРѕР№ РїСЂРѕС„РёР»СЊ";
+$MESS ['BLOG_MENU_PROFILE_TITLE'] = "РњРѕР№ РїСЂРѕС„РёР»СЊ";
+$MESS ['BLOG_MENU_FRIENDS'] = "Р›РµРЅС‚Р° РґСЂСѓР·РµР№";
+$MESS ['BLOG_MENU_FRIENDS_TITLE'] = "Р›РµРЅС‚Р° РґСЂСѓР·РµР№";
+$MESS ['BLOG_MENU_LOGOUT'] = "Р’С‹Р№С‚Рё";
+$MESS ['BLOG_MENU_LOGOUT_TITLE'] = "Р’С‹Р№С‚Рё";
+$MESS ['BLOG_MENU_LOGIN'] = "Р’РѕР№С‚Рё";
+$MESS ['BLOG_MENU_LOGIN_TITLE'] = "Р’РѕР№С‚Рё";
+$MESS ['BLOG_MENU_REGISTER'] = "Р РµРіРёСЃС‚СЂР°С†РёСЏ";
+$MESS ['BLOG_MENU_REGISTER_TITLE'] = "Р РµРіРёСЃС‚СЂР°С†РёСЏ";
+$MESS ['BLOG_MENU_ADD_MESSAGE'] = "РќРѕРІРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ";
+$MESS ['BLOG_MENU_ADD_MESSAGE_TITLE'] = "Р”РѕР±Р°РІРёС‚СЊ РЅРѕРІРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ";
+$MESS ['BLOG_MENU_DRAFT_MESSAGES'] = "РќРµРґРѕРїРёСЃР°РЅРЅС‹Рµ СЃРѕРѕР±С‰РµРЅРёСЏ";
+$MESS ['BLOG_MENU_DRAFT_MESSAGES_TITLE'] = "РќРµРґРѕРїРёСЃР°РЅРЅС‹Рµ СЃРѕРѕР±С‰РµРЅРёСЏ";
+$MESS ['BLOG_MENU_USER_SETTINGS'] = "РќР°СЃС‚СЂРѕР№РєР° РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№";
+$MESS ['BLOG_MENU_USER_SETTINGS_TITLE'] = "РќР°СЃС‚СЂРѕР№РєР° РїРѕР»СЊР·РѕРІР°С‚РµР»РµР№ РјРѕРµРіРѕ Р±Р»РѕРіР°";
+$MESS ['BLOG_MENU_GROUP_EDIT'] = "РќР°СЃС‚СЂРѕР№РєР° РіСЂСѓРїРї";
+$MESS ['BLOG_MENU_GROUP_EDIT_TITLE'] = "РќР°СЃС‚СЂРѕР№РєР° РіСЂСѓРїРї РјРѕРµРіРѕ Р±Р»РѕРіР°";
+$MESS ['BLOG_MENU_CATEGORY_EDIT'] = "РќР°СЃС‚СЂРѕР№РєР° С‚РµРіРѕРІ";
+$MESS ['BLOG_MENU_CATEGORY_EDIT_TITLE'] = "РќР°СЃС‚СЂРѕР№РєР° С‚РµРіРѕРІ РјРѕРµРіРѕ Р±Р»РѕРіР°";
+$MESS ['BLOG_MENU_BLOG_EDIT'] = "РќР°СЃС‚СЂРѕР№РєР° Р±Р»РѕРіР°";
+$MESS ['BLOG_MENU_BLOG_EDIT_TITLE'] = "РќР°СЃС‚СЂРѕР№РєР° РјРѕРµРіРѕ Р±Р»РѕРіР°";
+$MESS ['BLOG_MENU_FR_B_F'] = "РЎС‚Р°С‚СЊ РґСЂСѓРіРѕРј";
+$MESS ['BLOG_MENU_FR_A_F'] = "Р”РѕР±Р°РІРёС‚СЊ РІ РґСЂСѓР·СЊСЏ";
+?>

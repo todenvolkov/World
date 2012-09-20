@@ -1,0 +1,5 @@
+ErrorDocument 404 /bitrix/admin/404.php
+
+<IfModule mod_rewrite.c>
+	RewriteEngine Off
+</IfModule>

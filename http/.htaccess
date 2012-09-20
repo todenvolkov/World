@@ -5,9 +5,9 @@ Options +FollowSymLinks
 IndexIgnore */*
 RewriteEngine on
 
-#RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-f
 #RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_URI} !^/(site|catalog|bitrix|upload|outdoor_img)/.*$
+RewriteCond %{REQUEST_URI} !^/(site|catalog|bitrix|upload|outdoor_img|personal)/.*$
 RewriteRule ^(.*)$ /site/index.php$1 [L]
 
 

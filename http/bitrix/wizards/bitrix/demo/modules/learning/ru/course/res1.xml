@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<coursetoc><id>1</id>
+<timestamp_x>1209454081</timestamp_x>
+<active>Y</active>
+<code>BX-ADM001</code>
+<name>Элементы управления. Обучающий курс</name>
+<sort>100</sort>
+<preview_picture>51368.gif</preview_picture>
+<preview_text><![CDATA[<p>Ознакомительный курс по работе с интерфейсом продукта. В курсе рассматриваются вопросы работы с элементами интерфейса публичной и административной частей. Курс рекомендован всем категориям пользователей.</p>
+]]></preview_text>
+<preview_text_type>html</preview_text_type>
+<description><![CDATA[<p>Данный курс знакомит пользователя с основными элементами управления публичного и административного интерфейсов.</p>
+В цикле уроков рассмотрены следующие элементы интерфейса: 
+<ul>
+  <li><a href="/communication/learning/course/index.php?COURSE_ID=1&LESSON_ID=1">Управление из публичного раздела</a></li>
+      <ul>
+          <li>Режим Просмотра</li> 
+          <li>Режим Редактирования</li> 
+          <li>Режим Разработки</li> 
+      </ul>
+  <li><a href="/communication/learning/course/index.php?COURSE_ID=1&LESSON_ID=5">Административная панель управления</a> 
+    <ul>
+      <li>Область выбора функций </li>
+    
+      <li>Область доступа к функциям, содержанию и структуре </li>
+    
+      <li>Основная рабочая область </li>
+    
+      <li>Контекстная панель </li>
+    </ul>
+  </li>
+
+  <li><a href="/communication/learning/course/index.php?COURSE_ID=1&LESSON_ID=6">Управление списками элементов</a> 
+    <ul>
+      <li>Фильтр </li>
+    
+      <li>Таблица элементов </li>
+    
+      <li>Меню действий </li>
+    </ul>
+  </li>
+
+  <li><a href="/communication/learning/course/index.php?COURSE_ID=1&LESSON_ID=7">Форма редактирования элемента</a> </li>
+
+  <li><a href="/communication/learning/course/index.php?COURSE_ID=1&LESSON_ID=8">Управление настройками интерфейса</a></li>
+</ul>
+]]></description>
+<description_type>html</description_type>
+<active_from></active_from>
+<active_to></active_to>
+</coursetoc>

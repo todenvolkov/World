@@ -1,0 +1,75 @@
+/************** Index & Search Page ********************************/
+/* Main Table on index page */
+div.photo-page-main div.photo-header-component {
+	float: left; }
+div.photo-page-main table.photo-table td.photo-td-left, 
+div.photo-page-search table.photo-table td.photo-td-left {
+ 	padding-right: 2em; 
+ 	width: 90%;}
+div.photo-page-main table.photo-table td.photo-td-right div.photo-info-box-galleries, 
+div.photo-page-search table.photo-table td.photo-td-right div.photo-info-box-tags-cloud{
+	width: 25em;}
+/* Buttons: Upload, Create, Edit, Moderate */
+div.photo-page-main td.photo-td-right ul.photo-controls, 
+div.photo-page-main td.photo-td-right ul.photo-controls li{
+	clear: both;
+	overflow: visible;}
+/* Buttons: Login is invisible by default */
+div.photo-controls-authorize {
+	display: none;}
+/* Users galleries in 2 columns */
+div.photo-controls-mainpage li.photo-gallery-item {
+	width: 11.5em;
+	overflow: hidden;
+	margin: 0 0.5em 0 0;
+	float: left;
+	height: 2em;
+	overflow: hidden;}
+div.photo-controls-mainpage div.photo-gallery-name {
+	font-weight: normal;
+	line-height: 2em;
+	height: 2em;}
+div.photo-controls-mainpage div.photo-gallery-name a{
+	font-weight: normal;
+	line-height: 1.7em;
+	height: 1.7em;}
+/* Best Photo Block */
+div.photo-photo-item-simple{
+	padding-top: 0.3em;}
+div.photo-photo-item-simple div.photo-photo-name {
+	float: left;
+	font-weight: normal;
+	white-space: nowrap;
+	overflow: hidden;
+	display: none;}
+div.photo-photo-item-simple div.photo-gallery-info {
+	white-space: nowrap;
+	overflow: hidden;}
+div.photo-photo-item-simple div.photo-simple-gallery label {
+	display: none;}
+/* Information blocks right */
+div.photo-page-main div.photo-controls-usermenu,
+div.photo-page-main div.photo-info-box-best-photo, 
+div.photo-page-main div.photo-info-box-photo-list, 
+div.photo-page-main div.photo-info-box-galleries {
+	margin-bottom: 2.5em;}
+/************** Section Page ***************************************/
+div.photo-page-section div.photo-info-box-photo-list {
+	margin-bottom: 2.8em;}
+/************** Page User Gallery **********************************/
+div.photo-page-gallery {
+	margin-top: 0.78em;
+	padding-top: 2em;
+	border-top-width: 1px;
+	border-top-style: solid; }
+/************** Progress bar ***************************************/
+div.pbar-mark, div.pbar-mark-green {width:17px; height:17px; background-repeat:no-repeat; padding:0px;}
+div.pbar-mark-green{background-image:url(/bitrix/themes/.default/images/pbar/kv_green.gif);}
+div.pbar-outer{padding:1px; margin:0px; border:1px solid #8e99be; display:block; position:relative; top:0px; width:350px; height:13px; overflow:hidden; white-space:nowrap;}
+div.pbar-inner, div.pbar-inner-red, div.pbar-inner-green, div.pbar-inner-yellow, div.pbar-inner-red-error, div.pbar-inner-green-error, div.pbar-inner-yellow-error{padding:0px; margin:0px; border:none; display:inline; height:13px; background-repeat:repeat-x;}
+div.pbar-inner-green{background-image:url(/bitrix/themes/.default/images/pbar/bar_green.gif);}
+div.pbar-inner-green-error{background-image:url(/bitrix/themes/.default/images/pbar/bar_green_err.gif);}
+div.pbar-title-outer{padding:0px; margin:0px; display:block; position:relative; top:0px; border:none; width:350px;}
+div.pbar-title-inner{padding:0px 10px; width:100%; text-align:center;}
+div.photo-page-galleries-recalc div.photo-info-box {
+	margin-bottom: 1em;}

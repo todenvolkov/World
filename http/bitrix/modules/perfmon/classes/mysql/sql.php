@@ -1,0 +1,5 @@
+<?
+class CPerfomanceSQL extends CAllPerfomanceSQL
+{
+}
+?>

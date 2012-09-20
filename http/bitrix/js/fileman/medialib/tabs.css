@@ -1,0 +1,69 @@
+/*Image upload tabbed control*/
+table.edit-table table.imgtab-tabs {border-collapse: collapse !important;}
+table.edit-table table.imgtab-tabs td {height:24px !important; font-size:11px !important;font-weight:bold !important;white-space:nowrap !important;cursor:pointer !important;border:none !important;}
+table.edit-table table.imgtab-tab td {background-color:transparent !important; border:none !important; background-image: none !important;}
+table.edit-table table.imgtab-tab div {display:inline !important;}
+table.edit-table td.imgtab-sel table.imgtab-tab td {color:#494949 !important;padding-top:4px !important; background-image: none !important;}
+table.edit-table td.imgtab-some table.imgtab-tab td {color:#818185 !important;padding-top:5px !important; background-image: none !important;}
+
+table.edit-table td.imgtab-sel {padding-right:6px !important;  background-image:url(/bitrix/images/fileman/medialib/tabs/imgtab_sel.gif) !important; background-repeat:repeat-x !important; background-position:left top !important;}
+table.edit-table td.imgtab-some {padding-right:6px !important;  background-image:url(/bitrix/images/fileman/medialib/tabs/imgtab_some.gif) !important; background-repeat:repeat-x !important; background-position:left top !important;}
+table.edit-table td.imgtab-none {padding-right:12px !important; background-image:url(/bitrix/images/fileman/medialib/tabs/imgtab_none.gif) !important; background-repeat:repeat-x !important; background-position:left top !important;}
+
+table.edit-table table.imgtab-tabs td.imgtab-none-sel {padding-left:5px !important; background:url(/bitrix/images/fileman/medialib/tabs/imgtab_none_sel.gif) repeat-x left top !important;}
+table.edit-table table.imgtab-tabs td.imgtab-none-some {padding-left:5px !important; background:url(/bitrix/images/fileman/medialib/tabs/imgtab_none_some.gif) repeat-x left top !important;}
+
+table.edit-table table.imgtab-tabs td.imgtab-sel-none {padding-left:8px !important; background:url(/bitrix/images/fileman/medialib/tabs/imgtab_sel_none.gif) repeat-x left top !important;}
+table.edit-table table.imgtab-tabs td.imgtab-some-none {padding-left:8px !important; background:url(/bitrix/images/fileman/medialib/tabs/imgtab_some_none.gif) repeat-x left top !important;}
+
+table.edit-table table.imgtab-tabs td.imgtab-sel-some {padding-left:11px !important; background:url(/bitrix/images/fileman/medialib/tabs/imgtab_sel_some.gif) repeat-x left top !important;}
+table.edit-table table.imgtab-tabs td.imgtab-some-some {padding-left:11px !important; background:url(/bitrix/images/fileman/medialib/tabs/imgtab_some_some.gif) repeat-x left top !important;}
+table.edit-table table.imgtab-tabs td.imgtab-some-sel {padding-left:11px !important; background:url(/bitrix/images/fileman/medialib/tabs/imgtab_some_sel.gif) repeat-x left top !important;}
+
+table.edit-table td.imgtab-content-closed {color:#646465 !important; border-left: solid 1px #bbc4de !important;border-right: solid 1px #bbc4de !important;border-bottom: solid 1px #bbc4de !important;padding:13px !important;}
+table.edit-table td.imgtab-content-opened {color:#646465 !important; border-left: solid 1px #bbc4de !important;border-right: solid 1px #bbc4de !important;padding:13px !important;}
+table.edit-table td.imgtab-content td {color:#646465 !important; background-image: none !important;}
+table.edit-table td.img-control-descr input {margin-top:2px !important;}
+
+table.edit-table table.img-control-tab {border-bottom:1px solid #CFD6E9 !important;border-left:1px solid #CFD6E9 !important;border-right:1px solid #CFD6E9 !important;}
+table.edit-table table.img-control-alone {border:1px solid #CFD6E9 !important;}
+table.edit-table table.img-control td.img-control-empty-top    {padding-left: 15px !important; padding-right: 12px !important; height: 6px !important; border-bottom: none !important;}
+table.edit-table table.img-control td.img-control-empty-bottom {padding-left: 15px !important; padding-right: 12px !important; height: 6px !important; border-top: none !important;}
+table.edit-table table.img-control td.img-control-image {padding-left: 15px !important; padding-right: 12px !important; padding-top: 0px !important; border-bottom: none !important; border-top: none !important;}
+table.edit-table table.img-control td.img-control-descr {padding-left: 15px !important; padding-right: 12px !important; padding-top: 6px !important; color:#646465 !important; border-bottom: none !important; border-top: none !important;}
+table.edit-table table.img-control td.img-control-del   {padding-left: 15px !important; padding-right: 12px !important; padding-top: 6px !important; color:#646465 !important; border-bottom: none !important; border-top: none !important;}
+
+
+div#bx_admin_form table.edit-table table.imgtab-tabs {border-collapse: collapse !important;}
+div#bx_admin_form table.edit-table table.imgtab-tabs td {height:24px !important; font-size:11px !important;font-weight:bold !important;white-space:nowrap !important;cursor:pointer !important;border:none !important;}
+div#bx_admin_form table.edit-table table.imgtab-tab td {background-color:transparent !important;border:none !important; background-image: none !important;}
+div#bx_admin_form table.edit-table table.imgtab-tab div {display:inline !important;}
+div#bx_admin_form table.edit-table td.imgtab-sel table.imgtab-tab td {color:#494949 !important;padding-top:4px !important; background-image: none !important;}
+div#bx_admin_form table.edit-table td.imgtab-some table.imgtab-tab td {color:#818185 !important;padding-top:5px !important; background-image: none !important;}
+
+div#bx_admin_form table.edit-table td.imgtab-sel {padding-right:6px !important;  background-image:url(/bitrix/images/fileman/medialib/tabs/imgtab_sel.gif) !important; background-repeat:repeat-x !important; background-position:left top !important;}
+div#bx_admin_form table.edit-table td.imgtab-some {padding-right:6px !important;  background-image:url(/bitrix/images/fileman/medialib/tabs/imgtab_some.gif) !important; background-repeat:repeat-x !important; background-position:left top !important;}
+div#bx_admin_form table.edit-table td.imgtab-none {padding-right:12px !important; background-image:url(/bitrix/images/fileman/medialib/tabs/imgtab_none.gif) !important; background-repeat:repeat-x !important; background-position:left top !important;}
+
+div#bx_admin_form table.edit-table table.imgtab-tabs td.imgtab-none-sel {padding-left:5px !important; background:url(/bitrix/images/fileman/medialib/tabs/imgtab_none_sel.gif) repeat-x left top !important;}
+div#bx_admin_form table.edit-table table.imgtab-tabs td.imgtab-none-some {padding-left:5px !important; background:url(/bitrix/images/fileman/medialib/tabs/imgtab_none_some.gif) repeat-x left top !important;}
+
+div#bx_admin_form table.edit-table table.imgtab-tabs td.imgtab-sel-none {padding-left:8px !important; background:url(/bitrix/images/fileman/medialib/tabs/imgtab_sel_none.gif) repeat-x left top !important;}
+div#bx_admin_form table.edit-table table.imgtab-tabs td.imgtab-some-none {padding-left:8px !important; background:url(/bitrix/images/fileman/medialib/tabs/imgtab_some_none.gif) repeat-x left top !important;}
+
+div#bx_admin_form table.edit-table table.imgtab-tabs td.imgtab-sel-some {padding-left:11px !important; background:url(/bitrix/images/fileman/medialib/tabs/imgtab_sel_some.gif) repeat-x left top !important;}
+div#bx_admin_form table.edit-table table.imgtab-tabs td.imgtab-some-some {padding-left:11px !important; background:url(/bitrix/images/fileman/medialib/tabs/imgtab_some_some.gif) repeat-x left top !important;}
+div#bx_admin_form table.edit-table table.imgtab-tabs td.imgtab-some-sel {padding-left:11px !important; background:url(/bitrix/images/fileman/medialib/tabs/imgtab_some_sel.gif) repeat-x left top !important;}
+
+div#bx_admin_form table.edit-table td.imgtab-content-closed {color:#646465 !important; border-left: solid 1px #bbc4de !important;border-right: solid 1px #bbc4de !important;border-bottom: solid 1px #bbc4de !important;padding:13px !important;}
+div#bx_admin_form table.edit-table td.imgtab-content-opened {color:#646465 !important; border-left: solid 1px #bbc4de !important;border-right: solid 1px #bbc4de !important;padding:13px !important;}
+div#bx_admin_form table.edit-table td.imgtab-content td {color:#646465 !important; background-image: none !important;}
+div#bx_admin_form table.edit-table td.img-control-descr input {margin-top:2px !important;}
+
+div#bx_admin_form table.edit-table table.img-control-tab {border-bottom:1px solid #CFD6E9 !important;border-left:1px solid #CFD6E9 !important;border-right:1px solid #CFD6E9 !important;}
+div#bx_admin_form table.edit-table table.img-control-alone {border:1px solid #CFD6E9 !important;}
+div#bx_admin_form table.edit-table table.img-control td.img-control-empty-top    {padding-left: 15px !important; padding-right: 12px !important; height: 6px !important; border-bottom: none !important;}
+div#bx_admin_form table.edit-table table.img-control td.img-control-empty-bottom {padding-left: 15px !important; padding-right: 12px !important; height: 6px !important; border-top: none !important;}
+div#bx_admin_form table.edit-table table.img-control td.img-control-image {padding-left: 15px !important; padding-right: 12px !important; padding-top: 0px !important; border-bottom: none !important; border-top: none !important;}
+div#bx_admin_form table.edit-table table.img-control td.img-control-descr {padding-left: 15px !important; padding-right: 12px !important; padding-top: 6px !important; color:#646465 !important; border-bottom: none !important; border-top: none !important;}
+div#bx_admin_form table.edit-table table.img-control td.img-control-del   {padding-left: 15px !important; padding-right: 12px !important; padding-top: 6px !important; color:#646465 !important; border-bottom: none !important; border-top: none !important;}

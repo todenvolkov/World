@@ -1,0 +1,165 @@
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Outdoor секция");
+$MAP_KEY = '';
+$strMapKeys = COPtion::GetOptionString('fileman', 'map_yandex_keys');
+
+$strDomain = $_SERVER['HTTP_HOST'];
+$wwwPos = strpos($strDomian, 'www.');
+if ($wwwPos === 0)
+	$strDomain = substr($strDomain, 4);
+
+if ($strMapKeys)
+{
+	$arMapKeys = unserialize($strMapKeys);
+	
+	if (array_key_exists($strDomain, $arMapKeys))
+		$MAP_KEY = $arMapKeys[$strDomain];
+}
+//<script src="http://api-maps.yandex.ru/1.1/?key=AFCG200BAAAA_HPCXAMAKCrYbGfsuIggMU_CXzslbgC_A5EAAAAAAAAAAABk2X7hq4C2Dq4OIReQSrFJfN-Q2g==&modules=pmap&wizard=constructor" type="text/javascript"></script>
+?> 
+<table cellspacing="0" cellpadding="0" border="0" align="center" width="100%"> 
+  <tbody> 
+    <tr> <td style="-moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-image: none;">&nbsp; 
+        <br />
+       </td> <td height="50" style="-moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-image: none;" colspan="2"><img src="<?=SITE_TEMPLATE_PATH?>/images/HeaderOutDoorMap.png" width="347" height="25"  /></td> <td align="left" valign="top" style="-moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-image: none;" class="C10"> 
+        <p>Меню Карта 
+          <br />
+         Управление слоями</p>
+       
+        <p>Показать что надо</p>
+       </td> <td align="left" valign="top" style="-moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-image: none;" class="C10"> 
+        <p>Выбрать в Календаре</p>
+       
+        <p>Показать выбранное</p>
+       </td> <td align="left" valign="top" style="-moz-border-top-colors: none; -moz-border-right-colors: none; -moz-border-bottom-colors: none; -moz-border-left-colors: none; -moz-border-image: none;">&nbsp; 
+        <br />
+       </td> </tr>
+   </tbody>
+ </table>
+ 
+<!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту  (начало) -->
+ 
+<script src="http://api-maps.yandex.ru/1.1/?key=<img id="bxid_936136" src="/bitrix/images/fileman/htmledit2/php.gif" border="0"/>&modules=pmap&wizard=constructor" type="text/javascript"></script>
+ 
+<script type="text/javascript">
+    YMaps.jQuery(window).load(function () {
+        var map = new YMaps.Map(YMaps.jQuery("#YMapsID-104")[0]);
+        map.setCenter(new YMaps.GeoPoint(65.589363,57.128686), 11, YMaps.MapType.MAP);
+        map.addControl(new YMaps.Zoom());
+        //map.addControl(new YMaps.ToolBar());
+        YMaps.MapType.PMAP.getName = function () { return "Карта"; };
+        /*
+        map.addControl(new YMaps.TypeControl([
+            YMaps.MapType.MAP,
+            YMaps.MapType.SATELLITE,
+            YMaps.MapType.HYBRID,
+            YMaps.MapType.PMAP
+        ], [0, 1, 2, 3]));
+        
+        function createObject (type, point, style, description) {
+            var allowObjects = ["Placemark", "Polyline", "Polygon"],
+                index = YMaps.jQuery.inArray( type, allowObjects),
+                constructor = allowObjects[(index == -1) ? 0 : index];
+                description = description || "";
+            
+            var object = new YMaps[constructor](point, {style: style, hasBalloon : !!description});
+            object.description = description;
+            
+            return object;
+        }
+        */
+
+        var map_imgs = ['Arka.png','Bb3x4.png','Bb3x6.png','Bb5x12.png','BilBrd_3x4.png','BinBox.png','BrandMauer.png','BrM.png','Pr3x4.png','Pr3x6.png','Pr5x12.png','Pr_3x4.png','TV.png'];
+        var map_imgs_size = [41,32, 32,37, 38,32, 38,32, 32,34, 32,37, 37,33, 38,32, 31,37, 38,32, 38,32, 19,34, 38,32];
+        var map_styles = new Array();
+        for (i=0; i<map_imgs.length; i++){
+	        var s = new YMaps.Style();
+		s.iconStyle = new YMaps.IconStyle();
+		s.iconStyle.href = "/bitrix/templates/mir/images/icon/"+map_imgs[i];
+		s.iconStyle.size = new YMaps.Point(map_imgs_size[i*2], map_imgs_size[i*2+1]);
+		s.iconStyle.offset = new YMaps.Point(-5, -30);
+        	map_styles[i] = s;
+        	//var placemark = new YMaps.Placemark(map.getCenter(), {draggable: true, style: map_styles[i]});
+        	var placemark = new YMaps.Placemark(new YMaps.GeoPoint(65.589363 + (Math.random()*2-1)/6 , 57.128686 + (Math.random()*2-1)/10), {draggable: true, style: map_styles[i]});
+        	
+		map.addOverlay(placemark);
+        }
+        
+	
+
+    });
+</script>
+ 
+<div id="YMapsID-104" style="width: 1000px; height: 620px;"></div>
+ 
+<!-- Этот блок кода нужно вставить в ту часть страницы, где вы хотите разместить карту (конец) -->
+ <?$APPLICATION->IncludeComponent(
+	"bitrix:catalog",
+	".default",
+	Array(
+		"AJAX_MODE" => "N",
+		"SEF_MODE" => "N",
+		"IBLOCK_TYPE" => "catalog",
+		"IBLOCK_ID" => "6",
+		"USE_FILTER" => "N",
+		"USE_REVIEW" => "N",
+		"USE_COMPARE" => "N",
+		"SHOW_TOP_ELEMENTS" => "N",
+		"PAGE_ELEMENT_COUNT" => "100",
+		"LINE_ELEMENT_COUNT" => "1",
+		"ELEMENT_SORT_FIELD" => "sort",
+		"ELEMENT_SORT_ORDER" => "asc",
+		"LIST_PROPERTY_CODE" => array(),
+		"INCLUDE_SUBSECTIONS" => "Y",
+		"LIST_META_KEYWORDS" => "-",
+		"LIST_META_DESCRIPTION" => "-",
+		"LIST_BROWSER_TITLE" => "-",
+		"DETAIL_PROPERTY_CODE" => array(),
+		"DETAIL_META_KEYWORDS" => "-",
+		"DETAIL_META_DESCRIPTION" => "-",
+		"DETAIL_BROWSER_TITLE" => "-",
+		"BASKET_URL" => "",
+		"ACTION_VARIABLE" => "",
+		"PRODUCT_ID_VARIABLE" => "",
+		"SECTION_ID_VARIABLE" => "",
+		"CACHE_TYPE" => "A",
+		"CACHE_TIME" => "36000000",
+		"CACHE_NOTES" => "",
+		"CACHE_FILTER" => "N",
+		"CACHE_GROUPS" => "Y",
+		"SET_TITLE" => "N",
+		"SET_STATUS_404" => "N",
+		"PRICE_CODE" => array(),
+		"USE_PRICE_COUNT" => "N",
+		"SHOW_PRICE_COUNT" => "1",
+		"PRICE_VAT_INCLUDE" => "N",
+		"PRICE_VAT_SHOW_VALUE" => "N",
+		"LINK_IBLOCK_TYPE" => "",
+		"LINK_IBLOCK_ID" => "",
+		"LINK_PROPERTY_SID" => "",
+		"LINK_ELEMENTS_URL" => "",
+		"USE_ALSO_BUY" => "N",
+		"DISPLAY_TOP_PAGER" => "N",
+		"DISPLAY_BOTTOM_PAGER" => "N",
+		"PAGER_TITLE" => "",
+		"PAGER_SHOW_ALWAYS" => "N",
+		"PAGER_TEMPLATE" => "",
+		"PAGER_DESC_NUMBERING" => "N",
+		"PAGER_DESC_NUMBERING_CACHE_TIME" => "",
+		"PAGER_SHOW_ALL" => "N",
+		"VARIABLE_ALIASES" => Array(
+			"SECTION_ID" => "",
+			"ELEMENT_ID" => ""
+		),
+		"AJAX_OPTION_SHADOW" => "N",
+		"AJAX_OPTION_JUMP" => "N",
+		"AJAX_OPTION_STYLE" => "N",
+		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_ADDITIONAL" => ""
+	)
+);?> 
+<br />
+  
+<br />
+ <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

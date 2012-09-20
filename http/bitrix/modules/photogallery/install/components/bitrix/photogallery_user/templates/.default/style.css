@@ -1,0 +1,587 @@
+/********************************************************************
+				Menu Controls 
+********************************************************************/
+ul.photo-controls, ul.photo-controls li{
+	margin:0; 
+	padding:0; 
+	border:none; 
+	list-style-type:none;
+	overflow:hidden;}
+ul.photo-controls li{
+	height:2em;
+	float:left;
+	padding-right:1em;}
+li.photo-control label, 
+li.photo-control a:link, 
+li.photo-control a:visited, 
+li.photo-control a:active, 
+li.photo-control a:hover{
+	line-height:1.7em;
+	height:1.7em;}
+li.photo-control a:hover, li.photo-control a:active, li.photo-control a.pressed{ 
+	text-decoration: none;}
+li.photo-control-active a {
+	font-weight: bold;}
+/************** Controls Buttons ***********************************/
+div.photo-controls-buttons ul.photo-controls {
+	height: auto;}
+div.photo-controls-buttons ul.photo-controls li{
+	clear: both;
+	float: none;
+	height: 32px;
+	margin-bottom: 0.45em;
+	padding-right: 0.45em;}
+div.photo-controls-buttons ul.photo-controls li a, 
+div.photo-controls-buttons ul.photo-controls li a span {
+	height: 32px;
+	line-height: 28px;
+	display: block;
+	background-repeat: no-repeat;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+	cursor: hand; 
+	text-decoration: none;}
+div.photo-controls-buttons ul.photo-controls li a {
+	font-size: 110%; 
+	width: 11.61em; 
+	font-weight: bold; 
+	padding-left: 10px;
+	background-position: left bottom;}
+div.photo-controls-buttons ul.photo-controls li a span {
+	padding-right: 10px;
+	background-position: right bottom;}
+div.photo-controls-buttons ul.photo-controls li a:hover {
+	background-position: left top;}
+div.photo-controls-buttons ul.photo-controls li a:hover span {
+	background-position: right top;}
+/************** Menu Controls Album & Gallery Dropdown *************/
+li.photo-control-album-edit a {
+	float: left;}
+div.photo-controls-gallery ul.photo-controls li, 
+div.photo-controls-album ul.photo-controls li{
+	float: left;
+	height: 27px;
+	margin-bottom: 0.25em;}
+div.photo-controls-gallery ul.photo-controls li a, 
+div.photo-controls-album ul.photo-controls li a {
+	font-size: 110%; }
+div.photo-controls-gallery ul.photo-controls li a,
+div.photo-controls-gallery ul.photo-controls li a span,
+div.photo-controls-album ul.photo-controls li a, 
+div.photo-controls-album ul.photo-controls li a span {
+	height: 27px;
+	line-height: 24px;}
+div.photo-controls-album ul.photo-controls li.photo-control-album-edit a span {
+	padding-right: 1.2em;}
+div.photo-controls-album, 
+div.photo-controls-gallery {
+	float: right;}
+/********************************************************************
+				Menu Controls /
+********************************************************************/
+/********************************************************************
+				Popups
+********************************************************************/
+div.photo-popup, div.photo-popup div, div.photo-popup form {
+	background-color: white; 
+	padding: 0; 
+	margin: 0;
+	font-size: 12px;}
+div.photo-popup{
+	background-color: gray; 
+	overflow: hidden; 
+	width: 600px; 
+	height: 400px;}
+div.photo-popup div.photo-popup-container{
+	border: 1px solid black;}
+div.photo-popup div.photo-popup-inner{
+	padding: 9px;}
+div.photo-popup div.photo-popup-data{
+	overflow: hidden; 
+	width: 580px; 
+	height: 380px;}
+div.photo-popup table{
+	width: 100%; 
+	border: none;}
+table.photo-popup thead{
+	display: none;}
+div.photo-popup tbody {
+	height: 330px;}
+div.photo-popup tbody td {
+	border: none;
+	text-align: left;
+	vertical-align: top;}
+div.photo-popup tbody div.photo-info-box-section-edit-icon, 
+div.photo-popup tbody div.photo-info-box-section-edit, 
+div.photo-popup tbody div.photo-info-box-element-edit  {
+	height: 330px; 
+	overflow: auto;
+	zoom: 1;}
+div.photo-popup tfoot td {
+	text-align: center;
+	vertical-align: middle;
+	height: 50px;
+	overflow: hidden;}
+div.photo-popup tfoot td input {
+	margin: 2px;}
+div.photo-popup div.photo-edit-field {
+	padding: 0.3em 0 0.2em 0.3em;}
+div.photo-popup div.photo-edit-field-title input, 
+div.photo-popup div.photo-edit-field-tags input, 
+div.photo-popup div.photo-edit-field textarea {
+	width: 99%;}
+div.photo-popup div.photo-edit-field select {
+	width: 50%;}
+/********************************************************************
+				Popups /
+********************************************************************/
+/********************************************************************
+				Filter
+********************************************************************/
+/* Used on detail list page with new photo, photo with comments and other */
+div.photo-filter{
+	margin: 1.5em 0 2.5em 0;
+	border: 1px solid; 
+	padding: 1em;
+	width: 70%;}
+div.photo-filter-field {
+	margin-bottom: 0.7em;}
+div.photo-filter-field-inner {
+	margin-bottom: 0.4em;}
+div.photo-calendar-field label {
+	display: block;
+	margin-bottom: 0.5em;}
+div.photo-filter-buttons {
+	margin-right: 0.5em;}
+div.photo-filter-field legend {
+	padding: 0.5em 1em;}
+/********************************************************************
+				Filter /
+********************************************************************/
+/********************************************************************
+				Page Navigation 
+********************************************************************/
+div.modern-page-navigation { 
+	padding: 0.5em 0;}
+div.modern-page-navigation a, 
+span.modern-page-current, 
+span.modern-page-dots
+{
+	border-left-width: 1px;
+	border-left-style: solid;
+	padding-left: 0.75em;
+	padding-right: 0.5em;
+	text-decoration: none;
+}
+div.modern-page-navigation a.modern-page-previous { 
+	border-right-width: 1px; 
+	border-right-style: solid; 
+	border-left: none; }
+div.modern-page-navigation a.modern-page-first, 
+div.modern-page-navigation span.modern-page-first { 
+	border-left: none; 
+	padding-left: 0.5em; }
+span.modern-page-current { 
+	font-weight: bold; }
+/********************************************************************
+				Page Navigation /
+********************************************************************/
+
+/********************************************************************
+				Standart styles
+********************************************************************/
+ul.photo-items-list, ul.photo-items-list, li.photo-item {
+	padding: 0; 
+	margin: 0;
+	list-style-type: none;}
+div.photo-info-box {}
+div.photo-note-box {
+	width: 70%;
+	border-width: 1px; 
+	border-style: solid; 
+	margin: 1.117em 0; 
+	padding: 0.4em 1.117em;}
+div.photo-note-box ul {
+	padding: 0.3em 0.6em; 
+	list-style-type: none;
+	margin: 0;}
+div.photo-note-box ul li {
+	margin: 0.3em 0; 
+	padding: 0;}
+div.photo-breadcrumb-top{
+	margin-bottom: 1.27em;}
+div.empty-clear{ 
+	clear: both; 
+	overflow: hidden; 
+	height: 0.1em;}
+div.photo-popup-inner form, form.photo-form{
+	padding: 0; 
+	margin: 0;}
+table.photo-table, table.photo-table td{
+	font-size: 100%;}
+div#photo_waitwindow{
+	width: 170px!important; 
+	padding: 10px!important; 
+	display: block!important;
+	border: 1px solid #EACB6B!important; 
+	text-align: center!important; 
+	font-size: 13px!important; 
+	background-color: #FCF7D1!important; 
+	background-image: url("/bitrix/themes/.default/images/wait.gif")!important; 
+	background-position: 10px center!important; 
+	background-repeat: no-repeat!important;
+	position: relative!important; 
+	z-index: 10000;
+	text-align: center;
+	position: static!important;
+	width: 100%;}
+div.photo-header-big div.photo-header-inner, 
+div.photo-header-middle div.photo-header-inner{
+	margin-bottom: 0.78em; }
+div.photo-header-big {
+	border-bottom: 1px solid;
+	font-weight: bold; 
+	font-size: 110%; 
+	margin-bottom: 0.78em; }
+div.photo-header-component {
+	font-weight: bold; 
+	font-size: 110%; 
+	margin-right: 1em;
+	margin-bottom: 0.78em;}
+span.photo-header-link {
+	font-weight: normal;
+	font-size: 100%;
+	white-space: nowrap;
+}
+div.reviews-navigation-top {
+	display: none;}
+div.tags-cloud a {
+	text-decoration: none;}
+div.tags-cloud a:hover{
+	text-decoration: underline;}
+/********************************************************************
+				Standart styles
+********************************************************************/
+
+
+/********************************************************************
+				Album  styles
+********************************************************************/
+div.photo-album-avatar, div.photo-album-thumbs-avatar, div.photo-album-avatar-empty{
+	background-position: center center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	cursor: hand;
+	overflow: hidden;}
+div.photo-item-cover-block-outside{
+	padding: 0 8px 8px 0; }
+div.photo-item-cover-block-inside{
+	padding: 8px 20px;
+	border: none;}
+div.photo-item-cover-block-container, 
+div.photo-item-cover-block-outer, 
+div.photo-item-cover-block-inner {
+	border: 1px solid; }
+div.photo-item-cover-block-container{
+	position: relative!important; }
+div.photo-item-cover-block-outer, 
+div.photo-item-cover-block-inner {
+	position:absolute!important; }
+div.photo-item-cover-block-container{
+	left: 6px;
+	top: 8px;}
+div.photo-item-cover-block-outer {
+	left: -4px;
+	top: -4px;}
+div.photo-item-cover-block-inner {
+	left: -4px;
+	top: -4px;}
+div.photo-item-info-block-outer{
+	padding: 4px 2px 2px 2px;}
+div.photo-item-cover {
+	cursor: pointer; 
+	cursor: hand;}
+div.photo-album-name a { 
+	line-height: 1.2em; }
+div.photo-album-date, div.photo-album-photos {
+	font-size: 11px;}
+/************** Album controls on cover ****************************/
+div.photo-album-menu-controls {
+	z-index: 100;
+	text-align: center;}
+div.photo-album-menu{
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: relative;}
+div.photo-album-menu div {
+	position: absolute;
+	width:100%;
+	height:100%; }
+div.photo-album-menu-controls a {
+	line-height: 1em;
+	display: block;}
+/************** Albums List ****************************************/
+ul.photo-album-list, ul.photo-album-thumbs-list, li.photo-album-item {
+	padding: 0; 
+	margin: 0;
+	list-style-type: none;}
+ul.photo-album-list div.photo-item-info-block-outside {
+	margin-left: 0!important;}
+li.photo-album-item{
+	margin: 0;
+	float: left;
+	padding: 0 30px 30px 0;
+	display: inline;}
+ul.photo-album-thumbs-list li, ul.photo-album-thumbs-list div, 
+ul.photo-album-list li, ul.photo-album-list div{
+	zoom: 1;}
+ul.photo-album-list li, 
+ul.photo-album-list div.photo-item-cover-block-outside, 
+ul.photo-album-thumbs-list li, 
+ul.photo-album-thumbs-list div.photo-item-cover-block-outside {
+	float: left;}
+ul.photo-album-list div.photo-item-info-block-outside, 
+ul.photo-album-thumbs-list div.photo-item-info-block-outside {
+	clear: both;}
+li.photo-album-item div.photo-album-name {
+	position: relative;
+	height: 1.4em;
+	font-weight: bold;
+	overflow: hidden;}
+li.photo-album-item div.photo-album-name a {
+	line-height: 1.4em;
+	text-decoration: none;} 
+li.photo-album-item div.photo-album-date{
+	padding-top: 1px;
+	float: right; }
+li.photo-album-item div.photo-album-photos {
+	padding-top: 1px;}
+li.photo-album-item div.photo-album-photos-top, 
+li.photo-album-item div.photo-album-description{
+	display: none;}
+/************** Album Single ***************************************/
+div.photo-album-header div {
+	float: left;}
+div.photo-album-item div.photo-album-name, 
+div.photo-album-item div.photo-album-date {
+	line-height:1.5em;}
+div.photo-album-item div.photo-album-name {
+	font-weight: bold;}
+div.photo-album-item div.photo-album-date, div.photo-album-item div.photo-album-description {
+	margin-top:0.3em;}
+div.photo-album-item div.photo-album-info{
+	margin-bottom:1.5em;}
+/************** Album Edit *****************************************/
+div.photo-window-edit table{
+	width: 99%;}
+div.photo-window-edit table thead{
+	display: none;}
+div.photo-edit-field-title input{
+	width: 80%;}
+div.photo-edit-field-description textarea {
+	width: 100%;
+	height: 10em;}
+div.photo-edit-field {
+	padding: 0.7em 0 0.3em 0.3em;}
+div.photo-edit-field-title label, 
+div.photo-edit-field-tags label, 
+div.photo-edit-field-description label, 
+div.photo-edit-field-date label{
+	display: block;
+	margin-bottom: 0.2em;}
+div.photo-edit-field-image{
+	position: relative;
+	float: left;
+	padding: 0px;
+	margin: 0px 5px 5px 0px !important; 
+	border: none;}
+div.photo-edit-field-image input {
+	position: absolute; 
+	z-index: 1000; 
+	top: 0px; 
+	left: 0px;}
+div.photo-edit-field-image img {
+	cursor: pointer; 
+	cursor: hand;}
+/********************************************************************
+				Album  styles/
+********************************************************************/
+/********************************************************************
+				Photo styles
+********************************************************************/
+/************** Controls on list photo *****************************/
+li.photo-control-photo-selectall span, li.photo-control-photo-drop span, 
+li.photo-control-photo-moderate span {
+	padding-right: 1em;
+	border-right: 1px solid;}
+li.photo-control-photo-move select {
+	width: 12em;
+	margin-left: 0.5em;}
+/************** Controls on detail photo ***************************/
+div.photo-controls-photo ul {
+	height: auto;}
+div.photo-controls-photo li {
+	float: none;}
+/************** Photographies **************************************/
+div.group-by-days {
+	clear: both;
+	padding-bottom: 1em;}
+table.photo-photo-item {
+	float:left; 
+	margin-right:1.5em;
+	margin-bottom:1.5em;}
+table.photo-photo-item td, table.photo-photo-item th{
+	border:none;
+	margin:0;
+	padding:0;}
+div.photo-photo-name{
+	font-weight: bold;}
+/* Photo .Default */
+table.photo-photo-item-default td.photo-photo-info div.photo-photo-comments {
+	line-height: 1em;
+	height: 1.2em;
+	overflow: hidden;
+	font-size: 11px;
+	padding-left: 3px;}
+table.photo-photo-item-default div.photo-photo-item-inner{
+	padding: 3px;
+	vertical-align: top;}
+/* Photo Table */
+table.photo-photo-item-table{
+	border: 1px solid;}
+table.photo-photo-item-table th.photo-photo-image {
+	padding: 1em 1em 0 1em;}
+table.photo-photo-item-table div.photo-photo-name, 
+table.photo-photo-item-table div.photo-photo-rating, 
+table.photo-photo-item-table div.photo-photo-rating div, 
+table.photo-photo-item-table div.photo-photo-comments, 
+table.photo-photo-item-table div.photo-photo-shows {
+	overflow: hidden;
+	white-space: nowrap;
+	line-height: 1em;
+	height: 1.2em;}
+table.photo-photo-item-table tfoot td.photo-photo-info {
+	padding: 1em;
+	vertical-align: top;}
+table.photo-photo-item-table div.photo-photo-item-block-inner {
+	border: 1px solid;}
+table.photo-photo-item-table div.photo-photo-info{
+	margin-top: 1em;}
+/* Photo Ascetic */
+div.photo-photo-item-ascetic{
+	padding: 2px;
+	float: left; 
+	margin-right: 0.3em;
+	margin-bottom: 0.3em;}
+a.photo-photo-item-ascetic-inner{
+	overflow: hidden;
+	display: block;}
+/************** Popup div To Detail to around Slider ***************/
+div.photo-photo-item-popup {
+	cursor: pointer; 
+	cursor: hand;
+	background-position: left top;
+	background-repeat: no-repeat; 
+	zoom: 1;
+	z-index: 1100;
+	visibility: visible;
+	display: block;
+	width: 20px;
+	height: 20px;}
+div.photo-detail-img div.photo-photo-item-popup {
+	display: none!important;}
+/************** Photo navigation on detail page ********************/
+div.photo-detail {
+	margin-bottom: 1.5em;}
+div.photo-photo-info div.vote-no-results {
+	display: block;}
+div.photo-detail-image {
+	float: left;}
+div.photo-photo-info div.photo-photo-date {
+	padding-top: 0.38em;}
+div.photo-photo-info div.photo-photo-description {
+	margin-top: 1em;
+	padding-top: 0.5em;}
+div.photo-photo-tags {
+	padding-top: 0.5em;}
+div.photo-photo-rating {
+	padding-top: 2em;}
+div.photo-controls-photo {
+	margin-top: 2em;}
+div.photo-detail-image{
+	padding-right: 1em;}
+div.photo-photo-date, div.photo-photo-tags, div.photo-photo-tags a {
+	font-size: 11px;}
+div.photo-photo-info #photo_vote td.vote-result{
+	width: 100px;
+	overflow: hidden;}
+/********************************************************************
+				/ Photo styles
+********************************************************************/
+/******************************************************************** 
+				Gallery 
+********************************************************************/
+div.photo-gallery-name {
+	white-space: nowrap;}
+div.photo-gallery-avatar{
+	display: none;}
+/************** Ascetic Gallery ************************************/
+ul.photo-galleries-list-ascetic, 
+ul.photo-galleries-list-ascetic li.photo-gallery-item{
+	margin: 0; 
+	padding: 0; 
+	border: none; 
+	list-style-type: none;}
+ul.photo-galleries-list-ascetic li.photo-gallery-item {
+	width: 30em;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	float: left;
+	height: 6.2em;
+	overflow: hidden;}
+ul.photo-galleries-list-ascetic  div.photo-gallery-description {
+	line-height: 1.5em;
+	height: 4.5em;}
+/************** Default Gallery ************************************/
+div.photo-gallery-item div.photo-control {
+	float: left; 
+	line-height: 1.7em; 
+	height: 1.7em; 
+	padding-left: 0.7em;}
+ul.photo-galleries-list li.photo-gallery-item {
+	padding-bottom: 1em;}
+div.photo-controls-gallery-edit {
+	margin-top: 0.5em;}
+/************** Galleries ******************************************/
+li.photo-gallery-item td.photo-item-cover {
+	display: none;}
+div.photo-gallery-empty a{
+	text-decoration: none;}
+/************** Gallery Edit ***************************************/
+div.photo-edit-fields-gallery i {
+	display: block;
+	font-size: 90%;
+	width: 80%;
+	color: gray;}
+div.photo-edit-fields-gallery div.photo-edit-field-avatar {
+	display: none;}
+div.photo-edit-fields-gallery div.photo-edit-field-code input {
+	width: 50%;}
+div.photo-edit-fields-gallery div.photo-edit-field-title input{
+	width: 80%;}
+div.photo-edit-fields-gallery div.photo-edit-field-description textarea {
+	width: 80%;
+	height: 10em;}
+div.photo-edit-fields-gallery div.photo-edit-field {
+	padding: 0.7em 0 0.5em 0.3em;}
+div.photo-edit-fields-gallery div.photo-edit-field-code label, 
+div.photo-edit-fields-gallery div.photo-edit-field-title label, 
+div.photo-edit-fields-gallery div.photo-edit-field-avatar label, 
+div.photo-edit-fields-gallery div.photo-edit-field-description label{
+	display: block;
+	margin-bottom: 0.2em;}
+/******************************************************************** 
+				/ Gallery 
+********************************************************************/

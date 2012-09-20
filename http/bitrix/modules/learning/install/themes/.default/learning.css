@@ -1,0 +1,38 @@
+/*Menu icon*/
+#learning_menu_icon {background-image:url(icons/learning/mnu_learning.gif);}
+
+/*Pages & menu icons*/
+#learning_page_icon {background-image:url(icons/learning/title.gif);}
+
+#learning_page_icon_courses {background-image:url(icons/learning/title_course.gif);}
+#learning_menu_icon_courses {background-image:url(icons/learning/mnu_course.gif);}
+
+#learning_page_icon_lessons {background-image:url(icons/learning/title_lesson.gif);}
+#learning_menu_icon_lessons {background-image:url(icons/learning/mnu_lesson.gif);}
+
+#learning_page_icon_chapters {background-image:url(icons/learning/title_chapter.gif);}
+#learning_menu_icon_chapters {background-image:url(icons/learning/mnu_chapter.gif);}
+
+#learning_page_icon_tests {background-image:url(icons/learning/title_test.gif);}
+#learning_menu_icon_tests {background-image:url(icons/learning/mnu_test.gif);}
+
+#learning_page_icon_attempts {background-image:url(icons/learning/title_attempt.gif);}
+#learning_menu_icon_attempts {background-image:url(icons/learning/mnu_attempt.gif);}
+
+#learning_page_icon_gradebook {background-image:url(icons/learning/title_gradebook.gif);}
+#learning_menu_icon_gradebook {background-image:url(icons/learning/mnu_gradebook.gif);}
+
+#learning_page_icon_export {background-image:url(icons/learning/title_export.gif);}
+#learning_menu_icon_export {background-image:url(icons/learning/mnu_export.gif);}
+
+#learning_page_icon_question {background-image:url(icons/learning/title_question.gif);}
+#learning_menu_icon_question {background-image:url(icons/learning/mnu_question.gif);}
+
+#learning_page_icon_certification {background-image:url(icons/learning/title_certification.gif);}
+#learning_menu_icon_certification {background-image:url(icons/learning/mnu_certification.gif);}
+
+.learning-question-s {width:20px; height:20px;background-image:url(icons/learning/question_s.gif);}
+.learning-question-m {width:20px; height:20px;background-image:url(icons/learning/question_m.gif);}
+.learning-question-r {width:20px; height:20px;background-image:url(icons/learning/question_r.gif);}
+.learning-question-t {width:20px; height:20px;background-image:url(icons/learning/question_t.gif);}
+.learning-wrong-answer {color:red;}

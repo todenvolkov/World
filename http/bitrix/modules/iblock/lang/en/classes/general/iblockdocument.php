@@ -1,0 +1,30 @@
+<?
+$MESS["IBD_FIELD_ID"] = "Element ID";
+$MESS["IBD_FIELD_TIMESTAMP_X"] = "Element Last Modified On";
+$MESS["IBD_FIELD_MODYFIED"] = "Element Last Modified By";
+$MESS["IBD_FIELD_MODIFIED_BY_USER_PRINTABLE"] = "Edited By";
+$MESS["IBD_FIELD_DATE_CREATE"] = "Element Created On";
+$MESS["IBD_FIELD_IBLOCK_ID"] = "Information Block ID";
+$MESS["IBD_FIELD_ACTIVE"] = "Element Is Active";
+$MESS["IBD_FIELD_DATE_ACTIVE_FROM"] = "Element Active From";
+$MESS["IBD_FIELD_DATE_ACTIVE_TO"] = "Element Active Until";
+$MESS["IBD_FIELD_SORT"] = "Element Sort Weight";
+$MESS["IBD_FIELD_NAME"] = "Element Title";
+$MESS["IBD_FIELD_PREVIEW_PICTURE"] = "Preview Image";
+$MESS["IBD_FIELD_PREVIEW_TEXT"] = "Preview Text";
+$MESS["IBD_FIELD_PREVIEW_TEXT_TYPE"] = "Preview Text Type";
+$MESS["IBD_DESC_TYPE_TEXT"] = "Text";
+$MESS["IBD_FIELD_DETAIL_PICTURE"] = "Full Image";
+$MESS["IBD_FIELD_DETAIL_TEXT"] = "Full Text";
+$MESS["IBD_FIELD_DETAIL_TEXT_TYPE"] = "Full Text Type";
+$MESS["IBD_FIELD_CODE"] = "Mnemonic Code";
+$MESS["IBD_FIELD_XML_ID"] = "External ID";
+$MESS["IBD_FIELD_CREATED"] = "Created By";
+$MESS["IBD_FIELD_CREATED_BY_USER_PRINTABLE"] = "Created By";
+$MESS["IBD_OPERATION_READ"] = "Read";
+$MESS["IBD_OPERATION_WRITE"] = "Write";
+$MESS["IBD_DOCUMENT_AUTHOR"] = "Author";
+$MESS["IBD_FIELD_BP_PUBLISHED"] = "Published";
+$MESS["IBD_FIELD_USERNAME_PROPERTY"] = " (name)";
+$MESS["IBD_ELEMENT_NOT_FOUND"] = "Element not found.";
+?>

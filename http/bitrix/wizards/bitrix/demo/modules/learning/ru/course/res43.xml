@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<content type="TES"><id>1</id>
+<course_id>1</course_id>
+<timestamp_x>1207834320</timestamp_x>
+<sort>500</sort>
+<active>Y</active>
+<name>Элементы управления</name>
+<description><![CDATA[<p>Тест составлен на основе вопросов ко всему курсу. Перед началом теста рекомендуется внимательно ознакомиться с материалами курса.</p>
+
+<p>Тест содержит 33 вопроса. Для прохождения теста необходимо правильно ответить на 90% вопросов.</p>
+
+<p>Тип прохождения теста: разрешить переход к следующему вопросу без ответа на текущий вопрос, пользователь может изменять свои ответы.</p>
+]]></description>
+<description_type>html</description_type>
+<attempt_limit>20</attempt_limit>
+<time_limit>50</time_limit>
+<completed_score>90</completed_score>
+<questions_from>A</questions_from>
+<questions_amount>0</questions_amount>
+<random_questions>Y</random_questions>
+<random_answers>Y</random_answers>
+<approved>Y</approved>
+<include_self_test>Y</include_self_test>
+<passage_type>2</passage_type>
+</content>

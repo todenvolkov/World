@@ -1,0 +1,4 @@
+<?
+$MESS["LEARNING_TEMPLATE_DESCRIPTION_NAME"] = "TM 14155 Business Corp.";
+$MESS["LEARNING_TEMPLATE_DESCRIPTION_DESC"] = "1C-Bitrix 7.0 Template by lifter";
+?>

@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Traffic";
+$arDirProperties = Array(
+
+);
+?>

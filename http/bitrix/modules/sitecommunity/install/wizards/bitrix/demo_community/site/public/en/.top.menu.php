@@ -1,0 +1,46 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Posts", 
+		"#SITE_DIR#", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Blogs", 
+		"#SITE_DIR#blogs/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Forums", 
+		"#SITE_DIR#forum/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Communities", 
+		"#SITE_DIR#groups/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"People", 
+		"#SITE_DIR#people/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Photo", 
+		"#SITE_DIR#photo/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

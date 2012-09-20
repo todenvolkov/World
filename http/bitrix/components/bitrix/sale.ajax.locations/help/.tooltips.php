@@ -1,0 +1,9 @@
+<?
+$arTooltips = array(
+	"COUNTRY" => GetMessage("COUNTRY_TIP"),
+	"CITY_OUT_LOCATION" => GetMessage("CITY_OUT_LOCATION_TIP"),
+	"COUNTRY_INPUT_NAME" => GetMessage("COUNTRY_INPUT_NAME_TIP"),
+	"CITY_INPUT_NAME" => GetMessage("CITY_INPUT_NAME_TIP"),
+	"ONCITYCHANGE" => GetMessage("ONCITYCHANGE_TIP"),
+);
+?>

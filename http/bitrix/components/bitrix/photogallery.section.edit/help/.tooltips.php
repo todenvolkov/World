@@ -1,0 +1,15 @@
+<?
+$arTooltips = array(
+	"IBLOCK_TYPE" => GetMessage("IBLOCK_TYPE_TIP"),
+	"IBLOCK_ID" => GetMessage("IBLOCK_ID_TIP"),
+	"SECTION_ID" => GetMessage("SECTION_ID_TIP"),
+	"SECTION_CODE" => GetMessage("SECTION_CODE_TIP"),
+	"INDEX_URL" => GetMessage("INDEX_URL_TIP"),
+	"SECTION_URL" => GetMessage("SECTION_URL_TIP"),
+	"USE_PERMISSIONS" => GetMessage("USE_PERMISSIONS_TIP"),
+	"GROUP_PERMISSIONS" => GetMessage("GROUP_PERMISSIONS_TIP"),
+	"DISPLAY_PANEL" => GetMessage("DISPLAY_PANEL_TIP"),
+	"SET_TITLE" => GetMessage("SET_TITLE_TIP"),
+	"DATE_TIME_FORMAT" => GetMessage("DATE_TIME_FORMAT_TIP"),
+);
+?>

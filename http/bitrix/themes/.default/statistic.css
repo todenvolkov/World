@@ -1,0 +1,46 @@
+/*Menu Icons*/
+#statistic_icon_advert {background-image:url(icons/statistic/mnu_advert.gif);}
+#statistic_icon_events {background-image:url(icons/statistic/mnu_events.gif);}
+#statistic_icon_searchers {background-image:url(icons/statistic/mnu_searchers.gif);}
+#statistic_icon_sites {background-image:url(icons/statistic/mnu_sites.gif);}
+#statistic_icon_summary {background-image:url(icons/statistic/mnu_summary.gif);}
+#statistic_icon_traffic {background-image:url(icons/statistic/mnu_traffic.gif);}
+#statistic_icon_visitors {background-image:url(icons/statistic/mnu_visitors.gif);}
+#statistic_icon_online {background-image:url(icons/statistic/mnu_online.gif);}
+
+/*Page Icons*/
+#statistic_page_advert {background-image:url(icons/statistic/page_advert.gif);}
+#statistic_page_events {background-image:url(icons/statistic/page_events.gif);}
+#statistic_page_searchers {background-image:url(icons/statistic/page_searchers.gif);}
+#statistic_page_sites {background-image:url(icons/statistic/page_sites.gif);}
+#statistic_page_summary {background-image:url(icons/statistic/page_summary.gif);}
+#statistic_page_traffic {background-image:url(icons/statistic/page_traffic.gif);}
+#statistic_page_visitors {background-image:url(icons/statistic/page_visitors.gif);}
+#statistic_page_online {background-image:url(icons/statistic/page_online.gif);}
+
+/*Toolbar icons*/
+#btn_stat_graph {background-image:url(icons/statistic/graph.gif);}
+#btn_stat_diagram {background-image:url(icons/statistic/diagram.gif);}
+
+/*Context menu icons*/
+table.popupitem div.btn_stat_graph {background-image:url(icons/statistic/graph.gif);}
+
+/*Graphics with legends*/
+div.graph {margin:20px 0px 20px 0px;}
+div.graph img.graph {margin:10px;}
+div.graph table.graph {border:1px solid #BDC6E0;}
+div.graph table.legend {margin:0px 0px 7px 10px; font-size:70%;}
+div.graph table.legend td {padding:3px 10px 3px 0px;}
+
+/* Statistics :: admin css */
+.stat_attention {color:#f00;}
+a.stat_attention {color:#f00;}
+.stat_notauth {color:#136C1C;}
+.stat_newguest {color:#1C7729;}
+.stat_oldguest {color:#939393;}
+.stat_pointed {color:green;}
+
+a.stat_link {text-decoration:none;}
+a.stat_link:hover {text-decoration:underline;}
+a.stat_link:hover {color:red;}
+

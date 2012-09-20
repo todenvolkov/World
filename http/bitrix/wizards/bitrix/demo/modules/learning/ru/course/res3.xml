@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<content type="LES"><id>1278</id>
+<timestamp_x>1209909514</timestamp_x>
+<date_create>1209547508</date_create>
+<created_by>6104</created_by>
+<active>Y</active>
+<course_id>1</course_id>
+<chapter_id></chapter_id>
+<name>Режим Просмотра</name>
+<sort>20</sort>
+<preview_picture></preview_picture>
+<preview_text></preview_text>
+<preview_text_type>text</preview_text_type>
+<detail_picture></detail_picture>
+<detail_text><![CDATA[<p>Состояние административной панели, которое служит для просмотра страниц в том виде, как они будут доступны простым пользователям. В этом режиме также можно выполнять основные операции по управлению содержанием сайта:</p>
+<ul>
+   <li>Создание страницы или раздела:
+    <p><img src="cid:resources/res3/QU35z.create_page_section.png" width="106" height="77" border="0" /></p>
+
+Страница и раздел из публичной части создаются с помощью мастера. С его помощью пользователь, не имеющий подготовки, сможет создать страницу или раздел, последовательно внося данные на каждом шаге мастера. Содержание страницы создается в визуальном редакторе, загружаемом прямо в публичной части.
+</li>
+   <li>Редактирование текущей страницы и изменение свойств страницы или раздела:
+    <br /><br /><img src="cid:resources/res3/gJjiV.change_page_section.png" width="193" height="128" border="0" /><br /><br />
+Редактирование страницы производится либо в визуальном редакторе, либо в виде HTML кода без визуального представления. Свойства страницы или раздела изменяются в специальной форме. Все формы загружаются прямо в публичной части. После сохранения изменения сразу вступают в силу. 
+</li>
+   <li>Редактирование меню:
+    <p><img src="cid:resources/res3/WMUUY.menu.png" width="244" height="77" border="0" /></p>
+<p>Вы можете отредактировать пункты меню в форме из публичной части:</p>
+   <p><img src="cid:resources/res3/fqQmO.menu_edit_form_sm.png" height="241" alt="Нажмите на рисунок, чтобы увеличить" width="350" border="0"/>
+</p>
+После сохранения изменения сразу вступят в силу.
+ </li>
+   <li>В режиме просмотра можно получить минимальную информацию по статистике данного сайта.
+    <p><img src="cid:resources/res3/PYUWA.statistics.png" width="420" height="77" border="0" /></p>
+Есть возможность построить график посещаемости данной страницы, а также вывести статистику переходов по ссылкам с данной страницы.
+</li>
+</ul>
+<p>В случае необходимости административная панель может быть временно скрыта:
+</p>
+    <p><img src="cid:resources/res3/hy77P.hide_panel.png" width="181" height="91" border="0" /></p>
+<p>Развернуть ее в нужный момент можно по стрелке вниз:    <img src="cid:resources/res3/o1ms7.show_panel.png" width="127" height="34" border="0" />  </p>
+
+<p>Панель может быть зафиксирована вверху экрана: <img src="cid:resources/res3/B0yIQ.panel_fix.png" width="33" height="27" border="0" /> </p>
+
+<p>По кнопке <img src="cid:resources/res3/aBQzO.admin_button_opt.png" width="134" height="24" border="0" />  можно перейти к изменению профиля текущего пользователя в форме административного раздела.</p>
+
+<p>Кнопка <img src="cid:resources/res3/7XigX.log_out.png" width="63" height="24" border="0" /> служит для завершения авторизованного сеанса работы текущего пользователя.</p>
+
+<p>Административная панель теперь позволяет переходить на заранее определенную страницу административной части. Это выполняется с помощью кнопки <b>&quot;Пуск&quot;</b>. Разделы административной части подгружаются динамически:</p>
+
+<table>
+  <tr>
+     <td valign="top"><img src="cid:resources/res3/srLX7.start_button.png" width="123" height="87" border="0" /></td>
+    <td>&nbsp;&nbsp;&nbsp;</td>
+     <td><img src="cid:resources/res3/8ez6f.start_button_content.png" width="331" height="252" border="0" /></td>
+     
+</tr>
+</table>
+<br />
+Таким образом, вы можете сразу перейти, например, на страницу со списком заказов.]]></detail_text>
+<detail_text_type>html</detail_text_type>
+</content>

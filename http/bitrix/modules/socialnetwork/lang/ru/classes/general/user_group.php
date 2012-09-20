@@ -1,0 +1,33 @@
+<?
+$MESS["SONET_UG_EMPTY_USER_ID"] = "Не указан пользователь";
+$MESS["SONET_UG_ERROR_NO_USER_ID"] = "Пользователь указан неверно";
+$MESS["SONET_UG_EMPTY_GROUP_ID"] = "Не указана группа";
+$MESS["SONET_UG_ERROR_NO_GROUP_ID"] = "Группа указана неверно";
+$MESS["SONET_UG_EMPTY_DATE_CREATE"] = "Дата создания указана неверно";
+$MESS["SONET_UG_EMPTY_DATE_UPDATE"] = "Дата изменения параметров указана неверно";
+$MESS["SONET_UG_EMPTY_ROLE"] = "Не указана роль";
+$MESS["SONET_UG_ERROR_NO_ROLE"] = "Роль указана неверно";
+$MESS["SONET_NO_USER2GROUP"] = "Запись не найдена";
+$MESS["SONET_UG_EMPTY_INITIATED_BY_USER_ID"] = "Не указан пользователь, отправивший запрос на вступление";
+$MESS["SONET_UG_ERROR_NO_INITIATED_BY_USER_ID"] = "Пользователь, отправивший запрос на вступление, указан неверно";
+$MESS["SONET_UG_EMPTY_INITIATED_BY_TYPE"] = "Не указан тип запроса на вступление";
+$MESS["SONET_UG_ERROR_NO_INITIATED_BY_TYPE"] = "Тип запроса на вступление указан неверно";
+$MESS["SONET_UR_EMPTY_USERID"] = "Не указан код пользователя";
+$MESS["SONET_UR_EMPTY_GROUPID"] = "Не указан код группы";
+$MESS["SONET_UR_ERROR_CREATE_USER2GROUP"] = "Ошибка сохранения привязки";
+$MESS["SONET_UG_ERROR_NO_PERMS"] = "У вас нет прав на выполнение этого действия";
+$MESS["SONET_UG_CONFIRM_MEMBER_MESSAGE"] = "Пользователь согласился стать членом группы '#NAME#'";
+$MESS["SONET_UG_REJECT_MEMBER_MESSAGE"] = "Пользователь отказался стать членом группы '#NAME#'";
+$MESS["SONET_UR_EMPTY_RELATIONID"] = "Не указан код связи";
+$MESS["SONET_UG_MOD2MEMBER_MESSAGE"] = "Вас исключили из модераторов группы '#NAME#'";
+$MESS["SONET_UG_MEMBER2MOD_MESSAGE"] = "Вас включили в число модераторов группы '#NAME#'";
+$MESS["SONET_UG_BANMEMBER_MESSAGE"] = "Вас внесли в черный список группы '#NAME#'";
+$MESS["SONET_UG_UNBANMEMBER_MESSAGE"] = "Вас восстановили в правах в группе '#NAME#'";
+$MESS["SONET_UG_EXCLUDE_MESSAGE"] = "Вы исключены из группы '#NAME#'";
+$MESS["SONET_UG_CONFIRM_MEMBER_MESSAGE_G"] = "Вы приняты в члены группы '#NAME#'";
+$MESS["SONET_UG_REJECT_MEMBER_MESSAGE_G"] = "Вам отказано в приеме в члены группы '#NAME#'";
+$MESS["SONET_UG_REQUEST_G"] = "Пользователь #USER_NAME# хочет вступить в рабочую группу #GROUP_NAME#";
+$MESS["SONET_UG_REQUEST_G_TITLE"] = "Запрос на вступление пользователя #USER_NAME# в группу '#GROUP_NAME#'";
+$MESS["SONET_UG_REQUEST_G_TEXT"] = "Текст запроса: \"#REQUEST_TEXT#\"";
+$MESS["SONET_UG_REQUEST_G_LINK"] = "[url=#LINK#]Перейти в форму подтверждения запроса[/url]";
+?>

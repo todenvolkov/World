@@ -1,0 +1,14 @@
+drop table if exists b_form;
+drop table if exists b_form_2_mail_template;
+drop table if exists b_form_2_site;
+drop table if exists b_form_answer;
+drop table if exists b_form_field;
+drop table if exists b_form_field_filter;
+drop table if exists b_form_field_validator;
+drop table if exists b_form_menu;
+drop table if exists b_form_result;
+drop table if exists b_form_result_answer;
+drop table if exists b_form_2_group;
+drop table if exists b_form_status_2_group;
+drop table if exists b_form_status_2_mail_template;
+drop table if exists b_form_status;

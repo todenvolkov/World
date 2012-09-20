@@ -1,0 +1,7 @@
+<?
+$arTooltips = array(
+	"WEBSERVICE_NAME" => GetMessage("WEBSERVICE_NAME_TIP"),
+	"WEBSERVICE_MODULE" => GetMessage("WEBSERVICE_MODULE_TIP"),
+	"WEBSERVICE_CLASS" => GetMessage("WEBSERVICE_CLASS_TIP"),
+);
+?>

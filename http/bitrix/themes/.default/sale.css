@@ -1,0 +1,12 @@
+/*Menu icon*/
+#sale_menu_icon {background-image:url(icons/sale/mnu_sale.gif);}
+#sale_menu_icon_orders {background-image:url(icons/sale/mnu_orders.gif);}
+#sale_menu_icon_recurring {background-image:url(icons/sale/mnu_recurring.gif);}
+#sale_menu_icon_buyers {background-image:url(icons/sale/mnu_buyers.gif);}
+#sale_menu_icon_statistic {background-image:url(icons/sale/mnu_statistic.gif);}
+
+#sale_page_icon {background-image:url(icons/sale/title.gif);}
+#sale_page_icon_orders {background-image:url(icons/sale/title_orders.gif);}
+#sale_page_icon_recurring {background-image:url(icons/sale/title_recurring.gif);}
+#sale_page_icon_buyers {background-image:url(icons/sale/title_buyers.gif);}
+#sale_page_icon_statistic {background-image:url(icons/sale/title_statistic.gif);}

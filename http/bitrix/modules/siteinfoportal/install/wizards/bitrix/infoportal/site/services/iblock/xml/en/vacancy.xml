@@ -1,0 +1,1848 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CommerceInformation SchemaVersion="2.021" CreationDate="2011-03-03T11:46:55">
+	<Metadata>
+		<Id>infoportal_vacancy</Id>
+		<Title>Vacancies</Title>
+		<Properties>
+			<Property>
+				<Id>CML2_ACTIVE</Id>
+				<Title>BitrixActive</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_CODE</Id>
+				<Title>Code</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_SORT</Id>
+				<Title>Sort</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_FROM</Id>
+				<Title>Start time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_TO</Id>
+				<Title>End time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_TEXT</Id>
+				<Title>Anons</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_PICTURE</Id>
+				<Title>Preview picture</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>10</Id>
+				<Title>Gender</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>Any</Value>
+					<Choice>
+						<Id>022545f07c32907b13767d391f7c25c9</Id>
+						<Value>Any</Value>
+						<ByDefault>true</ByDefault>
+						<Sort>50</Sort>
+					</Choice>
+					<Value>male</Value>
+					<Choice>
+						<Id>7d303fbd405bd16a74e45c22806b5682</Id>
+						<Value>male</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>100</Sort>
+					</Choice>
+					<Value>female</Value>
+					<Choice>
+						<Id>896c7abd5da93068e6367d6c03fa7473</Id>
+						<Value>female</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>200</Sort>
+					</Choice>
+					
+				</ChoiceValue>	
+				<BitrixSort>100</BitrixSort>
+				<BitrixCode>SEX</BitrixCode>
+				<BitrixDefaultValue></BitrixDefaultValue>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+			</Property>
+			<Property>
+				<Id>8</Id>
+				<Title>Age</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>200</BitrixSort>
+				<BitrixCode>AGE</BitrixCode>
+				<BitrixDefaultValue></BitrixDefaultValue>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+			</Property>
+			<Property>
+				<Id>9</Id>
+				<Title>Education</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>Any</Value>
+					<Choice>
+						<Id>6b1eccccbd18e1bc1198e63f0ceb6ad1</Id>
+						<Value>Any</Value>
+						<ByDefault>true</ByDefault>
+						<Sort>50</Sort>
+					</Choice>
+					<Value>High School or Equivalent</Value>
+					<Choice>
+						<Id>cb21b505274c9d0fc18908bea37e621e</Id>
+						<Value>High School or Equivalent</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>100</Sort>
+					</Choice>
+					<Value>2-year degree</Value>
+					<Choice>
+						<Id>e538ccc30340744f8d4aedc8828db036</Id>
+						<Value>2-year degree</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>200</Sort>
+					</Choice>
+					<Value>4-year degree</Value>
+					<Choice>
+						<Id>aa1a6419bb0a8a47232e636a4d842649</Id>
+						<Value>4-year degree</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>300</Sort>
+					</Choice>
+					<Value>Some graduate education</Value>
+					<Choice>
+						<Id>d9ea15b5a924c7a6cf53921756f038e4</Id>
+						<Value>Some graduate education</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>400</Sort>
+					</Choice>
+					<Value>Doctorate</Value>
+					<Choice>
+						<Id>c6f0d7b427347cbf131a3b51eff95167</Id>
+						<Value>Doctorate</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>500</Sort>
+					</Choice>
+					<Value>Master’s degree</Value>
+					<Choice>
+						<Id>cfcbf983b7afee14a162158bca8e5e94</Id>
+						<Value>Master’s degree</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>500</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>300</BitrixSort>
+				<BitrixCode>EDUCATION</BitrixCode>
+				<BitrixDefaultValue></BitrixDefaultValue>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+			</Property>
+			<Property>
+				<Id>13</Id>
+				<Title>Experience</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>Any</Value>
+					<Choice>
+						<Id>b77b7d58a42faaff0c1d69087f60f6e5</Id>
+						<Value>Any</Value>
+						<ByDefault>true</ByDefault>
+						<Sort>10</Sort>
+					</Choice>
+					<Value>Entry level</Value>
+					<Choice>
+						<Id>76cdc0aa14d3e606d4c493662ddbf2ba</Id>
+						<Value>Entry level</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>50</Sort>
+					</Choice>
+					<Value>1-3 years</Value>
+					<Choice>
+						<Id>ba0e8f299c6041153c1c8282fe8185f8</Id>
+						<Value>1-3 years</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>100</Sort>
+					</Choice>
+					<Value>3-5 years</Value>
+					<Choice>
+						<Id>ac90d83e6171f03d094de1d2e4fad85d</Id>
+						<Value>3-5 years</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>200</Sort>
+					</Choice>
+					<Value>5-10 years</Value>
+					<Choice>
+						<Id>14a768c81d8535d8e713f6f81a9d6539</Id>
+						<Value>5-10 years</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>300</Sort>
+					</Choice>
+					<Value>More than 10 years</Value>
+					<Choice>
+						<Id>35333750870d1ff230fedf49d71c6805</Id>
+						<Value>More than 10 years</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>400</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>400</BitrixSort>
+				<BitrixCode>EXPERIENCE</BitrixCode>
+				<BitrixDefaultValue></BitrixDefaultValue>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+			</Property>
+			<Property>
+				<Id>18</Id>
+				<Title>Job Type</Title>
+				<Multiple>false</Multiple>
+				<ChoiceValue>
+					<Value>Full time</Value>
+					<Choice>
+						<Id>a9b817fc0181cbad0068823ad449e205</Id>
+						<Value>Full time</Value>
+						<ByDefault>true</ByDefault>
+						<Sort>10</Sort>
+					</Choice>
+					<Value>Part time</Value>
+					<Choice>
+						<Id>d4097877e3e515393144cddd0b9aa5b4</Id>
+						<Value>Part time</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>100</Sort>
+					</Choice>
+					<Value>Contract</Value>
+					<Choice>
+						<Id>79beb911d4ac4da6a2251f09ab4a0b74</Id>
+						<Value>Contract</Value>
+						<ByDefault>false</ByDefault>
+						<Sort>200</Sort>
+					</Choice>
+				</ChoiceValue>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>SCHEDULE</BitrixCode>
+				<BitrixDefaultValue></BitrixDefaultValue>
+				<BitrixPropertyType>L</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+			</Property>
+			<Property>
+				<Id>11</Id>
+				<Title>Salary</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>600</BitrixSort>
+				<BitrixCode>REMUNERATION</BitrixCode>
+				<BitrixDefaultValue></BitrixDefaultValue>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+			</Property>
+			<Property>
+				<Id>12</Id>
+				<Title>Experience / Skills</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>700</BitrixSort>
+				<BitrixCode>SKILLS</BitrixCode>
+				<BitrixDefaultValue></BitrixDefaultValue>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>5</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+			</Property>
+			<Property>
+				<Id>14</Id>
+				<Title>Organization</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>800</BitrixSort>
+				<BitrixCode>FIRM</BitrixCode>
+				<BitrixDefaultValue></BitrixDefaultValue>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>true</BitrixRequired>
+			</Property>
+			<Property>
+				<Id>15</Id>
+				<Title>Contact person</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>900</BitrixSort>
+				<BitrixCode>PERSON</BitrixCode>
+				<BitrixDefaultValue></BitrixDefaultValue>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+			</Property>
+			<Property>
+				<Id>16</Id>
+				<Title>Contact telephone</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>1100</BitrixSort>
+				<BitrixCode>PHONE</BitrixCode>
+				<BitrixDefaultValue></BitrixDefaultValue>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>true</BitrixRequired>
+			</Property>
+			<Property>
+				<Id>17</Id>
+				<Title>E-mail</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>1100</BitrixSort>
+				<BitrixCode>EMAIL</BitrixCode>
+				<BitrixDefaultValue></BitrixDefaultValue>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>true</BitrixRequired>
+			</Property>
+			<Property>
+				<Id>19</Id>
+				<Title>Website</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>1200</BitrixSort>
+				<BitrixCode>URL</BitrixCode>
+				<BitrixDefaultValue></BitrixDefaultValue>
+				<BitrixPropertyType>S</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>5</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+			</Property>
+		</Properties>
+		<Sections>
+			<Section>
+				<Id>53</Id>
+				<Title>Accounting &amp; Finance</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>accounting_finance</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>48</Id>
+				<Title>Advertising &amp; Public Relations</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>public_relations</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>56</Id>
+				<Title>Construction &amp; Facilities</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>construction_facilities</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>55</Id>
+				<Title>Education &amp; Training</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>education_training</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>49</Id>
+				<Title>Healthcare</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>healthcare</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>58</Id>
+				<Title>Human Resources</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>human_resources</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>54</Id>
+				<Title>Insurance</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>insurance</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>61</Id>
+				<Title>IT/Software Development</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>it_software_development</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>52</Id>
+				<Title>Law Enforcement &amp; Security</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>law_enforcement_security</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>50</Id>
+				<Title>Manufacturing &amp; Operations</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>manufacturing_operations</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>64</Id>
+				<Title>Marketing</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>marketing</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>62</Id>
+				<Title>Non-Profit</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>non_profit</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>60</Id>
+				<Title>Real Estate</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>real_estate</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>51</Id>
+				<Title>Skilled Labor</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>skilled_labor</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+			<Section>
+				<Id>57</Id>
+				<Title>Transportation &amp; Logistics</Title>
+				<BitrixActive>true</BitrixActive>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>transportation_logistics</BitrixCode>
+				<BitrixPicture></BitrixPicture>
+				<BitrixDetailPicture></BitrixDetailPicture>
+				<Sections>
+				</Sections>
+			</Section>
+		</Sections>
+	</Metadata>
+	<Catalog>
+		<Id>infoportal_vacancy</Id>
+		<MetadataId>infoportal_vacancy</MetadataId>
+		<Title>Vacancies</Title>
+		<BitrixCode>infoportal_vacancy</BitrixCode>
+		<BitrixSort>500</BitrixSort>
+		<BitrixListURL>#SITE_DIR#/job/vacancy/index.php?ID=#IBLOCK_ID#</BitrixListURL>
+		<BitrixDetailURL>#SITE_DIR#/job/vacancy/#SECTION_CODE#/#ELEMENT_ID#/</BitrixDetailURL>
+		<BitrixSectionURL>#SITE_DIR#/job/vacancy/#CODE#/</BitrixSectionURL>
+		<BitrixPicture></BitrixPicture>
+		<BitrixIndexElements>true</BitrixIndexElements>
+		<BitrixIndexSections>true</BitrixIndexSections>
+		<BitrixWorkflow>true</BitrixWorkflow>
+		<BitrixLabels>
+			<BitrixLabel>
+				<Id>ELEMENT_NAME</Id>
+				<Value>Vacancy</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENTS_NAME</Id>
+				<Value>Vacancies</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_ADD</Id>
+				<Value>Add Vacancy</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_EDIT</Id>
+				<Value>Edit Vacancy</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_DELETE</Id>
+				<Value>Delete Vacancy</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_NAME</Id>
+				<Value>Category</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTIONS_NAME</Id>
+				<Value>Categories</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_ADD</Id>
+				<Value>Add Category</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_EDIT</Id>
+				<Value>Edit Category</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_DELETE</Id>
+				<Value>Delete Category</Value>
+			</BitrixLabel>
+		</BitrixLabels>
+		<Elements>
+			<Element>
+				<Id>179</Id>
+				<Title>SAP basis administrator</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>61</Id>
+				</Sections>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>sap_basis_administrator</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2011-03-01 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value>2012-03-01 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>You will be responsible for day to day support for one or more products or applications that are deployed to the production environment ensuring the availability of an application or product for end users. You will provide SAP Basis Support for Top Blue Chip client. You possess knowledge of mainframe DB2, experience of SAP Webservices, assist in performance testing of new services, planning the system landscape and installation and upgrades of SAP, archiving and implementation of SAP upgrades. 
+&lt;br /&gt;&lt;br /&gt;
+# Testing: Ensures the control, integrity, and accessibility of SAP systems for the enterprise using various testing tools. Escalates when appropriate;&lt;br /&gt;
+# System Access: Sets up new profiles, creates and updates access permissions and maintains user accounts within the SAP systems;&lt;br /&gt;
+# Upgrades: Performs SAP system installations for upgrades and patches and logs all technical upgrade steps. Works with database administrator and SAP programming staff in coordinating system-wide updates, fixes, and upgrades;&lt;br /&gt;
+# Security: Understands security policy and implementation .and maintains system security through the implementation of security policies to prevent unauthorized access. Reports security issues when appropriate. Works with other infrastructure security teams to manage access to the SAP systems. Performs security functions such as securing key fields, applying security set ups, object security, process scheduler and query security;&lt;br /&gt;
+# Monitoring: Regularly checks system components for errors, takes corrective actions and escalates complex problems;&lt;br /&gt;
+# Operating Procedures: Assists in creating checklists for standard operating procedures;&lt;br /&gt;
+# Design and Development: Assists in the design, development and implementation of test and production objects;&lt;br /&gt;
+# Release Management: Works with production team to schedule production release updates and upgrades. Provides production support with any updates to the schedule. Packages releases for test, pre-production and production environments;&lt;br /&gt;
+# Performs related duties and fulfills responsibilities as required. </Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>10</Id>
+						<Value>7d303fbd405bd16a74e45c22806b5682</Value>
+						<PropertyValue>
+							<Value>7d303fbd405bd16a74e45c22806b5682</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>8</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>9</Id>
+						<Value>cb21b505274c9d0fc18908bea37e621e</Value>
+						<PropertyValue>
+							<Value>cb21b505274c9d0fc18908bea37e621e</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>13</Id>
+						<Value>ac90d83e6171f03d094de1d2e4fad85d</Value>
+						<PropertyValue>
+							<Value>ac90d83e6171f03d094de1d2e4fad85d</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>18</Id>
+						<Value>a9b817fc0181cbad0068823ad449e205</Value>
+						<PropertyValue>
+							<Value>a9b817fc0181cbad0068823ad449e205</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>11</Id>
+						<Value>$44,256 - $122,569 / Annually</Value>
+						<PropertyValue>
+							<Value>$44,256 - $122,569 / Annually</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>12</Id>
+						<Value>5 years experience with SAP Basis administration; 3 years experience with SAP installation and upgrade tools; 3 years experience with SAP transports, client copies, and client refreshes; 2 years experience with maintaining SAP SRM environments; 2 years experience with SAP security administration tools; 2 years experience creating and maintaining roles in a SAP ABAP and JAVA landscapes; Working knowledge of network security; Working knowledge of SAP Client management tools and techniques; Working knowledge of Microsoft Windows Server operating systems; Working knowledge of Technical architecture standards; Working knowledge of Oracle Database installation and tuning; Working knowledge of SQLPlus; Working knowledge of Unix shell scripting; Self motivated and can work autonomously; Ability to establish and maintain effective working relationships with City staff and the general public; Ability to communicate clearly and effectively, both verbally and in writing. </Value>
+						<PropertyValue>
+							<Value>5 years experience with SAP Basis administration; 3 years experience with SAP installation and upgrade tools; 3 years experience with SAP transports, client copies, and client refreshes; 2 years experience with maintaining SAP SRM environments; 2 years experience with SAP security administration tools; 2 years experience creating and maintaining roles in a SAP ABAP and JAVA landscapes; Working knowledge of network security; Working knowledge of SAP Client management tools and techniques; Working knowledge of Microsoft Windows Server operating systems; Working knowledge of Technical architecture standards; Working knowledge of Oracle Database installation and tuning; Working knowledge of SQLPlus; Working knowledge of Unix shell scripting; Self motivated and can work autonomously; Ability to establish and maintain effective working relationships with City staff and the general public; Ability to communicate clearly and effectively, both verbally and in writing. </Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>14</Id>
+						<Value>Austora, Inc.</Value>
+						<PropertyValue>
+							<Value>Austora, Inc.</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>15</Id>
+						<Value>Oskar Brill</Value>
+						<PropertyValue>
+							<Value>Oskar Brill</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>16</Id>
+						<Value>456-56-89</Value>
+						<PropertyValue>
+							<Value>456-56-89</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>17</Id>
+						<Value>o.brill@example.com</Value>
+						<PropertyValue>
+							<Value>o.brill@example.com</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>181</Id>
+				<Title>Insurance Accounting</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>54</Id>
+				</Sections>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>insurance_accounting</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2011-03-01 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value>2012-03-31 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Shall be responsible for a wide variety of tasks within the GAAP, Statutory, and management reporting cycles, related to several business units and several legal entities. Must be able to resolve complex accounting issues and prepare related journal entries, reconciliations and analyses. Will also participate in special projects, budget processes, audit support, and more. </Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>10</Id>
+						<Value>896c7abd5da93068e6367d6c03fa7473</Value>
+						<PropertyValue>
+							<Value>896c7abd5da93068e6367d6c03fa7473</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>8</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>9</Id>
+						<Value>cfcbf983b7afee14a162158bca8e5e94</Value>
+						<PropertyValue>
+							<Value>cfcbf983b7afee14a162158bca8e5e94</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>13</Id>
+						<Value>ba0e8f299c6041153c1c8282fe8185f8</Value>
+						<PropertyValue>
+							<Value>ba0e8f299c6041153c1c8282fe8185f8</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>18</Id>
+						<Value>a9b817fc0181cbad0068823ad449e205</Value>
+						<PropertyValue>
+							<Value>a9b817fc0181cbad0068823ad449e205</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>11</Id>
+						<Value>$70,000 to $105,000  / Annually</Value>
+						<PropertyValue>
+							<Value>$70,000 to $105,000  / Annually</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>12</Id>
+						<Value>Post Gradute - CA, M.Com, MBA/PGDM (Finance, CA, Commerce ) School & Graduate - B.Com, BE/B.Tech (Commerce Honors, Commerce Pass ); Strong management, leadership and communication; Drive change and innovation; Excellent judgment and decision making; Inspire and develop others; Able to drive execution and performance; Able to build and maintain positive and productive working relationship; Excellent project management skills Analytical review / problem solving skills; Possess in-depth knowledge of insurance/pension business, relevant laws and regulations; Able to drive operational efficiency improvement suggestions; Able to set, manage and control budgets and expenses; Ability to interpret data to be presented to senior leadership and possess strong lateral thinking / analytical review skills; In-depth functional experience in accounting for all balance sheet / income statement heads; Experience in accounting for income, expenses, loan loss provisions, expense and other accruals; Good knowledge of insurance/pension products, relevant laws and regulations; Familiar with operating system & strong PC skills; Knowledge of technical accounting concepts such as fair value accounting, goodwill impairment etc preferred; Able to work effectively with different teams; Ability and experience of managing customer relationships/ service delivery; Experience of interfacing with external auditors preferred; Hands on Experience using MS Office applications Experience of being involved in audit control and compliance reviews/ SOX related certifications </Value>
+						<PropertyValue>
+							<Value>Post Gradute - CA, M.Com, MBA/PGDM (Finance, CA, Commerce ) School & Graduate - B.Com, BE/B.Tech (Commerce Honors, Commerce Pass ); Strong management, leadership and communication; Drive change and innovation; Excellent judgment and decision making; Inspire and develop others; Able to drive execution and performance; Able to build and maintain positive and productive working relationship; Excellent project management skills Analytical review / problem solving skills; Possess in-depth knowledge of insurance/pension business, relevant laws and regulations; Able to drive operational efficiency improvement suggestions; Able to set, manage and control budgets and expenses; Ability to interpret data to be presented to senior leadership and possess strong lateral thinking / analytical review skills; In-depth functional experience in accounting for all balance sheet / income statement heads; Experience in accounting for income, expenses, loan loss provisions, expense and other accruals; Good knowledge of insurance/pension products, relevant laws and regulations; Familiar with operating system & strong PC skills; Knowledge of technical accounting concepts such as fair value accounting, goodwill impairment etc preferred; Able to work effectively with different teams; Ability and experience of managing customer relationships/ service delivery; Experience of interfacing with external auditors preferred; Hands on Experience using MS Office applications Experience of being involved in audit control and compliance reviews/ SOX related certifications </Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>14</Id>
+						<Value>Soiren Corp.</Value>
+						<PropertyValue>
+							<Value>Soiren Corp.</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>15</Id>
+						<Value>Stapler Joel</Value>
+						<PropertyValue>
+							<Value>Stapler Joel</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>16</Id>
+						<Value>543-87-32</Value>
+						<PropertyValue>
+							<Value>543-87-32</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>17</Id>
+						<Value>j.stapler@example.com</Value>
+						<PropertyValue>
+							<Value>j.stapler@example.com</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>183</Id>
+				<Title>Human Resources Staff Assistant</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>58</Id>
+				</Sections>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>human_resources_staff_assistant</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2011-03-01 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value>2012-03-31 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Coordinates and performs records management of Human Resource and employee data. Maintains applicant flow process. Assists in providing information to employees and managers regarding human resources related inquiries. Assists in organizing New Employee Orientation. Creates and troubleshoots badge issues. Provides recruitment and support functions for the Human Resources department and receives visitors, applicants, and employees. </Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>10</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>8</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>9</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>13</Id>
+						<Value>76cdc0aa14d3e606d4c493662ddbf2ba</Value>
+						<PropertyValue>
+							<Value>76cdc0aa14d3e606d4c493662ddbf2ba</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>18</Id>
+						<Value>d4097877e3e515393144cddd0b9aa5b4</Value>
+						<PropertyValue>
+							<Value>d4097877e3e515393144cddd0b9aa5b4</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>11</Id>
+						<Value>$12,50 per hour</Value>
+						<PropertyValue>
+							<Value>$12,50 per hour</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>12</Id>
+						<Value>Must be PC proficient, working knowledge of Microsoft Office, Word and Excel.
+						Must have excellent communication and phone skills.
+						Must have excellent customer service skills.
+						Must be able to handle multiple tasks with multiple time frames.</Value>
+						<PropertyValue>
+							<Value>Must be PC proficient, working knowledge of Microsoft Office, Word and Excel.
+						Must have excellent communication and phone skills.
+						Must have excellent customer service skills.
+						Must be able to handle multiple tasks with multiple time frames.</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>14</Id>
+						<Value>Museum of Art</Value>
+						<PropertyValue>
+							<Value>Museum of Art</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>15</Id>
+						<Value>Natasha Cottman</Value>
+						<PropertyValue>
+							<Value>Natasha Cottman</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>16</Id>
+						<Value>413-6767</Value>
+						<PropertyValue>
+							<Value>413-6767</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>17</Id>
+						<Value>n.cottmann@example.com</Value>
+						<PropertyValue>
+							<Value>n.cottmann@example.com</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>185</Id>
+				<Title>Head of retail banking department</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>53</Id>
+				</Sections>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>head_of_retail_banking_department</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2011-03-01 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value>2012-03-31 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>&lt;ul&gt;
+ &lt;li&gt;customer acquisition and conduct of negotiations;&lt;/li&gt;
+ &lt;li&gt;all Bank products Customer assistance (Accounts, Deposits, Cards, Bank Transfer Service, Loans and other types of provision of finance);&lt;/li&gt;
+ &lt;li&gt;management of current Department activity. &lt;/li&gt;
+&lt;/ul&gt;</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>10</Id>
+						<Value>896c7abd5da93068e6367d6c03fa7473</Value>
+						<PropertyValue>
+							<Value>896c7abd5da93068e6367d6c03fa7473</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>8</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>9</Id>
+						<Value>cfcbf983b7afee14a162158bca8e5e94</Value>
+						<PropertyValue>
+							<Value>cfcbf983b7afee14a162158bca8e5e94</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>13</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>18</Id>
+						<Value>a9b817fc0181cbad0068823ad449e205</Value>
+						<PropertyValue>
+							<Value>a9b817fc0181cbad0068823ad449e205</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>11</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>12</Id>
+						<Value>higher education in Finance or Economics;
+						minimum of 3 years experience in similar position;
+						negotiation skills;
+						excellent communication skills;
+						high level of positivity, initiative and motivation;
+						good command of English is your advantage;
+						experienced user of PC.</Value>
+						<PropertyValue>
+							<Value>higher education in Finance or Economics;
+						minimum of 3 years experience in similar position;
+						negotiation skills;
+						excellent communication skills;
+						high level of positivity, initiative and motivation;
+						good command of English is your advantage;
+						experienced user of PC.</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>14</Id>
+						<Value>J&amp;V Bank</Value>
+						<PropertyValue>
+							<Value>J&amp;V Bank</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>15</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>16</Id>
+						<Value>111-111-111</Value>
+						<PropertyValue>
+							<Value>111-111-111</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>17</Id>
+						<Value>bank@bank.com </Value>
+						<PropertyValue>
+							<Value>bank@bank.com </Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>187</Id>
+				<Title>Teller</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>53</Id>
+				</Sections>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>teller</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2011-03-01 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value>2012-03-31 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>&lt;ul&gt;
+ &lt;li&gt;all types exchange and cash transactions administration (currency, travellers cheque, cards);&lt;/li&gt;
+ &lt;li&gt;cash reception and payment according to debit and credit cach documents;&lt;/li&gt;
+ &lt;li&gt;controll of cash authenticity and paying capacity;&lt;/li&gt;
+ &lt;li&gt;cash documents administration.&lt;/li&gt;
+&lt;/ul&gt;</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>10</Id>
+						<Value>896c7abd5da93068e6367d6c03fa7473</Value>
+						<PropertyValue>
+							<Value>896c7abd5da93068e6367d6c03fa7473</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>8</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>9</Id>
+						<Value>d9ea15b5a924c7a6cf53921756f038e4</Value>
+						<PropertyValue>
+							<Value>d9ea15b5a924c7a6cf53921756f038e4</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>13</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>18</Id>
+						<Value>79beb911d4ac4da6a2251f09ab4a0b74</Value>
+						<PropertyValue>
+							<Value>79beb911d4ac4da6a2251f09ab4a0b74</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>11</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>12</Id>
+						<Value>at least 1 year relevant experience with a bank;
+							currency cashier certificate;
+							english language (desirable);
+							basic knowledge of Accounting;
+							experienced PC-user. </Value>
+						<PropertyValue>
+							<Value>at least 1 year relevant experience with a bank;
+							currency cashier certificate;
+							english language (desirable);
+							basic knowledge of Accounting;
+							experienced PC-user. </Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>14</Id>
+						<Value>J&amp;V Bank</Value>
+						<PropertyValue>
+							<Value>J&amp;V Bank</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>15</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>16</Id>
+						<Value>111-111-111</Value>
+						<PropertyValue>
+							<Value>111-111-111</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>17</Id>
+						<Value>bank@bank.com </Value>
+						<PropertyValue>
+							<Value>bank@bank.com </Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>97</Id>
+				<Title>Senior Financial Analyst</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>53</Id>
+				</Sections>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>senior_financial_analyst</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2011-03-01 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value>2012-03-31 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>&lt;p&gt;Senior Financial Analyst position in the Global Corporate and Investment Bank's Planning, Reporting &amp;amp; Analysis team. Position is responsible for all aspects of month end financial book close processes such as seeking and consolidating estimated results, perform variance analysis, compilation of monthly financial reports, including performance indicators, budgeting and forecast routines and enterprise stress testing processes. Position is also responsible to guide and manage Yr 1 FMAP and should have strong abilities to work LOB CFOs and Controllers, Corporate Planning Team and other internal constituents. &lt;/p&gt;</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>10</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>8</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>9</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>13</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>18</Id>
+						<Value>a9b817fc0181cbad0068823ad449e205</Value>
+						<PropertyValue>
+							<Value>a9b817fc0181cbad0068823ad449e205</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>11</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>12</Id>
+						<Value>degree in Finance/Business major; strong analytical &amp; communication skills, ability to multi task and work in a team and across finance groups; sdvanced use of MS applications particularly Excel and Powerpoint; strong knowledge of Insight and Essbase applications. </Value>
+						<PropertyValue>
+							<Value>degree in Finance/Business major; strong analytical &amp; communication skills, ability to multi task and work in a team and across finance groups; sdvanced use of MS applications particularly Excel and Powerpoint; strong knowledge of Insight and Essbase applications.</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>14</Id>
+						<Value>J&amp;V Bank</Value>
+						<PropertyValue>
+							<Value>J&amp;V Bank</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>15</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>16</Id>
+						<Value>111-111-111</Value>
+						<PropertyValue>
+							<Value>111-111-111</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>17</Id>
+						<Value>bank@bank.com </Value>
+						<PropertyValue>
+							<Value>bank@bank.com </Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>98</Id>
+				<Title>Designer, Decorative Accessories</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>50</Id>
+				</Sections>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>designer_decorative_accessories</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2011-03-01 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value>2012-03-31 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>&lt;p&gt;Develop designs from conception through revisions to sample approval. Present to Head Designer for review and approval.&lt;/p&gt;
+&lt;p&gt;Create presentation boards.&lt;/p&gt;</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>10</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>8</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>9</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>13</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>18</Id>
+						<Value>a9b817fc0181cbad0068823ad449e205</Value>
+						<PropertyValue>
+							<Value>a9b817fc0181cbad0068823ad449e205</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>11</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>12</Id>
+						<Value>Degree in Fine Arts, Applied Arts or Engineering</Value>
+						<PropertyValue>
+							<Value>Degree in Fine Arts, Applied Arts or Engineering</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>14</Id>
+						<Value>Furniture Company </Value>
+						<PropertyValue>
+							<Value>Furniture Company </Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>15</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>16</Id>
+						<Value>222-222-222</Value>
+						<PropertyValue>
+							<Value>222-222-222</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>17</Id>
+						<Value>info@example.com</Value>
+						<PropertyValue>
+							<Value>info@example.com</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>99</Id>
+				<Title>Associate Marketing Manager</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>50</Id>
+				</Sections>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>associate_marketing_manager</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2011-03-01 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value>2012-03-31 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>&lt;p&gt;Provide professional administrative support to IT executives and department. Tasks require a high degree of sound judgment, initiative and tact under general supervision.&lt;/p&gt;</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>10</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>8</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>9</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>13</Id>
+						<Value>ba0e8f299c6041153c1c8282fe8185f8</Value>
+						<PropertyValue>
+							<Value>ba0e8f299c6041153c1c8282fe8185f8</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>18</Id>
+						<Value>a9b817fc0181cbad0068823ad449e205</Value>
+						<PropertyValue>
+							<Value>a9b817fc0181cbad0068823ad449e205</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>11</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>12</Id>
+						<Value>Minimum 5 years experience as an executive assistant. Proficiency with Microsoft Office Suite. Strong organizational skills. Some college preferred but not necessary.</Value>
+						<PropertyValue>
+							<Value>Minimum 5 years experience as an executive assistant. Proficiency with Microsoft Office Suite. Strong organizational skills. Some college preferred but not necessary.</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>14</Id>
+						<Value>Furniture Company</Value>
+						<PropertyValue>
+							<Value>Furniture Company</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>15</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>16</Id>
+						<Value>222-222-222</Value>
+						<PropertyValue>
+							<Value>222-222-222</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>17</Id>
+						<Value>info@example.com</Value>
+						<PropertyValue>
+							<Value>info@example.com</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>100</Id>
+				<Title>Packaging Engineer</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>50</Id>
+				</Sections>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>packaging_engineer</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2011-03-01 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value>2012-03-31 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>&lt;p&gt;Develop and maintain general and specific packaging specifications that meet transportation
+and optimal distribution flow requirements for all Decorative Accessories&lt;/p&gt;
+&lt;p&gt;Analyze damage reports on products and take appropriate corrective actions to eliminate future
+problems&lt;/p&gt;
+&lt;p&gt;Research, designate, and approve packaging suppliers worldwide.&lt;/p&gt;</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>10</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>8</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>9</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>13</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>18</Id>
+						<Value>a9b817fc0181cbad0068823ad449e205</Value>
+						<PropertyValue>
+							<Value>a9b817fc0181cbad0068823ad449e205</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>11</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>12</Id>
+						<Value>Bachelors Degree preferably in packaging or technically related field. Project Management experience essential.</Value>
+						<PropertyValue>
+							<Value>Bachelors Degree preferably in packaging or technically related field. Project Management experience essential.</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>14</Id>
+						<Value>Furniture Company</Value>
+						<PropertyValue>
+							<Value>Furniture Company</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>15</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>16</Id>
+						<Value>222-222-222</Value>
+						<PropertyValue>
+							<Value>222-222-222</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>17</Id>
+						<Value>info@example.com</Value>
+						<PropertyValue>
+							<Value>info@example.com</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>101</Id>
+				<Title>Food Service Sales Representative</Title>
+				<BitrixTags></BitrixTags>
+				<Sections>
+					<Id>64</Id>
+				</Sections>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value>food_service_sales_representative</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2011-03-01 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value>2012-03-31 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>&lt;p&gt;Sales Representatives strive to achieve the sales and profit goals set within their territories, while communicating the value of the New England Coffee brand to current and prospective customers. The Sales Representative is responsible for seeking, acquiring, and maintaining a profitable customer base through the sale of beverage programs including coffee, tea and related allied products.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Liaising with customers by telephone&lt;/li&gt;
+
+  &lt;li&gt;Responding to customers enquiries&lt;/li&gt;
+
+  &lt;li&gt;Providing advise and cross-selling various products&lt;/li&gt;
+&lt;/ul&gt;</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>10</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>8</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>9</Id>
+						<Value>d9ea15b5a924c7a6cf53921756f038e4</Value>
+						<PropertyValue>
+							<Value>d9ea15b5a924c7a6cf53921756f038e4</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>13</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>18</Id>
+						<Value>a9b817fc0181cbad0068823ad449e205</Value>
+						<PropertyValue>
+							<Value>a9b817fc0181cbad0068823ad449e205</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>11</Id>
+						<Value>$18-22k + 3k Bonus + Benefits</Value>
+						<PropertyValue>
+							<Value>$18-22k + 3k Bonus + Benefits</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>12</Id>
+						<Value>Understanding the sales cycle. Confident telephone manner. Ability to work on own initiative. Strong communication skills. Excellent communication and organization skills as well as attention to detail are necessary. Must have Microsoft Office proficiency, valid driver's license, impeccable driving record, and ability to travel.</Value>
+						<PropertyValue>
+							<Value>Understanding the sales cycle. Confident telephone manner. Ability to work on own initiative. Strong communication skills. Excellent communication and organization skills as well as attention to detail are necessary. Must have Microsoft Office proficiency, valid driver's license, impeccable driving record, and ability to travel.</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>14</Id>
+						<Value>Global Food</Value>
+						<PropertyValue>
+							<Value>Global Food</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>15</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>16</Id>
+						<Value>+1 (555) 432-2920</Value>
+						<PropertyValue>
+							<Value>+1 (555) 432-2920</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>17</Id>
+						<Value>hr@example.com</Value>
+						<PropertyValue>
+							<Value>hr@example.com</Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>19</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+		</Elements>
+	</Catalog>
+</CommerceInformation>

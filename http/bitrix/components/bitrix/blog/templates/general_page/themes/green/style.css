@@ -1,0 +1,14 @@
+/*color*/
+.blog-post-title {background-color: #d7ead5;}
+.body-blog a:link, .body-blog a:visited, .body-blog a:active{color:#33782d;}
+.body-blog a:hover {color:#d04747;}
+
+.blog-post-title, .blog-post-title a:link, .blog-post-title a:visited, .blog-post-title a:active {color: #42783d !important;}
+
+/*images*/
+.blog-group-icon {background-image: url(images/user_group.gif);}
+.blog-author-icon {background-image: url(images/user.gif);}
+.blog-group-edit, .blog-post-edit-link {background-image: url(images/icon_edit.gif);}
+.blog-group-delete, .blog-post-delete-link  {background-image: url(images/icon_delete.gif);}
+.blog-post-comments-link {background-image: url(images/icon_comment.gif);}
+.blog-post-views-link {background-image: url(images/icon_view.gif); }

@@ -1,0 +1,32 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Vacancies", 
+		"job/vacancy/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Resumes", 
+		"job/resume/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Link Directory", 
+		"information/links/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Traffic", 
+		"information/road/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

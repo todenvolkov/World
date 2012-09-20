@@ -1,0 +1,5 @@
+[DEFAULT]
+BASEURL=http://temp.t5.ru/personal/profile/?forgot_password=yes
+[InternetShortcut]
+URL=http://temp.t5.ru/personal/profile/?forgot_password=yes
+Modified=40E021FDA330CC01DE

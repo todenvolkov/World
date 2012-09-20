@@ -1,0 +1,20 @@
+<?
+$arTooltips = array(
+	"PATH_TO_BLOG" => GetMessage("PATH_TO_BLOG_TIP"),
+	"PATH_TO_BLOG_INDEX" => GetMessage("PATH_TO_BLOG_INDEX_TIP"),
+	"PATH_TO_DRAFT" => GetMessage("PATH_TO_DRAFT_TIP"),
+	"PATH_TO_POST_EDIT" => GetMessage("PATH_TO_POST_EDIT_TIP"),
+	"PATH_TO_USER_FRIENDS" => GetMessage("PATH_TO_USER_FRIENDS_TIP"),
+	"PATH_TO_USER_SETTINGS" => GetMessage("PATH_TO_USER_SETTINGS_TIP"),
+	"PATH_TO_GROUP_EDIT" => GetMessage("PATH_TO_GROUP_EDIT_TIP"),
+	"PATH_TO_BLOG_EDIT" => GetMessage("PATH_TO_BLOG_EDIT_TIP"),
+	"PATH_TO_CATEGORY_EDIT" => GetMessage("PATH_TO_CATEGORY_EDIT_TIP"),
+	"BLOG_VAR" => GetMessage("BLOG_VAR_TIP"),
+	"POST_VAR" => GetMessage("POST_VAR_TIP"),
+	"PAGE_VAR" => GetMessage("PAGE_VAR_TIP"),
+	"USER_VAR" => GetMessage("USER_VAR_TIP"),
+	"BLOG_URL" => GetMessage("BLOG_URL_TIP"),
+	"SET_NAV_CHAIN" => GetMessage("SET_NAV_CHAIN_TIP"),
+	"PATH_TO_USER" => GetMessage("PATH_TO_USER_TIP"),
+);
+?>

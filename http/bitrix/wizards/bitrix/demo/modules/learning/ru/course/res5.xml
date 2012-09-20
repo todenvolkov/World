@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<content type="LES"><id>1280</id>
+<timestamp_x>1209886998</timestamp_x>
+<date_create>1209555204</date_create>
+<created_by>6104</created_by>
+<active>Y</active>
+<course_id>1</course_id>
+<chapter_id></chapter_id>
+<name>Режим Разработки</name>
+<sort>40</sort>
+<preview_picture></preview_picture>
+<preview_text></preview_text>
+<preview_text_type>text</preview_text_type>
+<detail_picture></detail_picture>
+<detail_text><![CDATA[<p>Режим предназначен для использования разработчиками сайта, т.к. предоставляет возможности по изменению внешнего облика сайта (настройки параметров компонентов, изменение стилей шаблона сайта и др.)</p>
+<p>Режим <b>Разработки</b> содержит все действия из режимов <b>Просмотр</b> и <b>Редактирование</b> и дополнительно позволяет:</p>
+<ul>
+    <li>Редактировать текущую страницу в режиме полного php-кода.</li>
+    <li>Редактировать параметры компонентов, использованных на текущей странице:
+<br /><br />
+<img src="cid:resources/res5/s7XVy.comp_menu_opt.png" width="218" height="245" border="0" />
+</li>
+    <li>Редактировать шаблон: изменить стили сайта и стили шаблона можно в форме из публичной части, а для перехода к полному редактированию шаблона имеются ссылки в нужный раздел панели управления.
+<br /><br />
+<img src="cid:resources/res5/C8mbe.template_opt.png" width="189" height="104" border="0" />
+
+</li>
+    <li>Расширены возможности работы с кешем: можно обновить кеш компонентов.
+<br /><br />
+<img src="cid:resources/res5/aLzkg.cash_opt.png" width="206" height="104" border="0" />
+
+</li>
+    <li>Режим предоставляет разработчику отладочную информацию, которая позволяет оценить время отработки различных областей на странице, компонентов или всей страницы в целом:
+<br /><br />
+<img src="cid:resources/res5/t2eJs.compile_opt.png" width="245" height="155" border="0" />
+ </li>
+</ul>
+
+<p>Компоненты и включаемые области выделены на странице и для каждой имеется определенный набор действий, доступный по клику на иконку <img src="cid:resources/res5/OKJYp.action_button_opt.png" width="48" height="25" border="0" />
+</p>
+
+<p><img src="cid:resources/res5/ou628.comp_actions_opt.png" width="520" height="276" border="0" /></p>
+
+<p>В режиме разработки доступны следующие действия над компонентами:</p>
+<ol>
+    <li>Редактировать параметры компонента в форме из публичной части. После сохранения установленные настройки будут сразу применены.</li>
+    <li>Копировать шаблон компонента.</li>
+    <li>Редактировать шаблон  компонента - позволяет изменить текущий шаблон. Однако если применен системный шаблон, то его необходимо сначала скопировать в шаблон сайта.
+<br />
+</li>
+  <li>другие действия. Их набор зависит от специфики данного компонента. Например, для компонента меню доступны такие действия:
+<br /><br />
+<img src="cid:resources/res5/Eh4dg.menu_actions_opt.png" width="316" height="151" border="0" />
+</li> 
+</ol>]]></detail_text>
+<detail_text_type>html</detail_text_type>
+</content>

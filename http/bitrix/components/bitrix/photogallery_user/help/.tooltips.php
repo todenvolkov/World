@@ -1,0 +1,7 @@
+<?
+$arTooltips = array(
+	"MODERATE" => GetMessage("P_MODERATE_TIP"),
+	"SHOW_ONLY_PUBLIC" => GetMessage("P_SHOW_ONLY_PUBLIC_TIP"), 
+	"INDEX_PAGE_TOP_ELEMENTS_PERCENT" => GetMessage("P_INDEX_PAGE_TOP_ELEMENTS_PERCENT_TIP"), 
+);
+?>

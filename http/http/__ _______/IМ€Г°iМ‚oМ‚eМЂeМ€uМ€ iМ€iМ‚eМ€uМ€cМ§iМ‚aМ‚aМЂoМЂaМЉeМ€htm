@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="ключевые слова">
+<meta name="description" content="Описание главное страницы.">
+<link href="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/panel.css" type="text/css" rel="stylesheet">
+<link href="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/solpanel.css" type="text/css" rel="stylesheet">
+<link href="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/core.css" type="text/css" rel="stylesheet">
+<link href="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/core_window.css" type="text/css" rel="stylesheet">
+<link href="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/sticker.css" type="text/css" rel="stylesheet">
+<link href="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/core_admin.css" type="text/css" rel="stylesheet">
+<link href="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/pubstyles.css" type="text/css" rel="stylesheet">
+<link href="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/styles_002.css" type="text/css" rel="stylesheet">
+<link href="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/template_styles.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/core.js"></script>
+<script type="text/javascript">BX.message({'LANGUAGE_ID':'ru','FORMAT_DATE':'DD.MM.YYYY','FORMAT_DATETIME':'DD.MM.YYYY HH:MI:SS','COOKIE_PREFIX':'BITRIX_SM','bitrix_sessid':'45463aeef25406129cef18688c6a65cc','JS_CORE_LOADING':'Загрузка...','JS_CORE_WINDOW_CLOSE':'Закрыть','JS_CORE_WINDOW_EXPAND':'Развернуть','JS_CORE_WINDOW_NARROW':'Свернуть в окно','JS_CORE_WINDOW_SAVE':'Сохранить','JS_CORE_WINDOW_CANCEL':'Отменить'})</script>
+<script type="text/javascript" src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/core_ajax.js"></script>
+<script type="text/javascript" src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/core_fx.js"></script>
+<script type="text/javascript" src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/session.js"></script>
+<script type="text/javascript">
+bxSession.mess.messSessExpired = 'Ваш сеанс работы с сайтом завершен из-за отсутствия активности в течение 24 мин. Введенные на странице данные не будут сохранены. Скопируйте их перед тем, как закроете или обновите страницу.';
+bxSession.Expand(1440, '45463aeef25406129cef18688c6a65cc', true, '693c4add5f837de1236e3e9445cf4893');
+</script>
+<script type="text/javascript" src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/core_window.js"></script>
+
+		<script>
+			BX.ready(function(){var BXST_MESS =
+{
+	Public : "общий",
+	Personal : "личный",
+	Close : "Отклеить",
+	Collapse : "Свернуть",
+	UnCollapse : "Восстановить",
+	UnCollapseTitle : "Двойной клик для восстановления стикера",
+	SetMarkerArea : "Привязать к области на странице",
+	SetMarkerEl : "Привязать к элементу на странице",
+	Color : "цвет",
+	Add : "добавить",
+	PersonalTitle : "Только вы можете видеть этот стикер. Нажмите, чтобы изменить.",
+	PublicTitle : "Этот стикер могут видеть другие. Нажмите, чтобы изменить.",
+	CursorHint : "Выделите область",
+	Yellow : "Желтый",
+	Green : "Зеленый",
+	Blue : "Синий",
+	Red : "Красный",
+	Purple : "Пурпурный",
+	Gray : "Серый",
+	StickerListTitle : "Список стикеров",
+	CompleteLabel : "выполнено",
+	DelConfirm : "Вы уверены, что хотите удалить выбранные стикеры?",
+	CloseConfirm : "Этот стикер наклеил #USER_NAME# Вы уверенны, что хотите его отклеить?",
+	Complete : "Пометить как завершенное",
+	CloseNotify : "Вы можете вернуть отклеенные стикеры на экран из #LINK#списка стикеров#LINK#."
+}; window.oBXSticker = new BXSticker(
+{'access':'W',
+'sessid_get':'sessid=45463aeef25406129cef18688c6a65cc',
+'start_width':'350',
+'start_height':'200',
+'min_width':'280',
+'min_height':'160',
+'start_color':'0',
+'zIndex':'800',
+'curUserName':'Иванов И.',
+'curUserId':'1',
+'pageUrl':'/personal/profile/',
+'pageTitle':'Профиль пользователя',
+'bShowStickers':false,
+'listWidth':'800',
+'listHeight':'450',
+'listNaviSize':'5',
+'filterParams':
+{'type':'all',
+'colors':'all',
+'status':'opened',
+'page':'current'
+},
+'bHideBottom':true,
+'focusOnSticker':'0',
+'strDate':'22 Июня',
+'curPageCount':'0'
+}, [], BXST_MESS);});
+		</script>
+<script type="text/javascript" src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/core_admin.js"></script>
+<script type="text/javascript">BX.message({'ADMIN_INCLAREA_DBLCLICK':'Двойной щелчок','ADMIN_SHOW_MODE_ON':'включен','ADMIN_SHOW_MODE_OFF':'выключен','AMDIN_SHOW_MODE_TITLE':'Режим правки','ADMIN_SHOW_MODE_ON_HINT':'Режим правки включен. На странице доступны элементы управления компонентами и включаемыми областями.','ADMIN_SHOW_MODE_OFF_HINT':'Режим правки выключен'})</script>
+
+<script type="text/javascript">
+var phpVars = {
+	'ADMIN_THEME_ID': '.default',
+	'LANGUAGE_ID': 'ru',
+	'FORMAT_DATE': 'DD.MM.YYYY',
+	'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS',
+	'opt_context_ctrl': false,
+	'cookiePrefix': 'BITRIX_SM',
+	'titlePrefix': 'Интернет-магазин - ',
+	'bitrix_sessid': '45463aeef25406129cef18688c6a65cc',
+	'messHideMenu': 'Скрыть меню',
+	'messShowMenu': 'Показать меню',
+	'messHideButtons': 'Уменьшить кнопки',
+	'messShowButtons': 'Увеличить кнопки',
+	'messFilterInactive': 'Поиск не используется - показаны все записи',
+	'messFilterActive': 'Используется поиск - показаны только найденные записи',
+	'messFilterLess': 'Скрыть условие поиска',
+	'messLoading': 'Загрузка...',
+	'messMenuLoading': 'Загрузка...',
+	'messMenuLoadingTitle': 'Загружаются пункты меню...',
+	'messNoData': '- Нет данных -',
+	'messExpandTabs': 'Развернуть все вкладки на одну страницу',
+	'messCollapseTabs': 'Свернуть вкладки',
+	'messPanelFixOn': 'Зафиксировать панель на экране',
+	'messPanelFixOff': 'Открепить панель',
+	'messPanelCollapse': 'Скрыть панель',
+	'messPanelExpand': 'Показать панель'
+};
+</script>
+<script type="text/javascript" src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/utils.js"></script>
+<script type="text/javascript" src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/admin_tools.js"></script>
+<script type="text/javascript" src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/popup_menu.js"></script>
+
+<script type="text/javascript" src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/sticker.js"></script>
+<script type="text/javascript" src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/public_tools.js"></script>
+
+<link rel="shortcut icon" type="image/x-icon" href="http://temp.t5.ru/bitrix/templates/mir/favicon.ico">
+<link rel="stylesheet" type="text/css" href="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/styles.css">
+
+<script type="text/javascript" src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/AC_RunActiveContent.js"></script>
+<title>Профиль пользователя</title>
+</head>
+
+<body>
+<table align="center" bgcolor="#FFFFFF" border="0" cellpadding="0" cellspacing="0" width="1000">
+<tbody><tr>
+ <td width="20"><img src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/7x7_Op.gif" height="10" width="10"></td>
+            <td width="250"><img src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/7x7_Op.gif" height="7" width="250"></td>
+            <td width="250"><img src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/7x7_Op.gif" height="7" width="250"></td>
+            <td width="250"><img src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/7x7_Op.gif" height="7" width="250"></td>
+            <td width="250"><img src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/7x7_Op.gif" height="7" width="250"></td>
+            <td width="0"><img src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/7x7_Op.gif" height="7" width="10"></td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td rowspan="2"><span class="DivLogo"><a href="http://temp.t5.ru/personal/profile/index.htm"><img src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/LogoPurple.png" border="0" height="127" width="177"></a></span></td>
+	<td class="C10" valign="top">&nbsp;</td>
+	<td class="Lleft C10" valign="top">
+		<span class="Column Grd">
+			<a href="http://temp.t5.ru/search/map/">Карта сайта</a> <br>
+			<a href="http://temp.t5.ru/personal/">Личный кабинет</a> <br>
+			<a href="http://temp.t5.ru/catalog/outdoor/">Заказ рекламы</a><br>
+			<a href="http://temp.t5.ru/personal/order/make/">Мой заказ</a>		</span>
+		<br><br>	<a href="http://temp.t5.ru/personal/profile/?backurl=%2Fpersonal%2Fprofile%2F">
+Иван Иванов	</a>
+	<a href="http://temp.t5.ru/personal/profile/?logout=yes&amp;login=yes">Выйти</a>	</td>
+	<td class="Lleft C10" valign="top">
+		<table border="0" cellpadding="0" cellspacing="0" width="230">
+		<tbody><tr>
+			<td class="Grd" nowrap="nowrap">Сообщений в блогах</td>
+			<td class="Grd" align="right" nowrap="nowrap">1</td>
+		</tr>
+		<tr>
+			<td class="Grd" nowrap="nowrap">Посетители</td>
+			<td class="Grd" align="right" nowrap="nowrap">1 456782</td>
+		</tr>
+		<tr>
+			<td class="Grd" nowrap="nowrap">Клиенты </td>
+			<td class="Grd" align="right" nowrap="nowrap">123 45</td>
+		</tr>
+		<tr>
+			<td class="Grd" nowrap="nowrap">Проекты</td>
+			<td class="Grd" align="right" nowrap="nowrap">89</td>
+		</tr>
+		</tbody></table>	</td>
+	<td valign="top">&nbsp;</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td colspan="4" class="Ltop2 Lbott" align="center">
+		<table border="0" bordercolor="#FFCCCC" cellpadding="0" cellspacing="0" width="90%">
+	<tbody><tr> 
+		<td class="Menu" align="center" height="37" nowrap="nowrap"><strong class="active">Главная</strong></td><td class="Menu" align="center" nowrap="nowrap">|</td><td class="Menu" align="center" height="37" nowrap="nowrap"><a href="http://temp.t5.ru/catalog/"><strong>Outdoor-Карта</strong></a></td><td class="Menu" align="center" nowrap="nowrap">|</td><td class="Menu" align="center" height="37" nowrap="nowrap"><a href="http://temp.t5.ru/print/"><strong>Печать</strong></a></td><td class="Menu" align="center" nowrap="nowrap">|</td><td class="Menu" align="center" height="37" nowrap="nowrap"><a href="http://temp.t5.ru/22.php"><strong>Дизайн</strong></a></td><td class="Menu" align="center" nowrap="nowrap">|</td><td class="Menu" align="center" height="37" nowrap="nowrap"><a href="http://temp.t5.ru/33.php"><strong>Производство</strong></a></td><td class="Menu" align="center" nowrap="nowrap">|</td><td class="Menu" align="center" height="37" nowrap="nowrap"><a href="http://temp.t5.ru/personal/order/make/"><strong>Заказать</strong></a></td><td class="Menu" align="center" nowrap="nowrap">|</td><td class="Menu" align="center" height="37" nowrap="nowrap"><a href="http://temp.t5.ru/55.php"><strong>Блог</strong></a></td><td class="Menu" align="center" nowrap="nowrap">|</td><td class="Menu" align="center" height="37" nowrap="nowrap"><a href="http://temp.t5.ru/66.php"><strong>Менеджеры</strong></a></td><td class="Menu" align="center" nowrap="nowrap">|</td><td class="Menu" align="center" height="37" nowrap="nowrap"><a href="http://temp.t5.ru/77.php"><strong>Клиентам</strong></a></td>	</tr>
+</tbody></table>	</td>
+	<td>&nbsp;</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td colspan="2">&nbsp;</td>
+	<td align="left" valign="top">&nbsp;</td>
+	<td align="left" valign="top">&nbsp;</td>
+	<td align="left" valign="top">&nbsp;</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td colspan="4"><form method="post" name="form1" action="/personal/profile/?" enctype="multipart/form-data">
+<p>
+  <input name="sessid" id="sessid" value="45463aeef25406129cef18688c6a65cc" type="hidden">
+  <input name="lang" value="s1" type="hidden">
+    <input name="ID" value="1" type="hidden">
+    <input name="LOGIN" value="admin" type="hidden">
+    <input name="EMAIL" value="dmitri@t5.ru" type="hidden">
+</p>
+<table width="1000" border="0" cellspacing="0" cellpadding="0">
+  <tr bgcolor="#FFFFFF">
+    <td width="250" height="50"><p><img src="Авторизация_files/Header_PersonCabinet.png" width="189" height="25" /></p></td>
+    <td width="250" class="C10"><p class="Header">Логин</p>
+        <p class="Header">Имя ФАМИЛИЯ</p></td>
+    <td width="500" align="left" valign="top" class="C10"><p>Заказать:</p>
+        <p>Кампанию наружной рекламы</p>
+      <p>Полноцветную широкоформатную печать</p>
+      <p>Дизайн-Проект <br />
+        Производство рекламных конструкций<br />
+      </p></td>
+  </tr>
+  <tr bgcolor="#FFFFFF">
+    <td valign="top"><table width="240" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="Ltop2"><p>&nbsp;</p>
+              <p class="Header">Профиль </p>
+              <p class="Header">пользователя</p>
+              <p>&nbsp;</p>
+              <p>Изменение личных данных пользователя.</p>
+              <p>&nbsp;</p>
+              <p>Вы можете скорректировать Контактные Данные или установить новый пароль доступа в Ваш личный Кабинет.</p></td>
+      </tr>
+    </table></td>
+    <td height="50" colspan="2" valign="top" class="Lleft C10_Right_Column"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="242" valign="top" class="Ltop2"><p>&nbsp;</p>
+          <p class="Header">Личные данные</p>
+          <p>&nbsp;</p>
+              <div class="field field-firstname">
+                <label class="field-title">Имя</label>
+                <div class="form-input">
+                  <input name="NAME" maxlength="50" value="Иван" type="text" />
+                </div>
+              </div>
+              <div class="field field-lastname">
+                <label class="field-title"><br />
+                Фамилия</label>
+                <div class="form-input">
+                  <input name="LAST_NAME" maxlength="50" value="Иванов" type="text" />
+                </div>
+              </div>
+              <div class="field field-secondname">
+                <label class="field-title"><br />
+                Отчество</label>
+                <div class="form-input">
+                  <input name="SECOND_NAME" maxlength="50" type="text" />
+                </div>
+              </div>              <p>&nbsp;</p></td>
+        <td width="247" valign="top" class="Ltop2 C10"><p class="Header">Контактные данные </p>
+              <p>&nbsp;</p>
+              <div class="field field-firstname">
+                <label class="field-title">Компания</label>
+                <div class="form-input">
+                  <input name="NAME2" maxlength="50" value="Наименование" type="text" />
+                </div>
+              </div>
+              <div class="field field-lastname">
+                <label class="field-title"><br />
+                  Адрес</label>
+                <div class="form-input">
+                  <input name="LAST_NAME2" maxlength="50" type="text" />
+                </div>
+              </div>
+              <div class="field field-secondname">
+                <label class="field-title"><br />
+                  Телефон</label>
+                <div class="form-input">
+                  <input name="SECOND_NAME2" maxlength="50" type="text" />
+                </div>
+              </div>
+              <p>&nbsp;</p></td>
+        <td width="251" valign="top" class="Ltop2 C10"><p class="Header">
+          Пароль
+          </p>
+          <p>&nbsp;</p>
+          <div class="content-form profile-form">
+                <div class="legend"></div>
+                <div class="fields">
+                  <div class="field field-password_new">
+                    <label class="field-title">Новый пароль</label>
+                    <div class="form-input">
+                      <input name="NEW_PASSWORD" maxlength="50" value="" autocomplete="off" type="password" />
+                    </div>
+                  </div>
+                  <div class="field field-password_confirm">
+                    <label class="field-title"><br />
+                    Подтверждение нового пароля</label>
+                    <div class="form-input">
+                      <input name="NEW_PASSWORD_CONFIRM" maxlength="50" value="" autocomplete="off" type="password" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="content-form profile-form">
+                <div class="button"></div>
+              </div>              <p class="Header">&nbsp;</p>          </td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<p align="right"><span class="button">
+  <input name="save" value="Сохранить настройки профиля" class="input-submit" type="submit" />
+</span></p>
+<div class="content-form profile-form">
+	<div class="fields">
+		<div class="field field-firstname">
+			<label class="field-title"></label>
+		</div>
+		<div class="field field-secondname"></div>
+	</div>
+</div>
+<div class="content-form profile-form">
+	<div class="legend"></div>
+	</div>
+
+<div class="content-form profile-form"></div>
+</form></td>
+	<td align="left" valign="top">&nbsp;</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td align="left" valign="top">&nbsp;</td>
+	<td align="left" valign="top">&nbsp;</td>
+	<td align="left" valign="top">&nbsp;</td>
+	<td align="left" valign="top">&nbsp;</td>
+</tr>
+<tr>
+	<td bgcolor="#4C4C4C">&nbsp;</td>
+	<td bgcolor="#4C4C4C">&nbsp;</td>
+	<td bgcolor="#4C4C4C">&nbsp;</td>
+	<td bgcolor="#4C4C4C">&nbsp;</td>
+	<td bgcolor="#4C4C4C">&nbsp;</td>
+	<td bgcolor="#4C4C4C">&nbsp;</td>
+</tr>
+<tr>
+	<td bgcolor="#4C4C4C">&nbsp;</td>
+	<td class="footerText" align="center" bgcolor="#4C4C4C">
+		<span class="DivLogoF"><img src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/LogoPurpleF.png" border="0" height="51" width="220"></span><br><br>© 2011&nbsp;&nbsp;&nbsp;&nbsp;	</td>
+	<td class="LWhite C10" bgcolor="#4C4C4C" valign="top">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tbody><tr>
+		<td valign="top">
+			<table border="0" cellpadding="0" cellspacing="0" width="50%"><tbody><tr><td class="footerText"><i>Главная</i></td></tr><tr><td class="footerText"><a href="http://temp.t5.ru/catalog/" class="f">Outdoor-Карта</a></td></tr><tr><td class="footerText"><a href="http://temp.t5.ru/print/" class="f">Печать</a></td></tr><tr><td class="footerText"><a href="http://temp.t5.ru/22.php" class="f">Дизайн</a></td></tr><tr><td class="footerText"><a href="http://temp.t5.ru/33.php" class="f">Производство</a></td></tr></tbody></table>		</td>
+		<td valign="top">
+			<table border="0" cellpadding="0" cellspacing="0" width="50%"><tbody><tr><td class="footerText"><a href="http://temp.t5.ru/personal/order/make/" class="f">Заказать</a></td></tr><tr><td class="footerText"><a href="http://temp.t5.ru/55.php" class="f">Блог</a></td></tr><tr><td class="footerText"><a href="http://temp.t5.ru/66.php" class="f">Менеджеры</a></td></tr><tr><td class="footerText"><a href="http://temp.t5.ru/77.php" class="f">Клиентам</a></td></tr></tbody></table>		</td>
+	</tr>
+</tbody></table>	</td>
+	<td class="LWhite C10" bgcolor="#4C4C4C" valign="top">
+		<table border="0" bordercolor="#CCFF00" cellpadding="0" cellspacing="0" width="100%">
+		<tbody><tr>
+			<td class="footerText"><strong>Обратная связь</strong></td>
+			<td class="footerText">&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="footerText">&nbsp;</td>
+			<td class="footerText">&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="footerText">Контакты</td>
+			<td class="footerText">&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="footerText">Рекламодателям</td>
+			<td class="footerText">&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="footerText">&nbsp;</td>
+			<td class="footerText">&nbsp;</td>
+		</tr>
+		<tr>
+			<td class="footerText">&nbsp;</td>
+			<td class="footerText">&nbsp;</td>
+		</tr>
+		</tbody></table>	</td>
+	<td class="LWhite C10" bgcolor="#4C4C4C" valign="top">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody><tr>
+                  <td class="footerText" nowrap="nowrap"><strong>Дружите с нами</strong></td>
+                  <td class="footerText" align="right">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td class="footerText" nowrap="nowrap">&nbsp;</td>
+                  <td class="footerText" align="right">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td class="footerText" nowrap="nowrap"><a class="f" href="http://temp.t5.ru/personal/profile/link">FaceBook</a></td>
+                  <td class="footerText" align="right">Icons SocNetwork</td>
+                </tr>
+                <tr>
+                  <td class="footerText" nowrap="nowrap">Twitter</td>
+                  <td class="footerText" align="right">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td class="footerText" nowrap="nowrap">LiveJornal</td>
+                  <td class="footerText" align="right">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td class="footerText" nowrap="nowrap">LinkedIn</td>
+                  <td class="footerText" align="right">&nbsp;</td>
+                </tr>
+            </tbody></table>            </td>
+            <td bgcolor="#4C4C4C"><span class="DivLogoFD"><a href="http://www.figuradesign.ru/" target="_blank"><img src="%D0%9F%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F_files/LogoFD.png" border="0" height="72" width="14"></a></span></td>
+          </tr>
+          <tr>
+            <td bgcolor="#4C4C4C">&nbsp;</td>
+            <td bgcolor="#4C4C4C">&nbsp;</td>
+            <td bgcolor="#4C4C4C">&nbsp;</td>
+            <td bgcolor="#4C4C4C">&nbsp;</td>
+            <td bgcolor="#4C4C4C"><br></td>
+            <td bgcolor="#4C4C4C">&nbsp;</td>
+          </tr>
+          <tr>
+            <td bgcolor="#313231">&nbsp;</td>
+            <td bgcolor="#313231"><p>&nbsp;</p>
+            <p>&nbsp;</p></td>
+            <td bgcolor="#313231">&nbsp;</td>
+            <td bgcolor="#313231">&nbsp;</td>
+            <td bgcolor="#313231">&nbsp;</td>
+            <td bgcolor="#313231">&nbsp;</td>
+          </tr>
+</tbody></table>
+
+
+</body></html>

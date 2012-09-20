@@ -1,0 +1,45 @@
+.bx-core-waitwindow { 
+	background-color:#FCF7D1;
+	background-image:url(/bitrix/js/main/core/images/wait.gif);
+	background-position:10px center;
+	background-repeat:no-repeat;
+	border:1px solid #E1B52D;
+	color:black;
+	font-family:Verdana,Arial,sans-serif;
+	font-size:11px;
+	padding:10px 30px 10px 37px;
+	position:absolute;
+	z-index:10000;
+	text-align:center; 
+}
+
+.bx-unselectable {
+   -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   user-select: none;
+}
+
+.bx-session-message {
+	background-color:#FFEB41;
+	border:1px solid #EDDA3C;
+	width:630px;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	text-align:center;
+	color:black;
+	position:absolute;
+	z-index:10000;
+	padding:10px;
+}
+
+.bx-session-message a.bx-session-message-close {
+	display:block;
+	width:12px;
+	height:12px;
+	background-image:url(/bitrix/js/main/core/images/close.gif);
+	background-repeat:no-repeat;
+	background-position:center;
+	float:right;
+}

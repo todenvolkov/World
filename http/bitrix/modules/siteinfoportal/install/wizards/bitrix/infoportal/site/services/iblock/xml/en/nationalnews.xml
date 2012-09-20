@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<CommerceInformation SchemaVersion="2.021" CreationDate="2011-03-12T12:19:00">
+	<Metadata>
+		<Id>infoportal_nationalnews</Id>
+		<Title>Reader Input</Title>
+		<Properties>
+			<Property>
+				<Id>CML2_ACTIVE</Id>
+				<Title>BitrixActive</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_CODE</Id>
+				<Title>Code</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_SORT</Id>
+				<Title>Sort</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_FROM</Id>
+				<Title>Start time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_ACTIVE_TO</Id>
+				<Title>End time</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_TEXT</Id>
+				<Title>Anons</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>CML2_PREVIEW_PICTURE</Id>
+				<Title>Preview picture</Title>
+				<Multiple>false</Multiple>
+			</Property>
+			<Property>
+				<Id>61</Id>
+				<Title>Forum topic for comments</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>FORUM_MESSAGE_CNT</BitrixCode>
+				<BitrixDefaultValue></BitrixDefaultValue>
+				<BitrixPropertyType>N</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>0</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+			</Property>
+			<Property>
+				<Id>60</Id>
+				<Title>Number of comments for item</Title>
+				<Multiple>false</Multiple>
+				<BitrixSort>500</BitrixSort>
+				<BitrixCode>FORUM_TOPIC_ID</BitrixCode>
+				<BitrixDefaultValue></BitrixDefaultValue>
+				<BitrixPropertyType>N</BitrixPropertyType>
+				<BitrixRows>1</BitrixRows>
+				<BitrixColumns>30</BitrixColumns>
+				<BitrixListType>L</BitrixListType>
+				<BitrixFileType></BitrixFileType>
+				<BitrixNumberOfInputs>0</BitrixNumberOfInputs>
+				<BitrixLinkedInformationBlock></BitrixLinkedInformationBlock>
+				<BitrixWithDescription>false</BitrixWithDescription>
+				<BitrixUsedInSearch>false</BitrixUsedInSearch>
+				<BitrixFilterAllowed>false</BitrixFilterAllowed>
+				<BitrixUserType></BitrixUserType>
+				<BitrixRequired>false</BitrixRequired>
+			</Property>
+		</Properties>
+		<Sections>
+		</Sections>
+	</Metadata>
+	<Catalog>
+		<Id>infoportal_nationalnews</Id>
+		<MetadataId>infoportal_nationalnews</MetadataId>
+		<Title>Reader Input</Title>
+		<BitrixCode>infoportal_nationalnews</BitrixCode>
+		<BitrixSort>500</BitrixSort>
+		<BitrixListURL>#SITE_DIR#/nationalnews/</BitrixListURL>
+		<BitrixDetailURL>#SITE_DIR#/nationalnews/#ID#/</BitrixDetailURL>
+		<BitrixSectionURL>#SITE_DIR#/nationalnews/</BitrixSectionURL>
+		<BitrixPicture></BitrixPicture>
+		<BitrixIndexElements>true</BitrixIndexElements>
+		<BitrixIndexSections>true</BitrixIndexSections>
+		<BitrixWorkflow>false</BitrixWorkflow>
+		<BitrixLabels>
+			<BitrixLabel>
+				<Id>ELEMENT_NAME</Id>
+				<Value>News</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENTS_NAME</Id>
+				<Value>News</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_ADD</Id>
+				<Value>Add News</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_EDIT</Id>
+				<Value>Edit News</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>ELEMENT_DELETE</Id>
+				<Value>Delete News</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_NAME</Id>
+				<Value>Section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTIONS_NAME</Id>
+				<Value>Sections</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_ADD</Id>
+				<Value>Add Section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_EDIT</Id>
+				<Value>Edit Section</Value>
+			</BitrixLabel>
+			<BitrixLabel>
+				<Id>SECTION_DELETE</Id>
+				<Value>Delete Section</Value>
+			</BitrixLabel>
+		</BitrixLabels>
+		<Elements>
+			<Element>
+				<Id>170</Id>
+				<Title>Center Floral thanks Northside for great 2010</Title>
+				<BitrixTags></BitrixTags>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2011-01-17 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Since founding Center Floral in May of 2006, I have made it a priority to serve Northside’s floral and gift giving needs. &lt;br /&gt;
+&lt;br /&gt;
+I say this with enormous gratitude: Wow and thank you!&lt;br /&gt;
+&lt;br /&gt;
+Yes, thank you for making our 5th Valentine's Day a huge success!&lt;br /&gt;
+&lt;br /&gt;
+I am once again impressed by the generosity of this county. I ordered 30 percent more flowers this year than last and only had 24 red roses and 24 white roses left at 8 p.m. on Valentine's Day. I had a wonderful time assisting men and women with their needs.&lt;br /&gt;
+&lt;br /&gt;
+
+I would also like to thank all new fans of Center Floral.&lt;br /&gt;
+&lt;br /&gt;
+
+Julie Boskins, of Caf&amp;#233; de Fleur and I are overwhelmed by the incredible embrace of our tea and edibles caf&amp;#233; over its first three weeks.&lt;br /&gt;
+&lt;br /&gt;
+
+Thank you Northside, thank you Centerville.&lt;br /&gt;
+&lt;br /&gt;
+
+&lt;i&gt;Tia Bart is owner of Central Floral and co-owner of Caf&amp;#233; de Fleur&lt;/i&gt;
+</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>nationalnews_files/iblock/36e/36e04cb5bd5a3c3b5488dee1da5affd2.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>61</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>60</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>172</Id>
+				<Title>Street Party on Rockford Ct. </Title>
+				<BitrixTags></BitrixTags>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2011-01-20 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>There will be a street party on Rockford Ct on Friday the 29th of August.  Residents are encouraged to prepare accordingly.  Permits for the event have been obtained and the annual tradition continues.  I’m a senior and the university and looking forward to it, though I don’t remember last year’s too well.   &lt;br /&gt;&lt;br /&gt;
+I think that community spirit is greatly boosted by events like this, and even though most of the people who live here (ok, everyone) is going to be graduating or at least moving out within 4 years, there is something great about opening the place where you live to mostly drunk strangers for a weekend.  &lt;br /&gt;&lt;br /&gt;
+Port-o-Lets will be available, too, and the forecast is great.  Everyone is invited and there will be at least 3 music zones, with W#@M parking its Traveling Party Van on the north end of the street, and me with my techno funk at my house and swing and anything Brazilian at Rudy’s.  &lt;br /&gt;&lt;br /&gt;
+There is no more information, just show up with what or whoever you have on hand. </Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>nationalnews_files/iblock/2eb/2eb9d6739cd1711dbe51774d6fd1701d.jpg</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>61</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>60</Id>
+						<Value></Value>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+			<Element>
+				<Id>174</Id>
+				<Title>Winter Food Drive meets target thanks to many</Title>
+				<BitrixTags></BitrixTags>
+				<PropertiesValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE</Id>
+						<Value>true</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_CODE</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_SORT</Id>
+						<Value>500</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_FROM</Id>
+						<Value>2011-01-17 00:00:00</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_ACTIVE_TO</Id>
+						<Value></Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_TEXT</Id>
+						<Value>Written by Lonnie Red    &lt;br /&gt;&lt;br /&gt;
+Monday, 17 January 2011 &lt;br /&gt;&lt;br /&gt;
+On behalf of the Centerville Food and Shelter Volunteers Assoc., I would like to publicly acknowledge and thank all who were involved in the project that was undertaken for the benefit of the communities less secure households. &lt;br /&gt;&lt;br /&gt;
+
+First of all, Mitch Sulley. When he called me in early December to ask if some local entities could hold a fundraiser for CFSVA, I was stunned. For all who know me, speechlessness is not my normal reaction.&lt;br /&gt;&lt;br /&gt;
+
+He explained that the Hog Farmers Association and two of its members, Hoover Foods and Manataw County Packaging wanted to collect food donations through there network of retailers and partners.  &lt;br /&gt;&lt;br /&gt;
+
+Additional kudos go to Ceebring Bank for allowing us to use their parking lot as our distribution point. On a cold, windy, slightly damp day we met with volunteer distributors and gave them boxes, which were then taken to needy homes by people well known and trusted by their individual recipients. 
+</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>CML2_PREVIEW_PICTURE</Id>
+						<Value>nationalnews_files/iblock/902/9028259ccd8fe6add85033268d83b723.png</Value>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>61</Id>
+						<Value></Value>
+						<PropertyValue>
+							<Value></Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+					<PropertyValues>
+						<Id>60</Id>
+						<Value></Value>
+						<PropertyValue>
+							<Value></Value>
+							<Description></Description>
+						</PropertyValue>
+					</PropertyValues>
+				</PropertiesValues>
+			</Element>
+		</Elements>
+	</Catalog>
+</CommerceInformation>

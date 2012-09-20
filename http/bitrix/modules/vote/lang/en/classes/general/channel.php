@@ -1,0 +1,4 @@
+<?
+$MESS ['VOTE_DIAGRAM_TYPE_HISTOGRAM'] = "Bar Chart";
+$MESS ['VOTE_DIAGRAM_TYPE_CIRCLE'] = "Pie Chart";
+?>

@@ -1,0 +1,5 @@
+/*Menu icon*/
+#subscribe_menu_icon {background-image:url(icons/subscribe/mnu_subscribe.gif);}
+#subscribe_page_icon {background-image:url(icons/subscribe/title.gif);}
+
+.subscribe_border {border:1px solid #BDC6E0; padding:4px;}

@@ -1,0 +1,42 @@
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<div class="job-section">
+<?if($arParams["DISPLAY_TOP_PAGER"]):?>
+	<?=$arResult["NAV_STRING"]?><br />
+<?endif;?>
+<table cellpadding="0" cellspacing="0" border="0">
+	<thead>
+		<tr>
+			<th><?=GetMessage('TH_DATE')?></th>
+			<th><?=GetMessage('TH_POSITION')?></th>
+			<th><?=GetMessage('TH_REMUNERATION')?></th>
+			<th><?=GetMessage('TH_EMPLOYER')?></th>
+			<?foreach($arElement["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
+			<th><?echo $arProperty["NAME"];?></th>
+			<?endforeach?>
+		</tr>
+	</thead>
+	<?foreach($arResult["ITEMS"] as $cell=>$arElement):?>
+	<?
+	$this->AddEditAction($arElement['ID'], $arElement['EDIT_LINK'], CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "ELEMENT_EDIT"));
+	$this->AddDeleteAction($arElement['ID'], $arElement['DELETE_LINK'], CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BCS_ELEMENT_DELETE_CONFIRM')));
+	?>
+	<tr>
+		<td valign="top" class="job-date"><?=$arElement["ACTIVE_FROM"]?></td>
+		<td valign="top"  id="<?=$this->GetEditAreaId($arElement['ID']);?>"><a href="<?=$arElement["DETAIL_PAGE_URL"]?>"><?=$arElement["NAME"]?></a></td>
+		<?foreach($arElement["DISPLAY_PROPERTIES"] as $pid=>$arProperty):?>
+		<td valign="top">
+			<?
+				if(is_array($arProperty["DISPLAY_VALUE"]))
+					echo implode("&nbsp;/&nbsp;", $arProperty["DISPLAY_VALUE"]);
+				else
+					echo '<nobr>' . $arProperty["DISPLAY_VALUE"] . '</nobr>';?><br />
+		</td>
+		<?endforeach?>
+		
+	</tr>
+	<?endforeach;?>
+</table>
+<?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
+	<br /><?=$arResult["NAV_STRING"]?>
+<?endif;?>
+</div>

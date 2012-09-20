@@ -1,0 +1,22 @@
+/*Menu icons*/
+#iblock_menu_icon_types {background-image:url(icons/iblock/mnu_iblock_type.gif);}
+#iblock_menu_icon_iblocks {background-image:url(icons/iblock/mnu_iblock.gif);}
+#iblock_menu_icon_sections {background-image:url(icons/iblock/mnu_iblock_sec.gif);}
+#iblock_menu_icon_elements {background-image:url(icons/iblock/mnu_iblock_el.gif);}
+#iblock_menu_icon_settings {background-image:url(icons/iblock/mnu_iblock_settings.gif);}
+
+#iblock_page_icon_types {background-image:url(icons/iblock/title.gif);}
+#iblock_page_icon_iblocks {background-image:url(icons/iblock/title_iblock.gif);}
+#iblock_page_icon_sections {background-image:url(icons/iblock/title_folder.gif);}
+#iblock_page_icon_elements {background-image:url(icons/iblock/title_element.gif);}
+#iblock_page_icon_settings {background-image:url(icons/iblock/title_settings.gif);}
+
+/*Toolbar icons*/
+#btn_up {background-image:url(icons/iblock/folder_up.gif);}
+#btn_bp {background-image:url(icons/iblock/bizproc.gif);}
+
+div.iblock_menu_icon_iblocks {background-image:url(icons/iblock/mnu_iblock.gif); width: 17px; height: 17px; float:left;}
+div.iblock_menu_icon_sections {background-image:url(icons/iblock/mnu_iblock_sec.gif); width: 17px; height: 17px; float:left;}
+div.iblock_menu_icon_elements {background-image:url(icons/iblock/mnu_iblock_el.gif); width: 17px; height: 17px; float:left;}
+
+img.linked {position:relative;left:2px;top:6px;width:11px;height:21px;border:none;cursor:pointer}

@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Печать";
+$arDirProperties = Array(
+
+);
+?>

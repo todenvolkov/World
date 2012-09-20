@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Примеры YMapsML. Отображение html-содержимого в балуне.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="http://api-maps.yandex.ru/1.1/index.xml?key=AFCG200BAAAA_HPCXAMAKCrYbGfsuIggMU_CXzslbgC_A5EAAAAAAAAAAABk2X7hq4C2Dq4OIReQSrFJfN-Q2g==" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        // Создание обработчика для события window.onLoad
+        YMaps.jQuery(function () {
+            // Создание экземпляра карты и его привязка к созданному контейнеру
+            var map = new YMaps.Map(YMaps.jQuery("#YMapsID")[0]);
+
+            // Установка для карты ее центра и масштаба
+            map.setCenter(new YMaps.GeoPoint(37.64, 55.76), 10);
+
+            // Создание и добавление YMapsML-документа на карту
+            var ml = new YMaps.YMapsML('http://temp.t5.ru/0/1.xml');
+            map.addOverlay(ml);
+
+            // Обработчик неудачной загрузки YMapsML
+            YMaps.Events.observe(ml, ml.Events.Fault, function (ml, error) {
+                alert('Ошибка: ' + error);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <div id="YMapsID" style="width:600px;height:400px"></div>
+</body>
+
+</html>

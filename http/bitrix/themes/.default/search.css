@@ -1,0 +1,4 @@
+/*Menu icon*/
+#search_menu_icon {background-image:url(icons/search/mnu_search.gif);}
+#search_page_icon {background-image:url(icons/search/title.gif);}
+a.search_attention {color:red;}

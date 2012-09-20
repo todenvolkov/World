@@ -1,0 +1,36 @@
+
+div.wiki-errors {
+	border: 1px solid #FFD482; 
+	margin: 1.117em; 
+	padding: 0.4em 1.117em;
+	color:red;
+	background-color:#FFFEEB;	
+}
+
+table.bx-interface-toolbar a.btn-delete {
+	background-image:url("images/buttons/delete.gif") !important; 
+}
+
+table.bx-interface-toolbar a.btn-rename {
+	background-image:url("images/buttons/rename.gif");
+}
+
+table.bx-interface-toolbar a.btn-article {
+	background-image:url("images/buttons/article.gif");
+}
+
+table.bx-interface-toolbar a.btn-add {
+	background-image:url("images/buttons/add.gif");
+}
+
+table.bx-interface-toolbar a.btn-edit {
+	background-image:url("images/buttons/edit.gif");
+}
+
+table.bx-interface-toolbar a.btn-history {
+	background-image:url("images/buttons/history.gif");
+}
+
+table.bx-interface-toolbar a.btn-discussion {
+	background-image:url("images/buttons/discussion.gif");
+}

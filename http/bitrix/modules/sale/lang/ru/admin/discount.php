@@ -1,0 +1,40 @@
+<?
+$MESS ['PERSON_TYPE_TITLE'] = "Скидки";
+$MESS ['SALE_F_FILTER'] = "Фильтр";
+$MESS ['LANG_FILTER_NAME'] = "Сайт";
+$MESS ['LANG_ALL'] = "Все";
+$MESS ['ERROR_UPDATE_REC'] = "Ошибка изменения записи ";
+$MESS ['ERROR_ADD_REC'] = "Ошибка добавления записи ";
+$MESS ['ERROR_NAME_REC'] = "Не установлена величина скидки ";
+$MESS ['ERROR_PRICE_REC'] = "Не установлен диапазон сумм для скидки ";
+$MESS ['ERROR_CURRENCY_REC'] = "Не установлена валюта для сумм ";
+$MESS ['ERROR_LID_REC'] = "Не установлен сайт ";
+$MESS ['LANG_FILTER_BTN'] = "Установить";
+$MESS ['SALE_F_DEL'] = "Сбросить";
+$MESS ['PERS_TYPE_NAV'] = "Скидки";
+$MESS ['PERS_TYPE_ACTIVE'] = "Акт.";
+$MESS ['PERS_TYPE_LID'] = "Сайт";
+$MESS ['PERS_TYPE_PRICE'] = "Цена";
+$MESS ['PERS_TYPE_DISCOUNT'] = "Скидка";
+$MESS ['PERS_TYPE_DEL'] = "Удалить";
+$MESS ['PERS_TYPE_UPD'] = "Сохранить";
+$MESS ['PERS_TYPE_RESET'] = "Сбросить";
+$MESS ['PERS_TYPE_ID'] = "ID";
+$MESS ['PERS_TYPE_DEL_CONF'] = "Вы уверены, что хотите удалить эту скидку?";
+$MESS ['SALE_NEW'] = "Новая";
+$MESS ['SALE_FROM'] = "от";
+$MESS ['SALE_TO'] = "до";
+$MESS ['SALE_NOTE'] = "Укажите для скидки символ <b>%</b>, если хотите задать скидку в процентах от суммы заказа. В противном случае скидка будет интерпретирована как фиксированная сумма в указанной валюте.<br> Скидка считается от суммы заказа без учета стоимости доставки.";
+$MESS ['PERS_TYPE_SORT'] = "Сорт.";
+$MESS ['DS_ALL'] = "(все)";
+$MESS ['DS_UNSET'] = "Сбросить";
+$MESS ['SDSN_DELETE_ERR'] = "Ошибка удаления скидки";
+$MESS ['SDSN_UPDATE_ALT'] = "Изменить параметры скидки";
+$MESS ['SDSN_DELETE_ALT1'] = "Удалить скидку";
+$MESS ['SDSN_DELETE_CONF'] = "Вы уверены, что хотите удалить эту скидку?";
+$MESS ['SDSN_ADD_NEW'] = "Добавить скидку";
+$MESS ['SDSN_ADD_NEW_ALT'] = "Нажмите для добавления новой скидки";
+
+$MESS ['SDSN_ACTIVE_FROM'] = "Активна с";
+$MESS ['SDSN_ACTIVE_TO'] = "Активна по";
+?>

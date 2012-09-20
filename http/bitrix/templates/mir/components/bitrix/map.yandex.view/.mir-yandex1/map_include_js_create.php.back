@@ -1,0 +1,198 @@
+<?
+if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true) die();
+
+$status_file	= $_SERVER["DOCUMENT_ROOT"]."/csv/status.csv";
+$reflect_file	= $_SERVER["DOCUMENT_ROOT"]."/csv/reflect.csv";
+$include_js_file= $_SERVER["DOCUMENT_ROOT"].$templateFolder."/map_include.js";
+
+$status_f = array(stat($status_file), stat($reflect_file), stat($include_js_file));
+
+if ($status_f[0]["mtime"]!=$status_f[2]["mtime"] || $status_f[1]["mtime"]!=$status_f[2]["mtime"]){
+
+
+
+// Статусы.csv
+$datas0 = time();
+$f = fopen($status_file, "r") or die("Ошибка!");
+
+$contents = explode("\n",fread($f,filesize($status_file)));
+for ($i=1; $i<sizeof($contents); $i++){  
+	$data=explode(';', ereg_replace('"','',rtrim($contents[$i])));
+	
+	if (sizeof($data)>3){
+		$datas1 = explode(".",$data[2]); $datas1 = mktime(0,0,0,$datas1[1],$datas1[0],$datas1[2]);
+		$datas2 = explode(".",$data[3]); $datas2 = mktime(0,0,0,$datas2[1],$datas2[0],$datas2[2]);
+		//$tmp_reserved[$data[1]][$data[0]][] = "['".$data[2]."','".$data[3]."']";
+
+		$tmp_reserved[$data[1]][$data[0]][] = "['".$datas1."','".$datas2."']";
+
+		if ($datas1 < $datas0 && $datas0 < $datas2) $tmp_status[$data[0]] = $data[1];
+	}
+}
+fclose($f);
+
+
+// read price index 1 - Base
+$db_res = CPrice::GetList(array(),array("CATALOG_GROUP_ID" => 1 ) );
+while ($ar_res = $db_res->Fetch()){
+    $tmp_price[$ar_res["PRODUCT_ID"]] = $ar_res["PRICE"];
+}
+
+//$tmp1 = CCatalog::GetList(array(),array("SUBSCRIPTION" => "Y"));
+$tmp1 = CCatalog::GetList(array(),array());
+while ($catalog = $tmp1->Fetch()){
+	$tmp2 = GetIBlockSectionList($catalog["ID"]);
+	while($section = $tmp2->GetNext()) {
+		if ($section['DEPTH_LEVEL']==1){
+			$rz_len = sizeof($rz_html);
+			$rz_index[$section["ID"]] = $rz_len;
+			$rz_html[] = "<td width=70>".$section["NAME"]."<br><a href=\"#\" onClick=\"javascript:return show_hide_overlay(".$rz_len.");\"><img src=\"".CFile::GetPath($section["PICTURE"])."\" border=\"0\" title=\"".$section["NAME"]."\" id=\"imgc_".$rz_len."\"></a></td>";
+			
+		}else{
+			$rz_cat2[] = $section["NAME"];
+			$icon2_files[]="'".CFile::GetPath($section["PICTURE"])."'";
+			$sec2_id[] = $section["ID"];
+			$rz_index2[$section["ID"]] = sizeof($sec2_id)-1;
+			$rz_index2_parent[ $section["ID"] ] = $section["IBLOCK_SECTION_ID"];
+		}
+	}
+
+	$tmp3 = CIBlockElement::GetList(array("NAME" => "ASC"),array("SECTION_ID" => $sec2_id, "INCLUDE_SUBSECTIONS" => "Y", "ACTIVE"=>"Y", "SECTION_ACTIVE"=>"Y"));
+	while($ob = $tmp3->GetNextElement()){
+		$itemP = $ob->GetProperties();
+		if ($itemP["KOORD1"]["VALUE"]!=""){
+			$item = $ob->GetFields();
+			$koords = explode(",",$itemP["KOORD1"]["VALUE"]);
+			$split_name = explode("сторона",preg_replace('/\s*/','',$item["NAME"]));
+			$p1 = CFile::GetPath($item["PREVIEW_PICTURE"]); if ($p1=="") $p1 = SITE_TEMPLATE_PATH."/images/7x7_Op.gif";
+			$p2 = CFile::GetPath($item["DETAIL_PICTURE"]); if ($p2=="") $p2 = SITE_TEMPLATE_PATH."/images/7x7_Op.gif";
+			$rz_items[$split_name[0]][] = array(
+				"ID"		=> $item["ID"],
+				"NAME"		=> $item["NAME"],
+				"SIDE"		=> $split_name[1],
+				"CODE"		=> $item["CODE"],
+				"LON"		=> $koords[1],
+	 			"LAT"		=> $koords[0],
+	 			//"FOTO"		=> ereg_replace("'","",$itemP["FOTO1"]["VALUE"]),
+	 			"FOTO1"		=> $p1,
+	 			"FOTO2"		=> $p2,
+	 			"ART"		=> $itemP["ART1"]["VALUE"],
+	 			"CAT"		=> $rz_index[ $rz_index2_parent[$item["IBLOCK_SECTION_ID"]] ],
+	 			"CAT2"		=> $rz_index2[$item["IBLOCK_SECTION_ID"]],
+	 			"PRICE"		=> $tmp_price[$item["ID"]]
+			);
+		}
+	} 
+}
+
+
+// собираем javascript array
+foreach ($rz_items as $i => $value) {
+
+	$item_len = sizeof($rz_item);
+	$item_all_len = sizeof($rz_item_all);
+	$sides = array();
+	$status_html = array(
+		''=>'<span style=\"color:#65781F\"><b>Свободен</b></span>',
+		'1'=>'<span style=\"color:#C70000\">Занят</span>',
+		'2'=>'<span style=\"color:#D5CD00\">Забронирован</span>'
+	);
+
+	//сначала узнаем стороны
+	for ($i=0;$i<sizeof($value);$i++){
+		$sides[]='<a href=\"\" onClick=\"javascript:return swapb('.($item_len).','.($item_all_len+$i).');\"><span>'.$value[$i]["SIDE"].'</span></a>';
+	}
+
+	$rz_item[]='{"ID":"'.$item_all_len.'","LON":"'.$value[0]["LON"].'", "LAT":"'.$value[0]["LAT"].'", "CAT":"'.$value[0]["CAT"].'", "CAT2":"'.$value[0]["CAT2"].'", "BASKET":0,"STATUS":1}';
+        	
+	//создаем массив контента
+	for ($i=0;$i<sizeof($value);$i++){
+		$tmp_links = '';
+		if (sizeof($sides)>1){
+			$tmp_sides = $sides;
+			$tmp_sides[$i]='<span class=\"Header\">'.$value[$i]["SIDE"].'</span>';
+			//$tmp_links='<tr><td nowrap>Стороны: '.implode("&nbsp;",$tmp_sides).'</td></tr>';
+			$tmp_links='Стороны: '.implode("&nbsp;",$tmp_sides).'';
+		}
+		
+		$rz_item_all[] = '{'.
+		'"ID":"'.$value[$i]["ID"].'",'.
+		'"PARENT":'.$item_len.','.
+		'"BASKET":0,'.
+		'"PRICE":"'.$value[$i]["PRICE"].'",'.
+		'"STATUS":"'.$tmp_status[$value[$i]["CODE"]].'",'.
+		'"PURCHASED":['.implode(",",$tmp_reserved[1][$value[$i]["CODE"]]).'],'.
+		'"RESERVED":['.implode(",",$tmp_reserved[2][$value[$i]["CODE"]]).'],'.
+		'"TEXT":"<table width=\"250\" border=\"0\" cellspacing=\"7\" cellpadding=\"0\"><tr><td rowspan=\"7\"><img src=\"\/bitrix\/templates\/mir\/images\/7x7_Op.gif\" width=\"12\" height=\"7\"></td><td rowspan=\"5\"><p class=\"Header\"><img src=\"'.$value[$i]["FOTO1"].'\" width=\"250\" height=\"187\" border=\"0\" onClick=\'javascript:show_window_photo(\"'.$value[$i]["FOTO2"].'\");\' style=\"cursor:pointer;\"></p></td><td><span class=\"Header\">'.$rz_cat2[$value[$i]["CAT2"]].'</span></td><td rowspan=\"7\"><img src=\"\/bitrix\/templates\/mir\/images\/7x7_Op.gif\" width=\"12\" height=\"7\"></td></tr><tr><td>'.$value[$i]["NAME"].'</td></tr><tr><td nowrap>'.$tmp_links.'</td></tr><tr><td>&nbsp;</td></tr><tr><td><p><span class=\"Grd\">'.$value[$i]["ART"].' / '.$value[$i]["CODE"].'</span></p></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td> </tr>",'.
+		'"TEXT_FOOT1":"<tr><td><a href=\"\" onClick=\'javascript:return show_window_calendar('.($item_all_len+$i).');\'>'.$status_html[$tmp_status[$value[$i]["CODE"]]].'</a> | <a href=\"\" onClick=\'javascript:return show_window_calendar('.($item_all_len+$i).');\'>Календарь </a></td><td align=\"right\" nowrap><a href=\"\" onClick=\'javascript:return show_window_calendar('.($item_all_len+$i).');\'>Поместить в Корзину</a></td></tr></table>",'.
+		'"TEXT_FOOT2":"<tr><td>&nbsp;</td><td align=\"right\" nowrap><a href=\"\" onClick=\'javascript:return remove2basket('.($item_all_len+$i).');\'>Удалить из корзины</a></td></tr></table>"'.
+		'}';
+	}
+}
+
+
+
+
+
+
+
+
+/*
+<table width=\"250\" border=\"0\" cellspacing=\"7\" cellpadding=\"0\">
+ <tr> 
+  <td rowspan=\"7\"><img src=\"\/bitrix\/templates\/mir\/images\/7x7_Op.gif\" width=\"12\" height=\"7\"></td>
+  <td rowspan=\"5\"><p class=\"Header\"><img src=\"'.$value[$i]["FOTO1"].'\" width=\"250\" height=\"187\" border=\"0\" onClick=\'javascript:show_window_photo(\"'.$value[$i]["FOTO2"].'\");\' style=\"cursor:pointer;\"></p></td>
+  <td><span class=\"Header\">'.$rz_cat2[$value[$i]["CAT2"]].'</span></td>
+  <td rowspan=\"7\"><img src=\"\/bitrix\/templates\/mir\/images\/7x7_Op.gif\" width=\"12\" height=\"7\"></td>
+ </tr>
+ <tr> 
+  <td>'.$value[$i]["NAME"].'</td>
+ </tr>
+ <tr> 
+  <td nowrap>'.$tmp_links.'</td>
+ </tr>
+ <tr> 
+  <td>&nbsp;</td>
+ </tr>
+ <tr> 
+  <td nowrap><p><span class=\"Grd\">'.$value[$i]["ART"].' / '.$value[$i]["CODE"].'</span></p></td>
+ </tr>
+ <tr> 
+  <td>&nbsp;</td>
+  <td>&nbsp;</td>
+ </tr>
+ <tr> 
+  <td>status</td>
+  <td>basket</td>
+ </tr>
+</table>
+*/
+
+
+
+
+//'"TEXT":"<table width=\"250\" border=\"1\" cellpadding=\"0\" cellspacing=\"7\" bgcolor=\"#FFFFFF\"><tr><td rowspan=\"6\" valign=\"top\" nowrap><img src=\"\/bitrix\/templates\/mir\/images\/7x7_Op.gif\" width=\"12\" height=\"7\"></td><td rowspan=\"6\" valign=\"top\" nowrap><p class=\"Header\"><img src=\"'.$value[$i]["FOTO1"].'\" width=\"250\" height=\"187\" border=\"0\" onClick=\'javascript:show_window_photo(\"'.$value[$i]["FOTO2"].'\");\' style=\"cursor:pointer;padding-right:5px;\"></p></td><td nowrap><span class=\"Header\">'.$rz_cat2[$value[$i]["CAT2"]].'</span></td></tr><tr><td>'.$value[$i]["NAME"].'</td></tr><tr><td nowrap>'.$tmp_links.'</td></tr><tr><td nowrap>&nbsp;</td></tr><tr><td align=\"left\" nowrap><p><span class=\"Grd\">'.$value[$i]["ART"].' / '.$value[$i]["CODE"].'</span></p></td></tr><tr><td nowrap colspan=\"3\">&nbsp;</td></tr><tr><td align=\"left\" nowrap>&nbsp;</td>",'.
+//'"TEXT_FOOT1":"<td align=\"left\" nowrap><a href=\"\" onClick=\'javascript:return show_window_calendar('.($item_all_len+$i).');\'>'.$status_html[$tmp_status[$value[$i]["CODE"]]].'</a> | <a href=\"\" onClick=\'javascript:return show_window_calendar('.($item_all_len+$i).');\'>Календарь </a></td><td align=\"right\" nowrap><a href=\"\" onClick=\'javascript:return show_window_calendar('.($item_all_len+$i).');\'>Поместить в Корзину</a></td></tr></table>",'.
+//'"TEXT_FOOT2":"<td align=\"left\" nowrap>&nbsp;</td><td align=\"right\" nowrap><a href=\"\" onClick=\'javascript:return remove2basket('.($item_all_len+$i).');\'>Удалить из корзины</a></td></tr></table>"'.
+
+
+
+$ff = fopen($include_js_file,"w");
+if ($ff){
+	fwrite($ff,"var map_point_data = [".implode(",",$rz_item)."];\n");
+	fwrite($ff,"var map_point_all = [".implode(",",$rz_item_all)."];\n");
+	fwrite($ff,"var map_imgs = [".implode(",",$icon2_files)."];\n");
+	fwrite($ff,"var map_header = '".implode("",$rz_html)."';\n");
+	fwrite($ff,"var map_showhide_len = ".sizeof($rz_index).";\n");
+
+	fclose($ff);
+}
+
+clearstatcache();
+$status_f[2] = stat($include_js_file);
+touch($status_file,$status_f[2]["mtime"]);
+touch($reflect_file,$status_f[2]["mtime"]);
+}
+
+?>
+

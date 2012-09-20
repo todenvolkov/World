@@ -1,0 +1,136 @@
+table.forum-menu {
+	border:none;
+	border-left:1px solid #CEDEEC;
+	border-top:1px solid #CEDEEC;
+	width:100%;
+	padding:0px;
+	margin:0px;}
+	
+table.forum-menu td.forumtoolbar {
+	background-color:#F1F5FA;
+	border:1px solid #CEDEEC;
+	border-left:1px solid #FFFFFF;
+	border-top:1px solid #FFFFFF;
+	height:25px;
+	width:100%;}
+
+table.forum-menu td.submenu {
+ 	cursor:pointer;
+ 	cursor:hand;}
+ 	
+table.forum-menu td {
+	color:#456A74;
+	font-size:11px;
+	vertical-align:middle;}
+	
+div.forumtoolsection {
+	border-left:1px solid #FFFFFF;
+	border-top:1px solid #FFFFFF;
+	border-right:1px solid #CEDEEC;
+	border-bottom:1px solid #CEDEEC;
+	width:3px;
+	height:21px;
+	margin-left:1px;
+	margin-right:0px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;}
+
+div.forumtoolseparator {
+	border-left:1px solid #CEDEEC;
+	border-right:1px solid #FFFFFF;
+	width:2px;
+	height:21px;
+	padding:0px;
+	margin-left:6px;
+	margin-right:1px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;}
+
+
+table.forum-menu a, 
+table.forum-menu select, 
+table.forum-menu input {
+	color:#456A74;
+	text-decoration:none;
+	font-size:11px;
+	margin:0px;
+	padding:0px;}
+	
+table.forum-menu select {width:100px;}
+table.forum-menu a:hover {text-decoration:underline;}
+table.forum-menu form, form.forum-form-menu {padding:0px;margin:0px;border:none;}
+form.forum-form-menu {width:100%;}
+div.forum-menu-br {height:4px;padding:0px;margin:0px;width:100%;overflow:hidden;}
+table.forum-menu-auth {border:1px solid #CEDEEC;width:200px;border-collapse:collapse;border:1px solid #99BAD7;}
+table.forum-menu-auth td{
+	background-color:#CEDEEC;
+	padding:4px 4px 0px 2px;
+	font-size:11px;
+	white-space:nowrap;
+	text-align:center;
+}
+
+table.forum-menu a.attention {}
+#USER_LOGIN {width:50px;}
+#USER_PASSWORD {width:50px;}
+
+/*icons*/
+.icon-flist, .icon-active, .icon-search, .icon-user_list, .icon-rules, .icon-help,
+.icon-profile, .icon-pm, .icon-subscribe, .icon-logout, .icon-login, .icon-register,
+.icon-subscribe, .icon-subscribe-all, .icon-subscribe-topic, .icon-subscribe-topic-this, 
+.icon-topics,  
+.icon-message, .icon-message-show, .icon-message-hide, .icon-message-move, .icon-message-del, .icon-forum-read,
+.icon-pm_sent, .icon-pm_inbox, .icon-pm_send, .icon-pm_outbox, .icon-pm_recyled, .icon-folders, .icon-folder {
+	background-image:url("images/icon_temp.gif");
+	background-repeat:no-repeat;
+	background-position:left;
+ 	cursor:pointer;
+ 	cursor:hand;
+	width:16px;
+	height:16px;
+	margin:4px;}
+
+span.icon-subscribe-all, span.icon-subscribe-topic, span.icon-subscribe-topic-this {
+	background-repeat:no-repeat;
+	background-position:left;
+	display:block-inline;
+	float:left;
+ 	cursor:pointer;
+ 	cursor:hand;
+	width:16px;
+	height:16px;
+	margin:0px;
+	margin:0px;}
+.icon-flist {background-image:url("images/icon_flist.gif");}
+.icon-active {background-image:url("images/icon_active.gif");}
+.icon-search {background-image:url("images/icon_search.gif");}
+.icon-user_list {background-image:url("images/icon_user_list.gif");}
+.icon-rules {background-image:url("images/icon_rules.gif");}
+.icon-help {background-image:url("images/icon_help.gif");}
+
+.icon-profile {background-image:url("images/icon_profile.gif");}
+.icon-pm {background-image:url("images/icon_pm_list.gif");width:17px;}
+.icon-subscribe {background-image:url("images/icon_subscribe.gif");}
+.icon-logout {background-image:url("images/icon_logout.gif");}
+.icon-login {background-image:url("images/icon_login.gif");}
+.icon-register {background-image:url("images/icon_reg.gif");}
+
+.icon-pm_sent {background-image:url("images/icon_pm_sent.gif");}
+.icon-pm_inbox {background-image:url("images/icon_pm_inbox.gif");}
+.icon-pm_send {background-image:url("images/icon_pm_send.gif");}
+.icon-pm_outbox {background-image:url("images/icon_pm_outbox.gif");}
+.icon-pm_recyled {background-image:url("images/icon_pm_recyled.gif");}
+.icon-folders {background-image:url("images/icon_folders.gif");}
+.icon-folder {background-image:url("images/icon_folder.gif");}
+
+
+.icon-subscribe-all {background-image:url("images/icon_subscr_forum.gif");}
+.icon-subscribe-topic {	background-image:url("images/icon_subscr_new_topic.gif");}
+.icon-subscribe-topic-this {	background-image:url("images/icon_subscr_topic.gif");}
+.icon-forum-read { background-image:url("images/icon_read.gif");}
+.icon-topics { background-image:url("images/icon_topics.gif");}
+.icon-message { background-image:url("images/icon_messages.gif");}
+/*icons*/
+a.forum-subscribe {white-space:nowrap;margin:0px 4px 0px 0px;text-decoration:none;}
+table.forum-popup td.forum-group, table.forum-popup td.forum-group-over{background-color:#CAD9E7;}
+table.forum-popup td.forum-group td, table.forum-popup td.forum-group-over td {font-weight:bold;color:#3A5FA2;}

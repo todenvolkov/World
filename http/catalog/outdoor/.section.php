@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Рефлексы";
+$arDirProperties = Array(
+
+);
+?>

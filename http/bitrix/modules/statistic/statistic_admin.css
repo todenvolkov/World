@@ -1,0 +1,17 @@
+	/* Statistics :: admin css */
+	.tablebodystop {font-family: Arial, Helvetica, sans-serif; font-size:12px; text-decoration: none; color: red;}
+	a.tablebodystop:hover {text-decoration: underline;}
+	.newguest {color:#1C7729;}
+	.oldguest {color:#939393;}
+	.notauth {color:#136C1C;}
+	.textmain {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; line-height: 15px; text-decoration: none;}
+	.textarea2 {font-family: Arial, Helvetica, sans-serif; background-color:#FFFFFF; font-size:smaller; width:100% }
+
+	.tablelinetop {border-top:1pt solid #D1D1D1}
+	.tablelinebottom {border-bottom:1pt solid #D1D1D1}
+	.tablelineleft {border-left:1pt solid #D1D1D1}
+	.tablelineright {border-right:1pt solid #D1D1D1}
+
+	.btn{BORDER-BOTTOM: buttonshadow solid 1px; BORDER-LEFT: #F4F4F4 solid 1px; BORDER-RIGHT: buttonshadow solid 1px; BORDER-TOP:  #F4F4F4 solid 1px; HEIGHT: 15px; WIDTH: 15px;}
+	.btnDown{BACKGROUND-COLOR: #FFFFFF; BORDER-BOTTOM: #F4F4F4 solid 1px;BORDER-LEFT: buttonshadow solid 1px;BORDER-RIGHT: #F4F4F4 solid 1px;BORDER-TOP:  buttonshadow solid 1px;}
+	.tb2{BORDER-BOTTOM: #FFFFFF solid 1px;BORDER-LEFT: #FFFFFF solid 1px;BORDER-RIGHT: #FFFFFF solid 1px;BORDER-TOP: #FFFFFF solid 1px;HEIGHT: 15px;WIDTH: 15px;}

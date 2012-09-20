@@ -1,0 +1,46 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Записи", 
+		"#SITE_DIR#", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Блоги", 
+		"#SITE_DIR#blogs/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Форумы", 
+		"#SITE_DIR#forum/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Сообщества", 
+		"#SITE_DIR#groups/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Люди", 
+		"#SITE_DIR#people/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Фото", 
+		"#SITE_DIR#photo/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

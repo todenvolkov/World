@@ -1,0 +1,16 @@
+<?
+$arTooltips = array(
+	"SEF_MODE" => GetMessage("SEF_MODE_TIP"),
+	"RESULT_ID" => GetMessage("RESULT_ID_TIP"),
+	"EDIT_ADDITIONAL" => GetMessage("EDIT_ADDITIONAL_TIP"),
+	"EDIT_STATUS" => GetMessage("EDIT_STATUS_TIP"),
+	"LIST_URL" => GetMessage("LIST_URL_TIP"),
+	"VIEW_URL" => GetMessage("VIEW_URL_TIP"),
+	"CHAIN_ITEM_TEXT" => GetMessage("CHAIN_ITEM_TEXT_TIP"),
+	"CHAIN_ITEM_LINK" => GetMessage("CHAIN_ITEM_LINK_TIP"),
+	"SEF_FOLDER" => GetMessage("SEF_FOLDER_TIP"),
+	"SEF_URL_TEMPLATES_edit" => GetMessage("SEF_URL_TEMPLATES_edit_TIP"),
+	"IGNORE_CUSTOM_TEMPLATE" => GetMessage("IGNORE_CUSTOM_TEMPLATE_TIP"),
+	"USE_EXTENDED_ERRORS" => GetMessage("USE_EXTENDED_ERRORS_TIP"),
+);
+?>

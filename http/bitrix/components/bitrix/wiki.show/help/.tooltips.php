@@ -1,0 +1,19 @@
+<?
+$arTooltips = array(
+	"PATH_TO_POST" => GetMessage("PATH_TO_POST_TIP"),
+	"PATH_TO_POST_EDIT" => GetMessage("PATH_TO_POST_EDIT_TIP"),
+	"PATH_TO_CATEGORIES" => GetMessage("PATH_TO_CATEGORIES_TIP"),
+	"PATH_TO_CATEGORY" => GetMessage("PATH_TO_CATEGORY_TIP"),
+	"PATH_TO_DISCUSSION" => GetMessage("PATH_TO_DISCUSSION_TIP"),
+	"PATH_TO_HISTORY" => GetMessage("PATH_TO_HISTORY_TIP"),
+	"PATH_TO_SEARCH" => GetMessage("PATH_TO_SEARCH_TIP"),
+	"PATH_TO_HISTORY_DIFF" => GetMessage("PATH_TO_HISTORY_DIFF_TIP"),
+	"PATH_TO_USER" => GetMessage("PATH_TO_USER_TIP"),
+	"PAGE_VAR" => GetMessage("PAGE_VAR_TIP"),
+	"OPER_VAR" => GetMessage("OPER_VAR_TIP"),
+	"ELEMENT_NAME" => GetMessage("ELEMENT_NAME_TIP"),
+	"CACHE_TYPE" => GetMessage("CACHE_TYPE_TIP"),
+	"CACHE_TIME" => GetMessage("CACHE_TIME_TIP"),
+	"SET_TITLE" => GetMessage("SET_TITLE_TIP"),
+);
+?>

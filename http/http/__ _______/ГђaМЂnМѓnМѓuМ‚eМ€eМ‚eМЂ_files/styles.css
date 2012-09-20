@@ -1,0 +1,152 @@
+HTML {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px;
+}
+
+BODY {
+	PADDING-TOP: 0px;
+	background-color: #E4E4E4;
+}
+
+body, input, select, textarea, td, font {
+	font-size: 13px;
+	font-family: Calibri, Verdana;
+	color: #666666;
+}
+P {
+	PADDING-RIGHT: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px;
+	MARGIN: 0px;
+	text-indent: 0px;
+}
+
+A:link, A:visited, A:active {
+	COLOR: #333333;
+	TEXT-DECORATION: none;
+	cursor: pointer;
+}
+
+A:hover {
+	text-decoration: overline;
+
+}
+A.pict:hover {
+	background-color: transparent;
+}
+a.f:link, a.f:visited, a.f:active {
+	COLOR: #999999;
+	TEXT-DECORATION: none;
+	cursor: pointer;
+}
+a.f:hover {
+	COLOR: #CCCCCC;
+	text-decoration: overline;
+}
+.Grd {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 10px;
+	font-style: italic;
+}
+.Menu {
+	font-family: Calibri, Verdana;
+	font-size: 17px;
+}
+.footerText {
+	COLOR: #999999;
+}
+.Header {
+	font-size: 18px;
+	font-weight: bold;
+	color: #333333;
+	padding-bottom: 0px;
+	font-family: Calibri, Verdana;
+}
+.Header2 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #333333;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+.BIG {
+	font-size: 36px;
+	color: #F45204;
+	line-height: 34px;
+}
+.C10 {
+	padding: 10px;
+}
+.C10_Left_Column {
+	padding-right: 10px;
+}
+.C10_Right_Column {
+	padding-left: 10px;
+}
+
+
+.Ltop {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+}
+.Ltop2 {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #333333;
+}
+
+.Lleft {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #CCCCCC;
+}
+.Lright {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #CCCCCC;
+}
+.Lbott {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCCCCC;
+}
+.LWhite {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #666666;
+}
+.DivLogo {
+	position:relative;
+	top:-10px;
+	left:40px;
+	height: 40px;
+	width: 125;
+}
+.DivLogoF {
+	position:relative;
+	left:-37px;
+	top:10px;
+	width:220px;
+	height:51px;
+	z-index:1;
+}
+.DivLogoFD {
+	position:relative;
+	left:17px;
+	top:10px;
+	width:1px;
+	height:51px;
+	z-index:1;
+}
+.CommentSub {
+	padding-left: 70px;
+}
+
+.active {
+	color: #005A66;
+	font-style: italic;
+	font-weight: bold;
+}

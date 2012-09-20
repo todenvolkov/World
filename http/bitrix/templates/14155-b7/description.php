@@ -1,0 +1,1 @@
+<?$arTemplate = Array("NAME"=>"TM 14155 Business Corp.", "DESCRIPTION"=>"1C-Bitrix 7.0 Template by lifter");?>

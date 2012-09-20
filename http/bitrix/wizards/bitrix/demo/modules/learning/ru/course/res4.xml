@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<content type="LES"><id>1279</id>
+<timestamp_x>1209554475</timestamp_x>
+<date_create>1209553492</date_create>
+<created_by>6104</created_by>
+<active>Y</active>
+<course_id>1</course_id>
+<chapter_id></chapter_id>
+<name>Режим Редактирования</name>
+<sort>30</sort>
+<preview_picture></preview_picture>
+<preview_text></preview_text>
+<preview_text_type>text</preview_text_type>
+<detail_picture></detail_picture>
+<detail_text><![CDATA[<p>Режим <b>Редактирования</b> создан специально для изменения содержания страниц и разделов на сайте. Режим предоставляет для этого более широкие возможности, чем режим <b>Просмотра</b>. </p>
+
+<p>Например, создать страницу можно как с помощью мастера из публичного раздела, так и в административной части с помощью традиционной формы редактирования страницы.</p>
+
+<p><img src="cid:resources/res4/FKyeH.new_page_admin.png" width="329" height="133" border="0"/></p>
+
+<p>Режим редактирования также позволяет:</p>
+
+<ul>
+   <li>Управлять доступом к текущей странице или разделу из публичной части:
+ <br/><br /><img src="cid:resources/res4/m1Lek.access_opt.png" width="117" height="77" border="0"/>
+</li>
+   <li>Удалить текущую страницу: <img src="cid:resources/res4/2cSMT.delete_button_opt.png" width="75" height="24" border="0"/></li>
+   <li>Создать, изменить или просмотреть историю изменений текущей страницы через документооборот:
+<br /><br />
+<img src="cid:resources/res4/FursU.workflow_opt.png" width="217" height="101" border="0"/>
+</li>
+   <li>Управлять кешем страницы:
+<br /><br />
+<img src="cid:resources/res4/ymd9o.cash_opt.png" width="204" height="80" border="0"/>
+
+</li>
+
+</ul>
+
+<p>В режиме редактирования для всех компонентов, использованных на странице, выведен набор действий по управлению содержанием:</p>
+<p><img src="cid:resources/res4/ZETuu.comp_buttons_opt.png" width="339" height="190" border="0"/>
+</p>
+<p>Например, меню действий компонента, выводящего структуру разделов инфоблока <i>Каталог товаров</i>, содержит такие операции:</p>
+
+<p><img src="cid:resources/res4/lvzu5.add_element_opt.png" width="161" height="76" border="0"/>
+</p>
+<p>При выборе действия <b>Добавить элемент</b> подгружается форма редактирования элемента в публичной части:</p>
+<p><img src="cid:resources/res4/QkaFe.add_element_form_sm.png" style="CURSOR: pointer" height="250" alt="Нажмите на рисунок, чтобы увеличить" width="350" border="0"/></p>
+
+<p>После сохранения элемент будет добавлен и опубликован в публичной части.</p>]]></detail_text>
+<detail_text_type>html</detail_text_type>
+</content>

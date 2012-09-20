@@ -1,0 +1,8 @@
+<?
+$arTooltips = array(
+	"TEST_DETAIL_TEMPLATE" => GetMessage("TEST_DETAIL_TEMPLATE_TIP"),
+	"COURSE_DETAIL_TEMPLATE" => GetMessage("COURSE_DETAIL_TEMPLATE_TIP"),
+	"TEST_ID_VARIABLE" => GetMessage("TEST_ID_VARIABLE_TIP"),
+	"SET_TITLE" => GetMessage("SET_TITLE_TIP"),
+);
+?>

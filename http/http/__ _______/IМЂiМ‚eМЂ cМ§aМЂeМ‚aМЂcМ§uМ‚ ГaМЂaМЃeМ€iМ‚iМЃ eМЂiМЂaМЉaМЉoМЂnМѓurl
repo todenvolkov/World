@@ -1,0 +1,5 @@
+[DEFAULT]
+BASEURL=http://temp.t5.ru/personal/order/?filter_history=Y
+[InternetShortcut]
+URL=http://temp.t5.ru/personal/order/?filter_history=Y
+Modified=F09B713CA430CC01D9

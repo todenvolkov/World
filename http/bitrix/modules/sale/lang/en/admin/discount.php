@@ -1,0 +1,40 @@
+<?
+$MESS ['PERSON_TYPE_TITLE'] = "Discounts";
+$MESS ['SALE_F_FILTER'] = "Filter";
+$MESS ['LANG_FILTER_NAME'] = "Site";
+$MESS ['LANG_ALL'] = "all";
+$MESS ['ERROR_UPDATE_REC'] = "Error updating the record ";
+$MESS ['ERROR_ADD_REC'] = "Error adding a record ";
+$MESS ['ERROR_NAME_REC'] = "The discount value is not specified";
+$MESS ['ERROR_PRICE_REC'] = "The discount price range is not specified";
+$MESS ['ERROR_CURRENCY_REC'] = "The currency for money sum is not specified";
+$MESS ['ERROR_LID_REC'] = "The site is not specified ";
+$MESS ['LANG_FILTER_BTN'] = "Set Filter";
+$MESS ['SALE_F_DEL'] = "Remove Filter";
+$MESS ['PERS_TYPE_NAV'] = "Discounts";
+$MESS ['PERS_TYPE_ACTIVE'] = "Active";
+$MESS ['PERS_TYPE_LID'] = "Site";
+$MESS ['PERS_TYPE_PRICE'] = "Total order value";
+$MESS ['PERS_TYPE_DISCOUNT'] = "Discount";
+$MESS ['PERS_TYPE_DEL'] = "Delete";
+$MESS ['PERS_TYPE_UPD'] = "Save";
+$MESS ['PERS_TYPE_RESET'] = "Reset";
+$MESS ['PERS_TYPE_ID'] = "ID";
+$MESS ['PERS_TYPE_DEL_CONF'] = "Are you sure you want to delete this discount?";
+$MESS ['SALE_NEW'] = "New";
+$MESS ['SALE_FROM'] = "from";
+$MESS ['SALE_TO'] = "to";
+$MESS ['SALE_NOTE'] = "Please append the <b>%</b> symbol to the discount to set the discount in percent of the total order value. Otherwise, the discount will be interpreted as the fixed value in the specified currency.<br> The discount is calculated from the order price not including the shipping expences.";
+$MESS ['PERS_TYPE_SORT'] = "Sort";
+$MESS ['DS_ALL'] = "(all)";
+$MESS ['DS_UNSET'] = "Reset";
+$MESS ['SDSN_DELETE_ERR'] = "Error deleting the discount";
+$MESS ['SDSN_UPDATE_ALT'] = "Modify the discount parameters";
+$MESS ['SDSN_DELETE_ALT1'] = "Delete the discount";
+$MESS ['SDSN_DELETE_CONF'] = "Are you sure you want to delete this discount?";
+$MESS ['SDSN_ADD_NEW'] = "Add a new discount";
+$MESS ['SDSN_ADD_NEW_ALT'] = "Click to add a new discount";
+
+$MESS ['SDSN_ACTIVE_FROM'] = "Active from";
+$MESS ['SDSN_ACTIVE_TO'] = "Active till";
+?>

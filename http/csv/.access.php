@@ -1,0 +1,9 @@
+<?
+$PERM["status.csv"]["2"]="X";
+$PERM["services.csv"]["2"]="X";
+$PERM["screens.csv"]["2"]="X";
+$PERM["resolutions.csv"]["2"]="X";
+$PERM["reflect.csv"]["2"]="X";
+$PERM["materials.csv"]["2"]="X";
+$PERM["discount.csv"]["2"]="X";
+?>

@@ -1,0 +1,26 @@
+<?
+$arTooltips = array(
+	"IBLOCK_TYPE" => GetMessage("IBLOCK_TYPE_TIP"),
+	"IBLOCK_ID" => GetMessage("IBLOCK_ID_TIP"),
+	"MONTH_VAR_NAME" => GetMessage("MONTH_VAR_NAME_TIP"),
+	"YEAR_VAR_NAME" => GetMessage("YEAR_VAR_NAME_TIP"),
+	"WEEK_START" => GetMessage("WEEK_START_TIP"),
+	"DATE_FIELD" => GetMessage("DATE_FIELD_TIP"),
+	"TYPE" => GetMessage("TYPE_TIP"),
+	"SHOW_YEAR" => GetMessage("SHOW_YEAR_TIP"),
+	"SHOW_TIME" => GetMessage("SHOW_TIME_TIP"),
+	"TITLE_LEN" => GetMessage("TITLE_LEN_TIP"),
+	"SET_TITLE" => GetMessage("SET_TITLE_TIP"),
+	"SHOW_CURRENT_DATE" => GetMessage("SHOW_CURRENT_DATE_TIP"),
+	"SHOW_MONTH_LIST" => GetMessage("SHOW_MONTH_LIST_TIP"),
+	"NEWS_COUNT" => GetMessage("NEWS_COUNT_TIP"),
+	"DETAIL_URL" => GetMessage("DETAIL_URL_TIP"),
+	"CACHE_TYPE" => GetMessage("CACHE_TYPE_TIP"),
+	"CACHE_TIME" => GetMessage("CACHE_TIME_TIP"),
+	"AJAX_MODE" => GetMessage("AJAX_MODE_TIP"),
+	"AJAX_OPTION_SHADOW" => GetMessage("AJAX_OPTION_SHADOW_TIP"),
+	"AJAX_OPTION_JUMP" => GetMessage("AJAX_OPTION_JUMP_TIP"),
+	"AJAX_OPTION_STYLE" => GetMessage("AJAX_OPTION_STYLE_TIP"),
+	"AJAX_OPTION_HISTORY" => GetMessage("AJAX_OPTION_HISTORY_TIP"),
+);
+?>

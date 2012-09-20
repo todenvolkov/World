@@ -1,0 +1,7 @@
+/* Subscribe :: admin css */
+.subscrprogressborder {border: 1px solid black;}
+.subscrprogresscomplete {background-color: green;}
+.subscrprogresserror {background-color: red;}
+.subscrprogressall {background-color: white;}
+.subscrerror {color: red;}
+.subscrsuccess {color: green;}

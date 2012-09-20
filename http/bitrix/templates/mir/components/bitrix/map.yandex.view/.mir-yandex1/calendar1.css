@@ -1,0 +1,71 @@
+A:link {color: #000000;text-decoration: none;}
+A:visited {color: #000000;text-decoration: none;}
+A:active {color: #000000;text-decoration: none;}
+A:hover {text-decoration: underline; color: red;}
+.tablec {
+	border-width: 0px;
+	border-style: solid;
+	border-color: white;
+	border-collapse: collapse;
+	background-color: white;
+}
+.tdc{
+	font-family : Colibri, Verdana;
+	font-size : 9pt !important;
+	font-style : normal;
+	color: #000000;
+
+	word-wrap: normal;
+
+	border-width: 1px;
+	border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;
+
+	width: 17px;
+	height:17px;
+
+	cursor: pointer;
+
+	white-space: nowrap;
+	text-align: center;
+	vertical-align: middle;
+	border-style: solid;
+	
+	border-color: gray;
+	-moz-border-radius: ;
+}
+
+.tdc_header{
+	cursor: auto;
+	border-width: 0px;
+}
+.tdc_navstart{
+	background-color: #44A942;
+}
+
+.tdc_navend{
+	background-color: #44A942;
+}
+.tdc_navon {
+	background-color: #7AFF77;
+}
+
+.tdc_navoff {
+	background-color: #FFFFFF;
+}
+
+.tdc_navoffline {
+	background-color: #EEEEEE;
+}
+.tdc_purchased {
+	background-color: #FF8000;
+	border-width: 1px;
+}
+.tdc_reserved {
+	background-color: #FFFF00;
+	border-width: 1px;
+}
+
+div.YMaps-copyrights, div.YMaps-logo { 	z-index: 1 !important; }
+div.YMaps-b-balloon-content{padding-top: 10px; padding-bottom: 10px; height:100% !important; overflow: hidden !important;}
+div.YMaps-b-balloon_close-on .YMaps-b-balloon-content {margin-right:0;}
+

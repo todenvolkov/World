@@ -1,0 +1,46 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Education", 
+		"education/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Blogs", 
+		"blogs/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Job", 
+		"job/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Photo", 
+		"photo/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Classifieds", 
+		"board/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Forum", 
+		"forum/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

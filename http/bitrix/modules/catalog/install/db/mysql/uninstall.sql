@@ -1,0 +1,17 @@
+DROP TABLE if exists b_catalog_iblock;
+DROP TABLE if exists b_catalog_price;
+DROP TABLE if exists b_catalog_product;
+DROP TABLE if exists b_catalog_extra;
+DROP TABLE if exists b_catalog_group_lang;
+DROP TABLE if exists b_catalog_group;
+DROP TABLE if exists b_catalog_group2group;
+DROP TABLE if exists b_catalog_load;
+DROP TABLE if exists b_catalog_export;
+DROP TABLE if exists b_catalog_product2group;
+DROP TABLE if exists b_catalog_discount;
+DROP TABLE if exists b_catalog_discount2product;
+DROP TABLE if exists b_catalog_discount2group;
+DROP TABLE if exists b_catalog_discount2cat;
+DROP TABLE if exists b_catalog_discount2section;
+DROP TABLE if exists b_catalog_discount_coupon;
+DROP TABLE if exists b_catalog_vat;

@@ -1,0 +1,7 @@
+<?
+$arTooltips = array(
+	"TRANSCRIPT_DETAIL_TEMPLATE" => GetMessage("TRANSCRIPT_DETAIL_TEMPLATE_TIP"),
+	"SET_TITLE" => GetMessage("SET_TITLE_TIP"),
+	"USER_PROPERTY" => GetMessage("USER_PROPERTY_TIP"),
+);
+?>
